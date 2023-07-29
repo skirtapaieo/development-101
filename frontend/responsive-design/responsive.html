@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    /* Fluid Grids */
+    .container {
+        width: 100%;
+        max-width: 1200px; /* Maximum width of the container */
+        margin: 0 auto; /* Centering */
+    }
+
+
+
+    /* Flexible Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Media Queries */
+    @media screen and (min-width: 600px) {
+        .column {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    /* Mobile First & Progressive Enhancement */
+    /* For small screens, the default is one column, larger font size */
+    body {
+        font-size: 18px;
+    }
+
+    /* For larger screens, we enhance by adding another column and decreasing the font size */
+    @media screen and (min-width: 600px) {
+        body {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="column">
+        <h1>Title</h1>
+        <p>This is some text.</p>
+    </div>
+    <div class="column">
+        <img src="image.jpg" alt="An example image">
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

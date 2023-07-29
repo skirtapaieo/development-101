@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Last Name Finder</title>
+  <script>
+    function findLastName() {
+      var firstName = document.getElementById('firstName').value;
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var lastNames = xhr.responseText.split('\n');
+            var matchingLastName = '';
+
+            for (var i = 0; i < lastNames.length; i++) {
+              var nameParts = lastNames[i].split(':');
+              if (nameParts[0].toLowerCase() === firstName.toLowerCase()) {
+                matchingLastName = nameParts[1];
+                break;
+              }
+            }
+
+            document.getElementById('lastName').textContent = matchingLastName.trim() || 'Not found';
+          } else {
+            console.log('Error: ' + xhr.status);
+          }
+        }
+      };
+
+      xhr.open('GET', 'lastnames.txt', true);
+      xhr.send();
+    }
+
+    function onFirstNameChange() {
+      var firstName = document.getElementById('firstName').value;
+
+      if (firstName.trim() !== '') {
+        findLastName();
+      } else {
+        document.getElementById('lastName').textContent = '';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Last Name Finder</h1>
+  <label for="firstName">Enter First Name:</label>
+  <input type="text" id="firstName" oninput="onFirstNameChange()">
+  <p>Last Name: <span id="lastName"></span></p>
+</body>
+</html>
