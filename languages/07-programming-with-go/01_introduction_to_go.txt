@@ -1,0 +1,28 @@
+/*
+
+Go positives:
+
+easy to read and write
+# less code
+# less prone to errors
+# concurrency
+
+ static type language
+ ======================
+ has to be defined at compile time
+
+ dynamic typed language
+ ======================
+ only type checking at runtime
+
+*/
+
+/*
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+}
+*/

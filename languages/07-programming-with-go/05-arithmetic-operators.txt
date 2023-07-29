@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+/* func maint() {
+	a := 1
+	b := int8(2)
+	c := a + int(b) // int8 cannot be added to int16
+	fmt.Println(c)
+} */
+
+func main() {
+	str := "1234"
+	a, err := strconv.ParseInt(str, 10, 64)
+	fmt.Println(a, err)
+}

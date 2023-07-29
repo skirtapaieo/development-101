@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func foo() {
+	var x int = 10 // default value is 0
+	fmt.Println("Hello World" + string(x) + "!")
+}
+
+/*
+	int a = 10 // integer, signed, 32 bits or 64 bits
+	uint = 10 // unsigned integer, 32 bits or 64 bits
+	byte = 100 // unsigned integer, 8 bits
+*/

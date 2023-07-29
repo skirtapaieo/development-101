@@ -1,0 +1,8 @@
+package main
+
+import "fmt"
+
+func foo() {
+	y := 1
+	fmt.Println("Hello World " + string(y))
+}
