@@ -352,7 +352,17 @@ Feel free to explore these libraries and choose the one that best suits your pro
 
 # Conversational UI 
 
-Sure, here is a table of the frameworks I mentioned, Dialogflow, Amazon Lex, Microsoft LUIS, Rasa NLU, and Botpress, with links to their websites:
+A breakdown of various tools: 
+
+| Type             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Advantages                                                                                 | Disadvantages                                             | Examples                          |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------|
+| Toolkit          | A framework of services or SDKs to build conversational platforms and chatbot solutions. Suitable when deep technical customization capabilities are required. It requires significant skills, time, and effort.                                                                                                                                                                                                                                                                                                                             | Suitable for unique business, end-user, or integration requirements; highly customizable. | Requires significant skills, time, and effort.            | Amazon Lex, Rasa, Azure Bot Framework |
+| Platform         | Lead with a configuration, low-code, administrator GUI-type implementation and maintenance approach for chatbot deployments. These platforms offer coding capabilities for additional customization (such as SDKs), but their strength is ease of use, access to multiple chatbot-building capabilities and a growing set of templates for prebuilt chatbot starting points. Can range from simple no-code options to custom solutions built with SDKs and APIs. These latter applications require significant skills, time, and effort. | Offers ease of use; access to multiple chatbot-building capabilities; breadth of applications. | Significant skills, time, and effort for custom solutions. | Kore, Cognigy, OneReach.ai         |
+| Targeted Service | These solutions focus on a particular vertical, use case, or requirement. They are built on top of an existing enterprise application solution. The focus is on a particular use case such as human resources, IT service desk, or sales enablement. They typically offer rapid deployment but are often difficult to customize.                                                                                                                                                                                                          | Easy integration with underlying applications; rapid deployment.   | Often difficult to customize.                             | Salesforce Einstein Bot, ServiceNow Virtual Agent, Oracle Digital Assistant   |
+
+
+
+## Toolkits 
 
 | Framework | Website |
 |---|---|
@@ -362,7 +372,11 @@ Sure, here is a table of the frameworks I mentioned, Dialogflow, Amazon Lex, Mic
 | Rasa NLU | https://rasa.com/nlu/ |
 | Botpress | https://botpress.com/ |
 
-I hope this helps!
+## Platform 
+
+
+
+## Targeted service 
 
 
 
