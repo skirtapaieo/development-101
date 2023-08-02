@@ -279,7 +279,7 @@ While there might be challenges in introducing a design system, the long-term be
 - React
 - Vue
 
-## React UI libraries 
+## Libraries/UI libraries 
 
 Here's a comparative table of the libraries you mentioned, detailing their support for React, Vanilla JS, TypeScript, and some key features:
 
