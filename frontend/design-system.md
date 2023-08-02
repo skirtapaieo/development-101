@@ -35,7 +35,7 @@ Certainly! Here are the links to the sections in the text:
    - [Startup, Scale-up, and Enterprises](#startup-scale-up-and-enterprises)
    - [The Benefits](#the-benefits)
 
-3. [Design Components](#design-components)
+[Design Components](#design-components)
    - [Design Libraries](#design-libraries)
    - [Web Components](#web-components)
    - [JavaScript Frameworks](#javascript-frameworks)
@@ -266,13 +266,71 @@ Implementing a design system and adhering to best practices and guidelines can i
 
 While there might be challenges in introducing a design system, the long-term benefits and positive impact on the organization's efficiency, user experience, and brand reputation make it a worthwhile endeavor. The key to successful implementation is to start with an incremental and iterative approach, ensuring alignment with the organization's unique needs and goals. Regular feedback, adaptation, and support from leadership and cross-functional teams are crucial for a successful design system journey.
 
-## Design components 
+## design tools 
 
-### design libraries
+- Sketch
+- Adobe XD
+- Figma
+- InVision
 
+## Libraries/frameworks
+
+- Svelte
+- React
+- Vue
+
+## React UI libraries 
+
+Here's a comparative table of the libraries you mentioned, detailing their support for React, Vanilla JS, TypeScript, and some key features:
+
+| Library/Design System | Type | Support for React | Support for Vanilla JS | Support for TypeScript | Key Features |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| React | Framework | Core technology | No | Yes | Component-based, High Performance, One-way Data Flow |
+| Material UI | React UI Library | Yes | No | Yes | Material Design, Theming, Overridable Styles |
+| Chakra UI | React UI Library | Yes | No | Yes | Accessibility, Theming, Composability |
+| Mantine | React UI Library | Yes | No | Yes | Dark Theme, Accessibility, Customizability |
+| Gestalt | React UI Library | Yes | No | Yes | Accessibility, Pinterest's Design, Modularity |
+| PrimeReact | React UI Library | Yes | No | Yes | 80+ Components, Templates, Themes |
+| Bootstrap | Front-end Toolkit | Yes (Bootstrap-React) | Yes | Yes | Responsive Grid System, Predefined Classes, JavaScript Plugins |
+| Evergreen | React UI Library | Yes | No | Yes | Polymorphic Components, Accessibility, Enterprise-grade |
+| Arco Design | React UI Library | Yes | No | Yes | Enterprise-grade, Refined Design, Powerful Tools |
+| Geist | React UI Library | Yes | No | Yes | Minimalistic Design, Lightweight, Suitable for Landing Pages |
+| Fluent UI | React UI Library | Yes | No | Yes | Microsoft’s Design Language, Accessibility, Enterprise Experiences |
+| Radix | React UI Library | Yes | No | Yes | Accessibility, Custom Styling, Low-level Components |
+| Semi UI | React UI Library | Yes | No | Yes | Comprehensive, Used in TikTok, Rich Component Set |
+| Ant Design | React UI Library | Yes | No | Yes | Design Language, Enterprise-grade, Rich Component Set |
+| React Suite | React UI Library | Yes | No | Yes | Interactive Design, Suitable for Back-end Projects, Accessibility |
+| Spectrum | React UI Library | Yes | No | Yes | Adobe's Design System, Accessibility, Modular Components |
+| Base Web | React UI Library | Yes | No | Yes | Uber's Design System, Customizable, Component Overrides |
+| Circuit UI | React UI Library | Yes | No | Yes | SumUp's Design System, Comprehensive, Modularity |
+| NextUI | React UI Library | Yes | No | Yes | Designed for Next.js, Modern UI, Lightweight |
+| Tiny UI | React UI Library | Yes | No | Yes | Small-sized, Customizable, TypeScript Components |
+
+
+## design libraries
+
+## design systems 
+
+- Material design
+- Fluent design (Microsoft)
+- Human Interface 
 
 ## CSS frameworks
 
+As for CSS frameworks:
+
+| CSS Framework | Support for React | Support for Vanilla JS | Support for TypeScript | Key Features |
+| :--- | :--- | :--- | :--- | :--- |
+| Bulma | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Flexbox-based, Responsiveness, Modularity |
+| Tailwind CSS | Yes | Yes | Yes | Utility-first, Responsiveness, Highly Customizable |
+| UIKit | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Modularity, Less & Sass, Customizable |
+| Spectre.css | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Lightweight, Responsiveness, Flexbox-based |
+| Milligram | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Minimalistic, Responsiveness, Flexbox-based |
+| Mini.css | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Minimalistic, Responsiveness, Modular |
+| Picnic CSS | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Lightweight, Simple Syntax, Responsiveness |
+| Skeleton | Yes, with third-party libraries | Yes | Yes, with third-party libraries | Lightweight, Minimalistic, Responsive Grid |
+
+Note: Most of these CSS frameworks don't directly support React or TypeScript, but they can be used in conjunction with these technologies via third-party libraries or additional configurations. They are primarily for Vanilla JS and CSS.
 
 1. **Bulma**: https://bulma.io/
 
@@ -292,6 +350,6 @@ While there might be challenges in introducing a design system, the long-term be
 
 Feel free to explore these libraries and choose the one that best suits your project's needs and requirements. Each library has its own set of features, design styles, and documentation to help you get started quickly. Happy designing!
 
-### web components 
+## web components 
 
 
