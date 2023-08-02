@@ -270,7 +270,8 @@ While there might be challenges in introducing a design system, the long-term be
 
 ### design libraries
 
-Certainly! Here are the links to the lightweight design libraries mentioned earlier:
+CSS frameworks: 
+
 
 1. **Bulma**: https://bulma.io/
 
@@ -292,5 +293,4 @@ Feel free to explore these libraries and choose the one that best suits your pro
 
 ### web components 
 
-### javascript frameworks 
 
