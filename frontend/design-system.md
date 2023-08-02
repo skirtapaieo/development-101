@@ -3,7 +3,7 @@
 
 Certainly! Here are the links to the sections in the text:
 
-1. [Design System](#design-system)
+ [Design System](#design-system)
    - [Introduction](#introduction)
    - [Design Principles](#design-principles)
    - [Branding Guidelines](#branding-guidelines)
