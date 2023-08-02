@@ -34,7 +34,7 @@ Certainly! Here are the links to the sections in the text:
 2. [Design System - Take 2](#design-system-take-2)
    - [Startup, Scale-up, and Enterprises](#startup-scale-up-and-enterprises)
    - [The Benefits](#the-benefits)
-
+ 
 [Design Components](#design-components)
    - [Design Libraries](#design-libraries)
    - [Web Components](#web-components)
