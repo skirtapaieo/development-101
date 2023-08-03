@@ -106,3 +106,29 @@ Sure, let's compare the principles of Next.js and Express.js in a tabular form.
  
 This table outlines the major differences between Next.js and Express.js. However, the best choice between the two depends largely on the specific requirements of the project. Express.js offers more flexibility and control, while Next.js provides more out-of-the-box features that can speed up development and improve productivity, especially for React projects.
 
+## Server-side rendering (SSR), Static site genereation (SSG) or client side generation (CSG)
+
+When building a React/Next.js application, choosing when to use Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR) is an important decision. Here are some guiding principles regarding these methods:
+
+1. **Server-Side Rendering (SSR):**
+
+- SSR is useful when you need the data from the server at the very initial page load.
+- It's beneficial for SEO as the search engine crawlers receive a fully rendered HTML page.
+- SSR is ideal for dynamic and user-specific data. If every request results in different data, SSR can help as it fetches and displays real-time data.
+- Keep in mind that SSR can be computationally expensive since the server has to render a new HTML page for every new request.
+
+2. **Static Site Generation (SSG):**
+
+- SSG is useful when your website data doesn't change often. You can generate HTML at build time, resulting in fast page loads.
+- It's excellent for SEO, similar to SSR, as fully-rendered pages are served.
+- Next.js supports Incremental Static Regeneration (ISR), which allows you to update static content after you've built your site. It's beneficial for content that changes infrequently.
+- Pages can be cached by a CDN, making them incredibly fast to serve.
+
+3. **Client-Side Rendering (CSR):**
+
+- CSR is ideal when your page content changes frequently or is very dynamic (e.g., a real-time data dashboard).
+- With CSR, once the JavaScript bundle is loaded, navigation between pages is fast since only necessary data is requested from the server, not an entire new page.
+- SEO can be a challenge with CSR because not all web crawlers can effectively process JavaScript. However, many modern search engines have improved their ability to index client-rendered sites.
+- It may cause a delay in interactivity on slower networks or devices due to the size of JavaScript files.
+
+Each rendering method has its advantages, and often, a modern web application will use a combination of these techniques depending on the specific needs of each page or component. Next.js's hybrid approach allows you to choose on a per-page basis.
