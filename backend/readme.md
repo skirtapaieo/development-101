@@ -132,3 +132,32 @@ When building a React/Next.js application, choosing when to use Server-Side Rend
 - It may cause a delay in interactivity on slower networks or devices due to the size of JavaScript files.
 
 Each rendering method has its advantages, and often, a modern web application will use a combination of these techniques depending on the specific needs of each page or component. Next.js's hybrid approach allows you to choose on a per-page basis.
+
+### Decision-tree 
+
+A simple decision tree for choosing between SSR, SSG, and CSR when using Next.js:
+
+1. **Does your page show static content that doesn't change often?**
+
+   - Yes: Use Static Site Generation (SSG).
+   
+     1.1. Does your static content need to be updated occasionally?
+     
+        - Yes: Use Incremental Static Regeneration (ISR).
+        - No: Use standard SSG.
+   
+   - No: Move to question 2.
+
+2. **Does your page need to fetch and display data that changes frequently or is user-specific on each request?**
+
+   - Yes: Use Server-Side Rendering (SSR).
+   - No: Move to question 3.
+
+3. **Does your page have highly dynamic content that changes on the client side or have a lot of user interaction?**
+
+   - Yes: Use Client-Side Rendering (CSR).
+   - No: Consider re-evaluating your page requirements, as it seems there's no dynamic or static data. Perhaps pure HTML/CSS will suffice.
+
+Remember, these choices aren't mutually exclusive, and often a combination is used. With Next.js's hybrid nature, you can choose to use SSG for some pages and SSR for others in the same application. Additionally, you can start with CSR and then fetch and render additional data server-side as needed. 
+
+This decision tree is a simplified guide. In real applications, you'll need to consider factors like the frequency of data updates, SEO requirements, user experience, page performance, and more.
