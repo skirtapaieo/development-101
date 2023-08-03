@@ -24,6 +24,8 @@ Almost any back-end framework, works with any front-end framework - suggestions 
 | Python | Pyramid | Traditional | A small, fast, down-to-earth, open source Python web framework. | React, Angular, Vue |
 | Python | FastAPI | Traditional | A modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. | React, Angular, Vue |
 
+<br>
+
 ### Comment on Typescript and Type of Typing  
 
 Python and Go are both statically-typed languages, which means they perform type checking at compile time, similar to TypeScript. However, they handle this in different ways and have different levels of strictness.
