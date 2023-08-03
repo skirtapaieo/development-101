@@ -1,5 +1,7 @@
 
-# Overview 
+# Backend 
+
+## Overview 
 
 Almost any back-end framework, works with any front-end framework - suggestions based on what is commonly used in the community 
 
@@ -18,3 +20,12 @@ Almost any back-end framework, works with any front-end framework - suggestions 
 | Python | Pyramid | Traditional | A small, fast, down-to-earth, open source Python web framework. | React, Angular, Vue |
 | Python | FastAPI | Traditional | A modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. | React, Angular, Vue |
 
+### Comment on Typescript and Type of Typing  
+
+Python and Go are both statically-typed languages, which means they perform type checking at compile time, similar to TypeScript. However, they handle this in different ways and have different levels of strictness.
+
+Python uses a system called "type hints" or "type annotations". This is optional typing, which means that you can choose whether or not to use it in your Python code. It was introduced in Python 3.5 as a means of achieving TypeScript-like static typing. Python type hints allow you to indicate the expected type of function arguments, return values, and variable assignments. However, these type hints are mostly used for development tools (like IDEs and linters) and don't affect the runtime behavior of the code. Python's type checking is not as strict as TypeScript's.
+
+Go, on the other hand, is strongly statically-typed, and all variables have to be explicitly declared with their type. If you try to use a variable of one type where a different type is expected, the Go compiler will throw an error. This is quite similar to TypeScript, which also requires you to declare types for your variables and function arguments/return values, and checks types at compile time.
+
+So, in short, while there is not a "TypeScript for Python" or "TypeScript for Go" in terms of being a superset language that adds static typing, both Python and Go do have their own static typing systems. Python's is optional and less strict, while Go's is mandatory and quite strict.
