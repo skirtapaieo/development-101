@@ -12,9 +12,9 @@
     - [Principles](#principles)
     - [Why did Vercel develop it?](#why-did-vercel-develop-it)
     - [Comparison Next vs Express](#comparison-next-vs-express)
-- Python Back-end Frameworks
-  - Overview
-  - 
+- [Python Back-end Frameworks](#python-back-end-frameworks)
+  - [Overview](#overview)
+  - [Flask vs Vanilla Python](#flask-vs-vanilla-python) 
 - [Server-side rendering (SSR), Static site generation (SSG) or client side generation (CSG)](#server-side-rendering-ssr-static-site-generation-ssg-or-client-side-generation-csg)
   - [Decision tree for picking the right approach](#decision-tree-for-picking-the-right-approach)
 
