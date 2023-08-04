@@ -133,7 +133,7 @@ When building a React/Next.js application, choosing when to use Server-Side Rend
 
 Each rendering method has its advantages, and often, a modern web application will use a combination of these techniques depending on the specific needs of each page or component. Next.js's hybrid approach allows you to choose on a per-page basis.
 
-### Decision-tree 
+### Decision tree for picking the right approach 
 
 A simple decision tree for choosing between SSR, SSG, and CSR when using Next.js:
 
