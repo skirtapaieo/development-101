@@ -123,6 +123,41 @@ Sure, let's compare the principles of Next.js and Express.js in a tabular form.
  
 This table outlines the major differences between Next.js and Express.js. However, the best choice between the two depends largely on the specific requirements of the project. Express.js offers more flexibility and control, while Next.js provides more out-of-the-box features that can speed up development and improve productivity, especially for React projects.
 
+## Python Back-end frameworks
+
+### Overview 
+
+Here is a simplified comparison of the underlying principles of Flask, Django, Pyramid, and FastAPI:
+
+| Principle/Characteristic | Flask | Django | Pyramid | FastAPI |
+|----------------------|-------|--------|---------|---------|
+| Simplicity           | Yes   | Yes    | Yes     | Yes     |
+| Flexibility          | Yes   | No     | Yes     | Yes     |
+| Extensibility        | Yes   | Yes    | Yes     | Yes     |
+| Batteries-Included   | No    | Yes    | No      | Partial |
+| DRY (Don't Repeat Yourself) | No   | Yes    | Yes     | Yes     |
+| Rapid Development    | Yes   | Yes    | Yes     | Yes     |
+| High Performance     | No    | No     | No      | Yes     |
+| Automatic Data Validation | No | Yes | Yes | Yes |
+| Interactive API documentation | No | No | No | Yes |
+| Asynchronous Programming Support | No | No | Yes | Yes |
+| Security Features    | Yes   | Yes    | Yes     | Yes     |
+| Testability          | Yes   | Yes    | Yes     | Yes     |
+| Built-in ORM         | No    | Yes    | No      | No      |
+| Support for RESTful APIs | Yes | Yes | Yes | Yes |
+
+Notes: 
+
+- For the Batteries-Included characteristic, Django offers a full suite of tools and features out of the box, whereas Flask, Pyramid, and FastAPI are more minimalistic and offer only a core set of features, though FastAPI does include more built-in features compared to Flask and Pyramid.
+- For Automatic Data Validation, Django, Pyramid, and FastAPI provide these features, while Flask does not include them in its core but can be extended using libraries like WTForms or Marshmallow.
+- For Interactive API documentation, only FastAPI includes automatic generation of interactive API documentation.
+- For Asynchronous Programming Support, only Pyramid and FastAPI support it natively.
+- For the Built-in ORM characteristic, Django provides a full-featured ORM, whereas Flask, Pyramid, and FastAPI do not include an ORM in their core package but can be easily integrated with external ORMs like SQLAlchemy.
+
+Remember, these characteristics can be implemented in all these frameworks using the right extensions or coding practices. This table is designed to show what each framework includes or emphasizes out of the box.
+
+
+
 ## Server-side rendering (SSR), Static site genereation (SSG) or client side generation (CSG)
 
 When building a React/Next.js application, choosing when to use Server-Side Rendering (SSR), Static Site Generation (SSG), and Client-Side Rendering (CSR) is an important decision. Here are some guiding principles regarding these methods:
