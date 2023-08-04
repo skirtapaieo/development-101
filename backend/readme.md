@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-- [Back-end frameworsk](#back-end-frameworks)
+- [Back-end frameworks](#backend-frameworks)
   - [Comment on Typescript and Type of Typing](#comment-on-typescript-and-type-of-typing)
 - JavaScript Back-end Frameworks 
   - [Next.js](#nextjs)
