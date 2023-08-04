@@ -156,6 +156,63 @@ Notes:
 
 Remember, these characteristics can be implemented in all these frameworks using the right extensions or coding practices. This table is designed to show what each framework includes or emphasizes out of the box.
 
+<br> 
+
+### Flask vs Vanilla Python 
+
+Let's consider a simple example where we want to create a web server that responds to HTTP GET requests at the endpoint '/hello' with the message 'Hello, World!'. 
+
+Here's how you might do it in "vanilla" Python, using only the built-in `http.server` module:
+
+```python
+# Vanilla Python with http.server
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+class MyHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/hello':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            self.wfile.write(b"Hello, World!")
+        else:
+            self.send_response(404)
+
+def run(server_class=HTTPServer, handler_class=MyHandler):
+    server_address = ('', 8000)
+    httpd = server_class(server_address, handler_class)
+    httpd.serve_forever()
+
+run()
+```
+
+Now, let's consider how we might achieve the same functionality using Flask, which is a minimalist Python web framework:
+
+```python
+# Flask
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/hello')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run(port=8000)
+```
+
+Here are some ways that using Flask improves upon the "vanilla" Python example:
+
+1. **Simplicity**: The Flask code is significantly shorter and easier to understand. There's no need to manually handle HTTP headers, status codes, or server setup - Flask takes care of all of this behind the scenes.
+
+2. **Flexibility**: It's easy to add new routes in Flask - just define a new function and use the `@app.route` decorator to specify the path. In the "vanilla" Python example, you'd need to modify the `do_GET` method each time you want to add a new route.
+
+3. **Testability**: Flask provides built-in support for unit testing, which makes it easier to test your routes and ensure that they're working as expected. Testing a server written using `http.server` would require additional tools or libraries.
+
+4. **Development Features**: Flask comes with features like automatic reloading during development, and detailed error pages, both of which can speed up the development process.
+
+This example illustrates why using a web framework like Flask, Django, Pyramid, or FastAPI is typically more efficient than using "vanilla" Python for web development. Each of these frameworks offers its own set of features and advantages, but they all aim to make it easier and faster to develop reliable, production-ready web applications.
+
 
 
 ## Server-side rendering (SSR), Static site genereation (SSG) or client side generation (CSG)
