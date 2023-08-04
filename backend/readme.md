@@ -213,7 +213,7 @@ Here are some ways that using Flask improves upon the "vanilla" Python example:
 
 This example illustrates why using a web framework like Flask, Django, Pyramid, or FastAPI is typically more efficient than using "vanilla" Python for web development. Each of these frameworks offers its own set of features and advantages, but they all aim to make it easier and faster to develop reliable, production-ready web applications.
 
-
+<br>
 
 ## Server-side rendering (SSR), Static site genereation (SSG) or client side generation (CSG)
 
