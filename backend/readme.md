@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Back-end frameworsk](#back-end-frameworks)
   - [Comment on Typescript and Type of Typing](#comment-on-typescript-and-type-of-typing)
 - JavaScript Back-end Frameworks 
   - [Next.js](#nextjs)
@@ -19,7 +19,7 @@
   - [Decision tree for picking the right approach](#decision-tree-for-picking-the-right-approach)
 
 
-## Overview 
+## Back-end frameworks 
 
 Almost any back-end framework, works with any front-end framework - suggestions based on what is commonly used in the community 
 
