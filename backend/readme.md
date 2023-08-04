@@ -49,9 +49,11 @@ Python uses a system called "type hints" or "type annotations". This is optional
 #### Go 
 Go, on the other hand, is strongly statically-typed, and all variables have to be explicitly declared with their type. If you try to use a variable of one type where a different type is expected, the Go compiler will throw an error. This is quite similar to TypeScript, which also requires you to declare types for your variables and function arguments/return values, and checks types at compile time.
 
-## Next.js 
+## JavaScript Backend Frameworks
 
-### Principles 
+### Next.js 
+
+#### Principles 
 
 Next.js is a popular React framework built by Vercel with several core principles and features that make it stand out. These include:
 
@@ -77,7 +79,7 @@ Next.js is a popular React framework built by Vercel with several core principle
   
 In essence, Next.js offers developers an advanced and versatile framework for building React applications, balancing ease of use with the flexibility to handle more complex use cases.
 
-### Why did Vercel develop it? 
+#### Why did Vercel develop it? 
 
 Vercel (formerly Zeit) developed Next.js to solve the common challenges in setting up and configuring a React application, especially for production. Their goal was to provide a solution that enabled developers to quickly bootstrap a new project and also provided a clear and efficient way to build highly performant, SEO-friendly, production-ready applications. Here are some specific reasons:
 
@@ -98,7 +100,7 @@ In summary, Vercel developed Next.js to help developers build production-ready R
 
 7. **Scalability**: Next.js, in combination with Vercel's hosting platform, is designed to scale effortlessly, meeting the needs of both small projects and large enterprise applications.
 
-### Comparison Next vs Express
+#### Comparison Next vs Express
 
 Sure, let's compare the principles of Next.js and Express.js in a tabular form. 
 
