@@ -3,6 +3,17 @@
 
 <br>
 
+## Table of Contents
+
+- [Overview](#overview)
+  - [Comment on Typescript and Type of Typing](#comment-on-typescript-and-type-of-typing)
+- [Next.js](#nextjs)
+  - [Principles](#principles)
+  - [Why did Vercel develop it?](#why-did-vercel-develop-it)
+  - [Comparison Next vs Express](#comparison-next-vs-express)
+- [Server-side rendering (SSR), Static site generation (SSG) or client side generation (CSG)](#server-side-rendering-ssr-static-site-generation-ssg-or-client-side-generation-csg)
+  - [Decision tree for picking the right approach](#decision-tree-for-picking-the-right-approach)
+
 
 ## Overview 
 
