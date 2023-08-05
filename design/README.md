@@ -1,20 +1,18 @@
 # design-101
 
+## Minimal design system
 
-# Minimal design system
+- [What is it?](#what-is-it)
+- [Approach](#approach)
+  - [1. Set Brand Guidelines](#1-set-brand-guidelines)
+    - [1.1 Brand Guidelines/Rules](#11-brand-guidelinesrules)
+    - [1.2 Best Practices](#12-best-practices)
+    - [1.3 Tools](#13-tools)
+  - [2. Define The System](#2-define-the-system)
+  - [3. Create The Design Components](#3-create-the-design-components)
+  - [4. Create UI Components](#4-create-ui-components)
 
-  - [What is it?](#what-is-it)
-  - [Approach](#approach)
-    - [1. Set Brand Guidelines](#1-set-brand-guidelines)
-      - [1.1 Brand Guidelines/Rules](#11-brand-guidelinesrules)
-      - [1.2 Best Practices](#12-best-practices)
-      - [1.3 Tools](#13-tools)
-    - [2. Define The System](#2-define-the-system)
-    - [3. Create The Design Components](#3-create-the-design-components)
-    - [4. Create UI Components](#4-create-ui-components)
-
-
-## What is it? 
+### What is it?
 
 A design system is a collection of standards for design and front end code. It serves as a guide to help teams design and build digital products more efficiently and consistently. Here are some elements that a design system typically consists of:
 
@@ -36,74 +34,71 @@ A design system is a collection of standards for design and front end code. It s
 
 The specific components and depth of a design system can vary based on the needs and size of the organization. It is also a living document, constantly evolving as the brand and products evolve.
 
-## Approach 
+### Approach
 
+#### 1 Set Brand guidelines
 
-### 1 Set Brand guidelines  
+The foundation is part strategy and part design.
 
-The foundation is part strategy and part design. 
+##### 1.1 Brand guidelines/rules
 
-#### 1.1 Brand guidelines/rules
+You need to manage a few rules and guidelines related to how your brand works:
 
-You need to manage a few rules and guidelines related to how your brand works:  
-
-- Brand story 
+- Brand story
 - Logo usage
-- Color palette 
-- Typography 
-- Imagery 
-- Voice and tone 
-- Print and digital application 
+- Color palette
+- Typography
+- Imagery
+- Voice and tone
+- Print and digital application
 
-#### 1.2 Best practices 
+##### 1.2 Best practices
 
-There are some basic best practices: 
+There are some basic best practices:
 
 - Including essential elements (above)
-- Provide clear instructions 
-- Use real examples 
-- Keep it flexible 
-- Keep it updated 
+- Provide clear instructions
+- Use real examples
+- Keep it flexible
+- Keep it updated
 
-#### 1.3 Tools 
+##### 1.3 Tools
 
-| Tool | Purpose | Usability | Collaboration | Cost | Online/Offline |
-| --- | --- | --- | --- | --- | --- |
-| Adobe Suite | Comprehensive design tool for creating all sorts of brand assets. | Steeper learning curve but offers robust features. | Limited real-time collaboration; primarily individual work. | Paid. Various subscription options based on requirements. | Both, but primarily Offline. |
-| Canva | User-friendly design tool, with templates for brand assets. | Very easy to use, even for beginners. | Good real-time collaboration features. | Free version available, paid for more features. | Online. |
-| Google Docs/Slides | For creating simple and straightforward guidelines. | Very easy to use. | Excellent real-time collaboration features. | Free. | Online. |
-| Figma/Sketch | Digital design tool for UI/UX and brand assets. | Moderate learning curve. | Excellent real-time collaboration features in Figma. Sketch has limited collaboration. | Figma: Free for individuals, paid for teams. Sketch: Paid. | Figma: Online. Sketch: Offline. |
-| Frontify | Professional brand management platform for creating and sharing brand guidelines. | Moderate learning curve. | Excellent real-time collaboration features. | Paid. | Online. |
+| Tool               | Purpose                                                                           | Usability                                          | Collaboration                                                                          | Cost                                                       | Online/Offline                  |
+| ------------------ | --------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- |
+| Adobe Suite        | Comprehensive design tool for creating all sorts of brand assets.                 | Steeper learning curve but offers robust features. | Limited real-time collaboration; primarily individual work.                            | Paid. Various subscription options based on requirements.  | Both, but primarily Offline.    |
+| Canva              | User-friendly design tool, with templates for brand assets.                       | Very easy to use, even for beginners.              | Good real-time collaboration features.                                                 | Free version available, paid for more features.            | Online.                         |
+| Google Docs/Slides | For creating simple and straightforward guidelines.                               | Very easy to use.                                  | Excellent real-time collaboration features.                                            | Free.                                                      | Online.                         |
+| Figma/Sketch       | Digital design tool for UI/UX and brand assets.                                   | Moderate learning curve.                           | Excellent real-time collaboration features in Figma. Sketch has limited collaboration. | Figma: Free for individuals, paid for teams. Sketch: Paid. | Figma: Online. Sketch: Offline. |
+| Frontify           | Professional brand management platform for creating and sharing brand guidelines. | Moderate learning curve.                           | Excellent real-time collaboration features.                                            | Paid.                                                      | Online.                         |
 
+#### 2 Define the system
 
-### 2 Define the system
+Define a few principles including:
 
-Define a few principles including: 
-
-- Typography 
-- Colors 
+- Typography
+- Colors
 - Spacing and Layout
 - Button styles
-- Form styles 
+- Form styles
 
-### 3 Create the Design components 
+#### 3 Create the Design components
 
-Using Figma for example, you can create a wide array of components, for each principle, like styles, colors and other elements. 
+Using Figma for example, you can create a wide array of components, for each principle, like styles, colors and other elements.
 
-- Clarify requirements and scope 
-- Create a style guid 
-- Build (design) components 
-- Prepare a Figma library 
-- Use version control (Github) 
+- Clarify requirements and scope
+- Create a style guid
+- Build (design) components
+- Prepare a Figma library
+- Use version control (Github)
 
-### C4 reate UI components 
+#### C4 reate UI components
 
 Using Storybook for example, can help you address to challenges with components, stories, browsers, viewports and additional requirements related to, for example, accessibility
 
 ![text](https://storybook.js.org/0930d02ee2c69e80e8eb796e8be8981c/multiverse.png)
 
-- Build components in Storybook 
-- Create stories in storybook 
-- Docucment the components 
-- Create a CI/CD pipeline 
-
+- Build components in Storybook
+- Create stories in storybook
+- Docucment the components
+- Create a CI/CD pipeline
