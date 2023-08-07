@@ -1,2 +1,78 @@
 # development-101
+
 experiment with skill areas
+
+# --- test
+
+## The general approach ..
+
+That's a great way to visualize the various approaches! Here's a basic outline of how they might map to these six key areas. Please note, the table includes only a selection of methodologies for simplicity and does not exhaustively represent all approaches:
+
+| Approach                          | Discover & Understand                   | Define & Plan                                   | Design & Develop                            | Test & Validate                            | Iterate & Improve                         | Launch & Monitor                         |
+| --------------------------------- | --------------------------------------- | ----------------------------------------------- | ------------------------------------------- | ------------------------------------------ | ----------------------------------------- | ---------------------------------------- |
+| **UX Approaches**                 |
+| User-Centered Design              | User research                           | User requirements, Personas, User flow diagrams | Interface and interaction design            | Usability testing, User feedback           | Iterative design                          | User analytics                           |
+| Lean UX                           | Problem interviews, User research       | Assumptions, Hypotheses                         | MVP design                                  | Usability testing, Customer feedback       | Iterative design                          | User analytics                           |
+| Design Thinking                   | Empathize with users                    | Define user needs, Problem statement            | Ideate solutions, Prototype                 | Test prototype with users                  | Iterate based on feedback                 | Monitor user feedback                    |
+| **Product Management Approaches** |
+| Agile                             | Market research, Stakeholder interviews | Product vision, Roadmap                         | Backlog management, User stories            | Sprint reviews                             | Backlog refinement, Iterative development | Product analytics, User feedback         |
+| Lean                              | Problem interviews, Market research     | Business model canvas, MVP definition           | Build MVP                                   | Measure MVP performance, Customer feedback | Learn from data, Pivot or persevere       | Product analytics, User feedback         |
+| Jobs to be Done                   | Job interviews                          | Job map, Opportunity identification             | Feature prioritization, Roadmap             | Customer interviews, User testing          | Update job map, Iterate features          | Monitor job satisfaction, User feedback  |
+| **Technology Approaches**         |
+| Agile Development                 | Requirement gathering                   | Sprint planning, Backlog creation               | Code development                            | Unit testing, Code review                  | Code refactoring, Iterative development   | Deploy, Monitor system performance       |
+| DevOps                            | Requirement gathering, System analysis  | Infrastructure design, Development plan         | Code development, Continuous integration    | Continuous testing, System feedback        | Code refactoring, Infrastructure updates  | Continuous deployment, System monitoring |
+| Test-Driven Development           | Requirement gathering, Test case design | Development plan                                | Write failing test, Write code to pass test | Run test, Refactor code                    | Iterative development based on tests      | Deploy, Monitor system performance       |
+
+Again, please note this is a simplified representation. Real-world implementation might involve more steps or feedback loops, and there can be significant overlap between the steps. Also, different teams might implement the same methodology in slightly different ways.
+
+## The dimensions
+
+### Product
+
+Here's a summary of the product management methodologies:
+
+| Approach                         | Description                                                                                                                                           | Key Activities                                                                                                                 |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Waterfall                        | A linear and sequential methodology with one phase being completed before moving onto the next.                                                       | Requirement gathering, Design, Implementation, Verification, Maintenance                                                       |
+| Agile                            | A flexible methodology that emphasizes incremental development and frequent reassessment and adaptation of plans.                                     | Daily Standup, Sprint Planning, Sprint Review, Sprint Retrospective                                                            |
+| Scrum (Agile Framework)          | Organizes work into small pieces completed by a cross-functional team in short timeframes (sprints).                                                  | Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective                                                              |
+| Kanban (Agile Framework)         | Uses visual boards to manage work at various stages of production.                                                                                    | Visualize work, Limit work in progress, Manage flow, Make policies explicit, Implement feedback loops, Improve collaboratively |
+| Lean Product Development         | Aims to minimize waste in the development process by building an MVP, measuring its effect, learning from the data, and iterating.                    | Build-Measure-Learn feedback loop                                                                                              |
+| Product-led Growth (PLG)         | The product is the main driver of customer acquisition, conversion, and expansion.                                                                    | User onboarding, Product experience enhancement, Feature development                                                           |
+| Jobs to be Done (JTBD)           | Focuses on the "job" that a customer wants to accomplish and how a product can help them do that job.                                                 | Interviews, Observational studies, Job mapping                                                                                 |
+| Design Thinking                  | A human-centric problem-solving approach that involves empathizing with users, defining their problems, ideating solutions, prototyping, and testing. | Empathize, Define, Ideate, Prototype, Test                                                                                     |
+| Outcome-Driven Innovation (ODI)  | Links a company’s value proposition with customer’s unmet needs to drive innovation.                                                                  | Outcome gathering, Segment identification, Outcome rating and ranking                                                          |
+| Feature-driven Development (FDD) | In FDD, a product is developed in short iterations, with each iteration resulting in a new feature.                                                   | Develop overall model, Build feature list, Plan by feature, Design by feature, Build by feature                                |
+
+### UX
+
+| **Design Approach**                           | **Startup** | **Scaleup** | **Enterprise** |
+| --------------------------------------------- | ----------- | ----------- | -------------- |
+| Sketching/Paper Prototyping                   | High        | Medium      | Low            |
+| Wireframing                                   | High        | High        | High           |
+| Digital Prototyping (Figma, Sketch, Adobe XD) | High        | High        | High           |
+| Designing in the Browser/HTML Prototyping     | Medium      | High        | High           |
+| Design Systems                                | Low         | High        | High           |
+| Mental Modeling/Designing in Your Head        | High        | Medium      | Low            |
+| User-Centered Design (UCD)                    | High        | High        | High           |
+| Design Thinking                               | High        | High        | High           |
+| Lean UX                                       | High        | High        | Medium         |
+
+### Technology
+
+Here's a summary of the software development methodologies:
+
+| Approach                          | Description                                                                                                            | Key Activities                                                                                                          |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Waterfall Model                   | A linear and sequential approach where each stage is fully completed before moving onto the next one.                  | Requirement gathering, Design, Implementation, Verification, Maintenance                                                |
+| Agile Software Development        | Emphasizes iterative progress, team collaboration, and customer feedback.                                              | Plan, Design, Develop, Test, Review, Iterate                                                                            |
+| DevOps                            | Combines software development and IT operations for continuous delivery with high software quality.                    | Plan, Code, Build, Test, Release, Deploy, Operate, Monitor                                                              |
+| Scrum                             | An Agile framework that breaks a project down into small pieces that can be completed in short time periods (sprints). | Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective                                                       |
+| Extreme Programming (XP)          | An Agile subset that emphasizes customer satisfaction and flexible response to changing requirements.                  | Planning, Designing, Coding, Testing                                                                                    |
+| Lean Software Development         | Focuses on the continual elimination of waste in the development process.                                              | Eliminate Waste, Build Quality In, Create Knowledge, Defer Commitment, Deliver Fast, Respect People, Optimize the Whole |
+| Test-Driven Development (TDD)     | Involves repeated short development cycles with automated test case writing and code refactoring.                      | Write Test, Write Code, Run Test, Refactor Code, Repeat                                                                 |
+| Behavior-Driven Development (BDD) | Extends TDD by writing test cases in a natural language that non-programmers and domain experts can read.              | Write a User Story, Write a Failing Acceptance Test, Write Failing Unit Test, Write Code to Pass the Test, Refactor     |
+| Feature Driven Development (FDD)  | A model-driven, short-iteration process built around software engineering best practices.                              | Develop an Overall Model, Build a Features List, Plan by Feature, Design by Feature, Build by Feature                   |
+| Pair Programming                  | Two programmers share a single workstation (one screen, keyboard and mouse among the pair).                            | Code Design, Code Implementation, Code Review, Continuous Integration                                                   |
+
+###
