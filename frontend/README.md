@@ -1,6 +1,6 @@
-
 # Index
-- [Historical approaches](#historical-approaches) 
+
+- [Historical approaches](#historical-approaches)
   - [The evolution of the web](#the-unprincipled-evolution-of-the-web)
 - [Design systems](#design-systems)
 - [Core principles of the Internet and the web](#core-principles-of-the-internet-and-the-web)
@@ -14,7 +14,7 @@
     - [Static-site generation (SSG)](#static-site-generation-ssg)
     - [Server-side rendering (SSR](#server-side-rendering-ssr)
     - [Client-side rendering (CSR)](#client-side-rendering-csr)
-    - [Back-end for front-end](#back-end-for-front-end) 
+    - [Back-end for front-end](#back-end-for-front-end)
   - [Overview](#overview-1)
   - [React principles](#react)
   - [Vue](#vue)
@@ -24,10 +24,10 @@
 - [Mobile-approaches](#mobile-approaches)
   - [React Native](#react-native)
   - [Flutter](#flutter)
-  - [Swift/iOS](#swift-ios) 
-  - [Kotlin/Android](#kotlin-android) 
+  - [Swift/iOS](#swift-ios)
+  - [Kotlin/Android](#kotlin-android)
 - [Desktop approaches](#desktop-approaches)
-  - [Electron](#electron) 
+  - [Electron](#electron)
 - [JavaScript Framework comparison (Svelte/Vue/React)](#javascript-framework-comparison-sveltevuereact)
   - [Overview](#overview)
   - [React](#react)
@@ -38,66 +38,81 @@
 - [Algoexpert - Blog Post](#algoexpert-blog-post)
 - [Algoexpert - Rainbow circles (JavaScript)](#algoexpert-rainbow-circles-javascript)
 
+## Historical approaches
 
-## Historical approaches 
-
-A few examples of front-end development: 
-
+A few examples of front-end development:
 
 - 1985 - [Writing first windows-based application in GEM using C](https://github.com/skirtapaieo/frontend-101/blob/main/oldschool/helloworld-TOS.c)
 - 1995 - [Java applets](https://github.com/skirtapaieo/frontend-101/blob/main/oldschool/Java-applet.java)
 - 1997 - Server-side rendering - https://github.com/skirtapaieo/frontend-101/blob/main/VBscript.asp
 - 1998 - Pre-CSS layouts using Tables and Pixels - https://github.com/skirtapaieo/frontend-101/blob/main/simple-layout-tables-pixels.html
 - 2003 - Introduction of AJAX (Asynchronous JavaScript and XML) https://github.com/skirtapaieo/frontend-101/blob/main/AJAX-example.html
-- 2015 - Responsive design - Sketch and Javascript https://github.com/skirtapaieo/frontend-101/blob/main/AJAX-example.html  
+- 2015 - Responsive design - Sketch and Javascript https://github.com/skirtapaieo/frontend-101/blob/main/AJAX-example.html
 - 2016 - Micro-frontends (scaling front-ends) - ...
-- 2019 - Design systems -  
-- 2019 - Real-time, 3D gameas using Babylon.js - 
+- 2019 - Design systems -
+- 2019 - Real-time, 3D gameas using Babylon.js -
 
-| Year   | Concept                                      | Example                                             |
-|--------|----------------------------------------------|-----------------------------------------------------|
-| 1984   | GUI on Apple Macintosh (Macintosh System)     | Icons, windows, menus, and mouse interaction        |
-| 1985   | GUI on Atari ST (TOS)                        | Graphical User Interface with desktop-like controls |
-| 1990   | Introduction of the World Wide Web (WWW)      | Hypertext Markup Language (HTML)                    |
-| 1993   | Server-side rendering (CGI)                   | Common Gateway Interface (CGI) scripts              |
-| 1995   | Introduction of Java Applets                  | Embedding Java programs in web pages                |
-| 1995   | Dynamic client-side interaction (AJAX)        | XMLHttpRequest for asynchronous data retrieval      |
-| 1996   | Introduction of CSS (Cascading Style Sheets)  | Separation of presentation from HTML                |
-| 1997   | Introduction of IIS (Internet Information Services) | Web server software for hosting websites     |
-| 1998   | Introduction of VBScript                      | Client-side scripting language for web browsers     |
-| 1999   | Introduction of Perl                          | General-purpose scripting language for web development |
-| 2000   | Introduction of PHP                           | Server-side scripting language for web development  |
-| 2002   | Single-page applications (SPAs)               | Gmail (AJAX-based email client)                     |
-| 2005   | JavaScript frameworks (jQuery)                | Simplified DOM manipulation and event handling      |
-| 2007   | Introduction of iOS (Objective-C)             | Native mobile app development for Apple devices     |
-| 2008   | Introduction of Android (Java)                | Native mobile app development for Android devices   |
-| 2009   | HTML5 specification                           | Semantic elements, video/audio, canvas              |
-| 2010   | CSS3 specification                            | Transitions, transforms, media queries              |
-| 2013   | Introduction of React.js                       | Component-based UI development                      |
-| 2014   | Introduction of Swift (iOS)                   | Modern programming language for iOS development     |
-| 2015   | Introduction of Vue.js                         | Progressive and lightweight JavaScript framework    |
-| 2017   | Progressive Web Apps (PWAs)                    | Web applications with native-like capabilities       |
-| 2019   | Serverless architecture                        | Serverless functions (AWS Lambda, Azure Functions)   |
-| 2020   | AI/ML integration in web development           | Machine learning models in browser applications     |
-| 2021   | Continued advancements in web standards       | HTML6 proposals, Web Components                     |
-| 1995   | Introduction of Java (Java Servlets, JSP)      | Server-side Java for web development                |
-| Present | Ongoing innovations and emerging technologies  | WebAssembly, WebRTC, GraphQL, PWAs                   |
-| Present | Continued advancements in mobile app development | Kotlin (Android), Swift (iOS)                       |
+| Year    | Concept                                             | Example                                                |
+| ------- | --------------------------------------------------- | ------------------------------------------------------ |
+| 1984    | GUI on Apple Macintosh (Macintosh System)           | Icons, windows, menus, and mouse interaction           |
+| 1985    | GUI on Atari ST (TOS)                               | Graphical User Interface with desktop-like controls    |
+| 1990    | Introduction of the World Wide Web (WWW)            | Hypertext Markup Language (HTML)                       |
+| 1993    | Server-side rendering (CGI)                         | Common Gateway Interface (CGI) scripts                 |
+| 1995    | Introduction of Java Applets                        | Embedding Java programs in web pages                   |
+| 1995    | Dynamic client-side interaction (AJAX)              | XMLHttpRequest for asynchronous data retrieval         |
+| 1996    | Introduction of CSS (Cascading Style Sheets)        | Separation of presentation from HTML                   |
+| 1997    | Introduction of IIS (Internet Information Services) | Web server software for hosting websites               |
+| 1998    | Introduction of VBScript                            | Client-side scripting language for web browsers        |
+| 1999    | Introduction of Perl                                | General-purpose scripting language for web development |
+| 2000    | Introduction of PHP                                 | Server-side scripting language for web development     |
+| 2002    | Single-page applications (SPAs)                     | Gmail (AJAX-based email client)                        |
+| 2005    | JavaScript frameworks (jQuery)                      | Simplified DOM manipulation and event handling         |
+| 2007    | Introduction of iOS (Objective-C)                   | Native mobile app development for Apple devices        |
+| 2008    | Introduction of Android (Java)                      | Native mobile app development for Android devices      |
+| 2009    | HTML5 specification                                 | Semantic elements, video/audio, canvas                 |
+| 2010    | CSS3 specification                                  | Transitions, transforms, media queries                 |
+| 2013    | Introduction of React.js                            | Component-based UI development                         |
+| 2014    | Introduction of Swift (iOS)                         | Modern programming language for iOS development        |
+| 2015    | Introduction of Vue.js                              | Progressive and lightweight JavaScript framework       |
+| 2017    | Progressive Web Apps (PWAs)                         | Web applications with native-like capabilities         |
+| 2019    | Serverless architecture                             | Serverless functions (AWS Lambda, Azure Functions)     |
+| 2020    | AI/ML integration in web development                | Machine learning models in browser applications        |
+| 2021    | Continued advancements in web standards             | HTML6 proposals, Web Components                        |
+| 1995    | Introduction of Java (Java Servlets, JSP)           | Server-side Java for web development                   |
+| Present | Ongoing innovations and emerging technologies       | WebAssembly, WebRTC, GraphQL, PWAs                     |
+| Present | Continued advancements in mobile app development    | Kotlin (Android), Swift (iOS)                          |
 
 <br>
 
-### The evolution of the web  
+### The evolution of the web - high-level
 
+| Year  | Tools for Layout & Design              | Tools for Content Management                  | Tools for Interactivity              | Design Component/Systems            | Analytics & UX                             |
+| ----- | -------------------------------------- | --------------------------------------------- | ------------------------------------ | ----------------------------------- | ------------------------------------------ |
+| 1990s | HTML, Tables, Pixels                   | Basic Text Editors, templates in databases    | Animated GIFs, Java Applets          | N/A                                 | N/A                                        |
+| 2000s | CSS Frameworks, Dreamweaver, Flash     | Early CMS Platforms (e.g., WordPress)         | ActiveX, Flash, JavaScript Libraries | N/A                                 | Basic Web Analytics                        |
+| 2010s | Responsive Design, CSS Grid, Bootstrap | Advanced CMS Platforms (e.g., Drupal, Joomla) | HTML5, CSS3, jQuery, Ajax            | Design Frameworks (e.g., Bootstrap) | Advanced Analytics, User Testing           |
+| 2020s | CSS Flexbox, CSS Grid, Tailwind CSS    | Headless CMS, Contentful, Prismic             | Three.js, Babylon.js, WebAssembly    | Design Systems (e.g., Material UI)  | Advanced Analytics, A/B Testing, UX Design |
 
-| Year  | Tools for Layout & Design              | Tools for Content Management              | Tools for Interactivity                | Design Component/Systems       | Analytics & UX                             |
-|-------|---------------------------------------|-------------------------------------------|---------------------------------------|-------------------------------|--------------------------------------------|
-| 1990s | HTML, Tables, Pixels                   | Basic Text Editors, templates in databases                        | Animated GIFs, Java Applets           | N/A                           | N/A                                        |
-| 2000s | CSS Frameworks, Dreamweaver, Flash     | Early CMS Platforms (e.g., WordPress)      | ActiveX, Flash, JavaScript Libraries  | N/A                           | Basic Web Analytics                        |
-| 2010s | Responsive Design, CSS Grid, Bootstrap | Advanced CMS Platforms (e.g., Drupal, Joomla) | HTML5, CSS3, jQuery, Ajax            | Design Frameworks (e.g., Bootstrap)  | Advanced Analytics, User Testing           |
-| 2020s | CSS Flexbox, CSS Grid, Tailwind CSS    | Headless CMS, Contentful, Prismic          | Three.js, Babylon.js, WebAssembly     | Design Systems (e.g., Material UI) | Advanced Analytics, A/B Testing, UX Design |
+### More rendering patterns
 
+Here's a table summarizing the various front-end rendering patterns for web applications, their key principles, tools commonly used, and approximate first appearance timeline.
 
-## Core principles of the Internet and the web 
+| Timeline | Pattern                                  | Principles                                                                         | Tools                                                              |
+| -------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 1991     | 1. Static Websites                       | Pre-built HTML files served directly. No dynamic rendering. Simple and performant. | HTML, CSS, JavaScript, Jekyll and Hugo                             |
+| 2005     | 2. Single Page Websites                  | Dynamic rendering on the client side using JavaScript, and one (not multiple) page | jQuery, AngularJS, Backbone.js                                     |
+| 2009     | 3. SSR (Server-Side Rendering)           | Rendered on the server. Faster initial page load. Good for SEO. MPA+SPA            | Node.js, Express.js, Next.js, ASP.NET, PHP                         |
+| 2010     | 4. SSG (Static Site Generation)          | Build time rendering. Good performance and SEO. Limited dynamic content.           | Jekyll, Hugo, Next.js, Gatsby                                      |
+| 2020     | 5. Incremental Static Regeneration       | Update static content post-deployment without full rebuild. SSG+SSR                | Next.js                                                            |
+| 2010     | 6. Hydration                             | Initial SSR for fast load, followed by client-side rendering for interactivity.    | React, Vue.js                                                      |
+| 2018     | 7. Partial Hydration                     | Only specific parts of the app are made interactive, reducing load time.           | Astro, Marko                                                       |
+| 2021     | 8. Islands                               | Mix of SSR and client-side rendering. Each component decides its own rendering.    | Astro, Island Architecture                                         |
+| 2022     | 9. Streaming SSR (Server-Side Rendering) | Server sends HTML to the browser in chunks, speeding up time to first byte.        | React 18+, Vue 3.0+, Next 13?                                      |
+| 2023     | 10. Resumability                         | The ability to pause server-side rendering, deliver HTML to client, and resume.    | Frameworks supporting streaming SSR like React 18+, Qwik framework |
+
+Please note that the timeline is approximate and may vary depending on the specific use case or development ecosystem. Also, some of the tools mentioned under each category can support multiple rendering patterns, such as Next.js, which supports SSR, SSG, and Incremental Static Regeneration.
+
+## Core principles of the Internet and the web
 
 The core principles of the internet and the web, as established by their inventors and early architects, can be summarized as follows:
 
@@ -121,8 +136,7 @@ The core principles of the internet and the web, as established by their invento
 
 These principles have guided the development and growth of the internet and the web, and while some of them face challenges today due to technological, political, and commercial pressures, they remain fundamental to the nature of the internet and web.
 
-
-## 1 Universality 
+## 1 Universality
 
 the principle of universality, in the context of the web, signifies that anyone, anywhere, should be able to access and use the web, regardless of their physical or mental abilities, the devices they're using, their language, culture, or geographical location. This principle can be broken down into several related principles or areas:
 
@@ -140,8 +154,7 @@ the principle of universality, in the context of the web, signifies that anyone,
 
 All these principles support the overall idea of universality and aim to ensure that the web is a platform that everyone can use, irrespective of their circumstances or the technology they have access to.
 
-
-### 1.1 Responsive Design 
+### 1.1 Responsive Design
 
 https://github.com/skirtapaieo/frontend-101/blob/main/responsive-design/responsive.html
 
@@ -161,18 +174,17 @@ The main principles of responsive design are:
 
 Remember, the goal of responsive design is not just to make the website "work" on different devices, but to ensure a great user experience regardless of the device being used.
 
-
-### 1.2  Accessibility 
+### 1.2 Accessibility
 
 https://github.com/skirtapaieo/frontend-101/blob/main/accessibility.md
 
-Using the above example, in the context of accessibility: 
+Using the above example, in the context of accessibility:
 
 Looking at the given code, it does follow some general accessibility practices but could be improved in other areas:
 
 - **Use of alt attribute**: The image has an alt attribute which is very good. This attribute provides alternative text for those who can't see images. However, the value "An example image" is not very descriptive. It should ideally contain a brief description of the image.
 
-- **Semantics**: The code doesn't use semantic HTML elements. Semantic elements like ```<header>', <footer>, <section>, <article>, and <nav> ``` make it easier for both people and machines (like search engines and screen readers) to understand the content structure. Consider replacing ```<div>``` tags with semantic HTML where appropriate.
+- **Semantics**: The code doesn't use semantic HTML elements. Semantic elements like `<header>', <footer>, <section>, <article>, and <nav> ` make it easier for both people and machines (like search engines and screen readers) to understand the content structure. Consider replacing `<div>` tags with semantic HTML where appropriate.
 
 - **Font size**: The code specifies font sizes in pixels which is not ideal for accessibility. Instead, relative units like em or rem should be used to make the site more flexible for users who need or prefer larger text.
 
@@ -194,15 +206,15 @@ These tools are extremely valuable in creating more inclusive designs and should
 
 Please note, while these tools can help identify many potential accessibility issues, they are not exhaustive, and manual checks and user testing should also be included in the design and development process.
 
-## Design systems 
+## Design systems
 
 https://github.com/skirtapaieo/frontend-101/blob/main/design-system.md
 
 ## A Microfrontent experiment (in index.html)
 
-started with a very basic example without any JavaScrit framework/library or router, no separate development or deployment pipeline. To load the content into a content area based on people clicking on navigation links - we had to add a simple router that basically reacts to capture the click, fetch the content and update the page. Note: It doesn't work yet. Just wanted to try it out. 
+started with a very basic example without any JavaScrit framework/library or router, no separate development or deployment pipeline. To load the content into a content area based on people clicking on navigation links - we had to add a simple router that basically reacts to capture the click, fetch the content and update the page. Note: It doesn't work yet. Just wanted to try it out.
 
-``` HTML
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,35 +278,36 @@ started with a very basic example without any JavaScrit framework/library or rou
 </html>
 
 ```
+
 <br>
 
 ## Web-based front-end approaches
 
-### The general approaches 
+### The general approaches
 
 There are primarily three types of techniques commonly used in web development:
 
 #### Static Site Generation (SSG)
-   
-   - Static Site Generation involves pre-rendering the entire website at build time, generating static HTML, CSS, and JavaScript files for each page. These static files are then served to the client without requiring server-side processing for each request.
-   - SSG is well-suited for content-heavy websites where the content doesn't change frequently. It offers fast loading times and improved performance as the server doesn't need to regenerate the pages for each user request.
-   - Popular frameworks that support SSG include Gatsby, Next.js (with its "export" feature), and Nuxt.js.
+
+- Static Site Generation involves pre-rendering the entire website at build time, generating static HTML, CSS, and JavaScript files for each page. These static files are then served to the client without requiring server-side processing for each request.
+- SSG is well-suited for content-heavy websites where the content doesn't change frequently. It offers fast loading times and improved performance as the server doesn't need to regenerate the pages for each user request.
+- Popular frameworks that support SSG include Gatsby, Next.js (with its "export" feature), and Nuxt.js.
 
 #### Server-Side Rendering (SSR)
-   
-   - Server-Side Rendering involves rendering React or other frontend components on the server and sending the fully rendered HTML to the client.
-   - When a user requests a page, the server fetches the data, processes it, renders the React components, and returns the complete HTML to the client.
-   - SSR is useful when you need dynamic content or personalized data to be available on the page at load time. It also improves SEO since search engine crawlers can see the fully rendered content.
-   - Frameworks like Next.js, Nuxt.js, and After.js provide built-in SSR capabilities for React and Vue.js applications.
+
+- Server-Side Rendering involves rendering React or other frontend components on the server and sending the fully rendered HTML to the client.
+- When a user requests a page, the server fetches the data, processes it, renders the React components, and returns the complete HTML to the client.
+- SSR is useful when you need dynamic content or personalized data to be available on the page at load time. It also improves SEO since search engine crawlers can see the fully rendered content.
+- Frameworks like Next.js, Nuxt.js, and After.js provide built-in SSR capabilities for React and Vue.js applications.
 
 #### Client-Side Rendering (CSR)
 
-   - Client-Side Rendering involves sending a minimal HTML page with JavaScript bundles to the client. The JavaScript code then fetches data from APIs and renders the components on the client-side, updating the DOM dynamically.
-   - CSR is useful for highly interactive and dynamic web applications where content is frequently changing or personalized to each user.
-   - The initial load time may be slower compared to SSR or SSG because the browser needs to fetch and execute JavaScript before rendering the content.
-   - React, Vue.js, and other modern frontend libraries are commonly used for CSR.
+- Client-Side Rendering involves sending a minimal HTML page with JavaScript bundles to the client. The JavaScript code then fetches data from APIs and renders the components on the client-side, updating the DOM dynamically.
+- CSR is useful for highly interactive and dynamic web applications where content is frequently changing or personalized to each user.
+- The initial load time may be slower compared to SSR or SSG because the browser needs to fetch and execute JavaScript before rendering the content.
+- React, Vue.js, and other modern frontend libraries are commonly used for CSR.
 
-#### Back-end for front-end 
+#### Back-end for front-end
 
 The Back-End for Front-End (BFF) is considered to be a hybrid architectural pattern that combines both server-side and client-side elements.
 
@@ -316,7 +329,7 @@ Here's how the BFF pattern fits into the architectural landscape:
 
 Overall, the Back-End for Front-End pattern combines aspects of both server-side and client-side architecture, acting as a hybrid layer that serves as an interface between the front-end and the main back-end services. It is a valuable architectural approach to enhance front-end development, improve performance, and enable greater flexibility in managing complex web applications.
 
-### Main advantages and use cases 
+### Main advantages and use cases
 
 - SSG is ideal for content-heavy websites where content is relatively static, as it provides excellent performance and SEO benefits.
 - SSR is useful when you need dynamic content, personalized data, or want to ensure that search engines can crawl the fully rendered content.
@@ -324,60 +337,58 @@ Overall, the Back-End for Front-End pattern combines aspects of both server-side
 
 Developers can choose the appropriate SSR technique based on the specific requirements of their project, the nature of the content, and the desired user experience. Some frameworks, like Next.js and Nuxt.js, offer a combination of both SSR and SSG, allowing developers to choose the most suitable rendering technique on a per-page basis.
 
-
-
-### React principles 
+### React principles
 
 https://github.com/skirtapaieo/frontend-101/blob/main/react.md
 
 ### Overview 1
-| Principle                 | React                                         | Vue                                            | Svelte                                        | Angular                                      | Vanilla JavaScript                          |
-|---------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------|
-| Declarative Programming   | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Component-Based           | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Unidirectional Data Flow  | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Virtual DOM               | Yes                                           | Yes                                           | No                                            | No                                            | No                                          |
-| Reactive Updates          | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Templating                | JSX                                           | Vue Templates                                 | Svelte Templates                              | Angular Templates                             | Manual DOM Manipulation                     |
-| Directives                | No                                            | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Two-Way Data Binding      | No                                            | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Dependency Tracking       | No                                            | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Store Management (State)  | Redux, MobX, etc.                            | Vuex                                          | No built-in store, but easy to integrate     | RxJS and NgRx                                 | Manual State Management                    |
-| Reactivity                | Reactivity libraries like RxJS can be used   | Vue's reactivity system                       | Svelte's reactivity system                    | Angular's RxJS observables                    | No built-in reactivity                      |
-| Scoped Styles            | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Component Lifecycle Hooks | Yes                                           | Yes                                           | Yes                                           | Yes                                           | No                                          |
-| Transition and Animation  | Yes                                           | Yes                                           | Yes                                           | Yes                                           | Manual CSS Animation/JavaScript Handling   |
-| Rich Ecosystem            | Yes                                           | Yes                                           | Yes                                           | Yes                                           | Limited                                    |
-| Community                 | Strong                                        | Great                                         | Growing                                       | Large                                         | N/A                                         |
-| Native                    | React Native                                  | N/A                                           | N/A                                           | N/A                                           | N/A                                         |
-| CLI                       | Create React App                              | Vue CLI                                       | SvelteKit CLI                                 | Angular CLI                                   | N/A                                         |
-| Adoption                  | Widely adopted                                | Rapidly growing                               | Emerging                                      | Well-established                              | N/A                                         |
-| Performance               | Excellent                                     | Good                                          | Excellent                                     | Good                                          | N/A                                         |
-| Bundle Size               | Moderate                                      | Moderate                                      | Smallest                                      | Larger                                        | N/A                                         |
-| Ease of Learning          | Moderate                                      | Easy                                          | Easy                                          | Moderate                                      | N/A                                         |
-| Comprehensive Documentation | Extensive                                    | Comprehensive                                 | Comprehensive                                 | Comprehensive                                 | N/A                                         |
 
+| Principle                   | React                                      | Vue                     | Svelte                                   | Angular                    | Vanilla JavaScript                       |
+| --------------------------- | ------------------------------------------ | ----------------------- | ---------------------------------------- | -------------------------- | ---------------------------------------- |
+| Declarative Programming     | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Component-Based             | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Unidirectional Data Flow    | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Virtual DOM                 | Yes                                        | Yes                     | No                                       | No                         | No                                       |
+| Reactive Updates            | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Templating                  | JSX                                        | Vue Templates           | Svelte Templates                         | Angular Templates          | Manual DOM Manipulation                  |
+| Directives                  | No                                         | Yes                     | Yes                                      | Yes                        | No                                       |
+| Two-Way Data Binding        | No                                         | Yes                     | Yes                                      | Yes                        | No                                       |
+| Dependency Tracking         | No                                         | Yes                     | Yes                                      | Yes                        | No                                       |
+| Store Management (State)    | Redux, MobX, etc.                          | Vuex                    | No built-in store, but easy to integrate | RxJS and NgRx              | Manual State Management                  |
+| Reactivity                  | Reactivity libraries like RxJS can be used | Vue's reactivity system | Svelte's reactivity system               | Angular's RxJS observables | No built-in reactivity                   |
+| Scoped Styles               | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Component Lifecycle Hooks   | Yes                                        | Yes                     | Yes                                      | Yes                        | No                                       |
+| Transition and Animation    | Yes                                        | Yes                     | Yes                                      | Yes                        | Manual CSS Animation/JavaScript Handling |
+| Rich Ecosystem              | Yes                                        | Yes                     | Yes                                      | Yes                        | Limited                                  |
+| Community                   | Strong                                     | Great                   | Growing                                  | Large                      | N/A                                      |
+| Native                      | React Native                               | N/A                     | N/A                                      | N/A                        | N/A                                      |
+| CLI                         | Create React App                           | Vue CLI                 | SvelteKit CLI                            | Angular CLI                | N/A                                      |
+| Adoption                    | Widely adopted                             | Rapidly growing         | Emerging                                 | Well-established           | N/A                                      |
+| Performance                 | Excellent                                  | Good                    | Excellent                                | Good                       | N/A                                      |
+| Bundle Size                 | Moderate                                   | Moderate                | Smallest                                 | Larger                     | N/A                                      |
+| Ease of Learning            | Moderate                                   | Easy                    | Easy                                     | Moderate                   | N/A                                      |
+| Comprehensive Documentation | Extensive                                  | Comprehensive           | Comprehensive                            | Comprehensive              | N/A                                      |
 
 ### Overview 2
 
-Lets check out three different frameworks - React, Vue and Svelte. 
+Lets check out three different frameworks - React, Vue and Svelte.
 
-| | React | Vue.js | Svelte |
-|---|---|---|---|
-| **Learning Curve** | High. JSX and the whole React ecosystem (like Redux) can take time to grasp. | Medium. Provides a gentle learning curve and is easier to get started with than React. | Low. Arguably the easiest to learn out of these three, with more emphasis on plain JavaScript and less boilerplate. |
-| **Performance** | Fast. But can suffer if not optimized properly (like using PureComponent, shouldComponentUpdate, etc.). | Fast. Similar to React, but includes automatic performance optimizations. | Very fast. Svelte compiles your code to tiny, standalone JavaScript modules at build time, unlike React and Vue, which do the bulk of their work in the browser. |
-| **Community and Ecosystem** | Large. Many resources and third-party libraries available. Supported by Facebook. | Growing. Backed by a strong community. A healthy balance between official and community plugins. | Smaller. The youngest of the three, so the community is still growing. Fewer resources and libraries. |
-| **Flexibility** | Very flexible. React is more of a library than a framework, which means it can be more lightweight but might require more setup. | Balanced. Vue.js is a progressive framework, meaning it can be used in part of an application or for a complete build. | Less flexible. Svelte is less flexible in terms of usage within existing projects, but this is by design—it's an intentional trade-off for performance. |
-| **Use Case** | Best for large-scale applications with active development where performance is a concern. | Best for applications that require a balance of flexibility, ease of use, and performance. | Best for smaller projects where start-up performance is the most important factor, or for including in larger projects as a widget or component. |
+|                             | React                                                                                                                            | Vue.js                                                                                                                 | Svelte                                                                                                                                                           |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Learning Curve**          | High. JSX and the whole React ecosystem (like Redux) can take time to grasp.                                                     | Medium. Provides a gentle learning curve and is easier to get started with than React.                                 | Low. Arguably the easiest to learn out of these three, with more emphasis on plain JavaScript and less boilerplate.                                              |
+| **Performance**             | Fast. But can suffer if not optimized properly (like using PureComponent, shouldComponentUpdate, etc.).                          | Fast. Similar to React, but includes automatic performance optimizations.                                              | Very fast. Svelte compiles your code to tiny, standalone JavaScript modules at build time, unlike React and Vue, which do the bulk of their work in the browser. |
+| **Community and Ecosystem** | Large. Many resources and third-party libraries available. Supported by Facebook.                                                | Growing. Backed by a strong community. A healthy balance between official and community plugins.                       | Smaller. The youngest of the three, so the community is still growing. Fewer resources and libraries.                                                            |
+| **Flexibility**             | Very flexible. React is more of a library than a framework, which means it can be more lightweight but might require more setup. | Balanced. Vue.js is a progressive framework, meaning it can be used in part of an application or for a complete build. | Less flexible. Svelte is less flexible in terms of usage within existing projects, but this is by design—it's an intentional trade-off for performance.          |
+| **Use Case**                | Best for large-scale applications with active development where performance is a concern.                                        | Best for applications that require a balance of flexibility, ease of use, and performance.                             | Best for smaller projects where start-up performance is the most important factor, or for including in larger projects as a widget or component.                 |
 
+### React
 
-### React 
+#### Click on Button
 
-#### Click on Button 
-A simple example of a component that increments a counter when the button is clicked: 
+A simple example of a component that increments a counter when the button is clicked:
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [counter, setCounter] = useState(0);
@@ -393,10 +404,10 @@ function Counter() {
 export default Counter;
 ```
 
-### Decrement/incement/reset Button 
+### Decrement/incement/reset Button
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [counter, setCounter] = useState(0);
@@ -414,8 +425,7 @@ function Counter() {
 export default Counter;
 ```
 
-
-### Vue 
+### Vue
 
 ```vue
 <template>
@@ -468,8 +478,7 @@ export default {
 </script>
 ```
 
-
-### Svelte 
+### Svelte
 
 ```svelte
 <script>
@@ -508,7 +517,6 @@ export default {
 
 ```
 
-
 ## Mobile approaches
 
 ### React Native
@@ -521,32 +529,28 @@ Google's UI toolkit for building natively compiled applications for mobile, web,
 
 ### Swift/iOS
 
-These are the native development languages and frameworks for iOS. Offer comprehensive support for platform specific features, but not cross-platform. 
+These are the native development languages and frameworks for iOS. Offer comprehensive support for platform specific features, but not cross-platform.
 https://github.com/skirtapaieo/frontend-101/blob/main/mobile-desktop/swift-hello.swift
 
 ### Kotlin/Android
 
-These are the native development languages and frameworks for Android. Offer comprehensive support for platform specific features, but not cross-platform. 
+These are the native development languages and frameworks for Android. Offer comprehensive support for platform specific features, but not cross-platform.
 https://github.com/skirtapaieo/frontend-101/blob/main/mobile-desktop/kotlin-hello.js
 
 ## Desktop approaches
 
-### Electron 
+### Electron
 
-This allows you to build desktop apps with JavaScript, HTML, and CSS. Apps like Visual Studio Code, Slack, and GitHub Desktop are built with Electron.  https://github.com/skirtapaieo/frontend-101/blob/main/mobile-desktop/electron.js
+This allows you to build desktop apps with JavaScript, HTML, and CSS. Apps like Visual Studio Code, Slack, and GitHub Desktop are built with Electron. https://github.com/skirtapaieo/frontend-101/blob/main/mobile-desktop/electron.js
 
+## Algoexpert - Spaghetti Recipe
 
-
-
-## Algoexpert - Spaghetti Recipe 
-
-Pretty straight forward 
+Pretty straight forward
 
 ## Algoexpert - Blog Post
 
-Pretty straight forward 
+Pretty straight forward
 
-## Algoexpert - Rainbow circles (JavaScript) 
+## Algoexpert - Rainbow circles (JavaScript)
 
 Not so straight forward :-)
-
