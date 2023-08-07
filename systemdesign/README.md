@@ -1,18 +1,182 @@
+# System Designs
 
+- Code Deployment system (Algoexpert exercise)
+- Feed-based system (Algoexpert exercise)
+- Spotify (random yo)
 
-# System Designs (13%)
+- [Global and Fast Code Deployment system - from Algoexpert](#1-code-deployment-system)
 
-- A few examples from Algoexpert/system design 
-- Most other are private (ex. teamstream and magic) 
+## Spotify
 
-- [Global and Fast Code Deployment system - from Algoexpert](#1-code-deployment-system)  
+Table of Contents/Index:
 
+- [Product and UX perspective (out of scope)](#product-and-ux-perspective-out-of-scope)
+- [Requirements/goals (start for it)](#requirementsgoals-start-for-it)
+- [System components](#system-components)
+- [Data "pipeline"](#data-pipeline)
+- [Music streaming is central](#music-streaming-is-central)
+- [Infrastructure (end-to-end)](#infrastructure-end-to-end)
+- [IoT perspective](#iot-perspective)
+- [Front-end perspective / microservices](#front-end-perspective--microservices)
+- [Product requirements](#product-requirements)
+- [UX](#ux)
 
-# System Design 1 - News feed (facebook) 
+#### Product and UX perspective (out of scope)
 
-## Initial questions related 
+- User research
+- Product requirements
+- UX design principles
+- Wireframing and prototyping
+- User testing and iterations
+- Implementation and evalution
 
-### Key concepts? 
+--> focus is 1) finding and playing music
+
+### Requirements/goals (start for it)
+
+- Users: 1 billion
+- Lists: 10 billion
+- Songs: 100 million
+- Artists: 1 million
+- Albums: 10 million
+
+- Search for the above
+- Create, share, follow playlists
+- System recommends songs/artists/lists
+
+### System components
+
+1. User management
+2. Music metadata management
+3. Music/Podcast audio management
+4. Search service
+5. Music streaming service
+6. Recommendation service
+7. Analytics service
+
+### Data "pipeline"
+
+Here's a table that outlines a possible data pipeline for Spotify using AWS services:
+
+| Stage                              | AWS Service                                          | Purpose                                                                                                                                                                   |
+| ---------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Data Ingestion                     | Amazon Kinesis Data Streams or Kinesis Firehose      | To handle the real-time streaming data from various sources such as user activities.                                                                                      |
+| Operational Data Storage           | Amazon RDS / Amazon DynamoDB / Amazon S3             | RDS for structured data like user profiles, song metadata. DynamoDB for semi-structured data like playlists. S3 for storing music files.                                  |
+| Analytical Data Storage            | Amazon Redshift                                      | A data warehouse service that is used for analytical processing, which is optimized for aggregation and read-heavy workloads.                                             |
+| Batch Processing                   | Amazon EMR                                           | Managed Hadoop framework to process vast amounts of data across scalable Amazon EC2 instances.                                                                            |
+| Stream Processing                  | Amazon Kinesis Data Analytics                        | To process and analyze streaming data in real-time.                                                                                                                       |
+| ETL                                | AWS Glue                                             | Fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load data for analysis.                                                        |
+| Data Analysis and Machine Learning | Amazon Athena / Amazon QuickSight / Amazon SageMaker | Athena for interactive query service. QuickSight for visualization. SageMaker for building, training, and deploying machine learning models.                              |
+| Data Serving                       | AWS Lambda / Amazon API Gateway                      | Lambda for running your code (for example, to generate recommendations) without provisioning or managing servers. API Gateway for creating, deploying, and managing APIs. |
+
+Note: This is a high-level overview and actual implementation may involve additional services based on the specific needs and constraints. Also, while AWS offers comprehensive services, other cloud providers like Google Cloud and Azure offer similar services and can also be used to implement the data pipeline.
+
+### Music streaming is central
+
+Music streaming is a critical feature for an application like Spotify, and it needs to be highly efficient to provide a smooth user experience. There are several aspects to consider:
+
+1. **Audio File Compression:** The raw audio files are large, so they're compressed to make them more manageable for streaming. Spotify uses Ogg Vorbis and AAC for audio compression. The streaming quality can be adjusted based on the user's preference and network condition.
+
+2. **Content Delivery Network (CDN):** Spotify uses a CDN to deliver music streams to users. A CDN is a network of servers distributed across various locations around the world. When a user requests a song, it is served from the nearest server in the CDN. This reduces the latency and improves the streaming experience. AWS CloudFront could be an example of a CDN in an AWS-based architecture.
+
+3. **Caching:** Frequently accessed songs can be cached at various levels (CDN, Spotify backend servers, user's device) to reduce the load on the servers and decrease the latency.
+
+4. **Adaptive Streaming:** The streaming quality can be dynamically adjusted based on the network condition. If the network is slow, the server can switch to a lower bitrate stream to avoid buffering. This requires encoding the song in multiple bitrates and switching between them as needed.
+
+5. **Pre-fetching:** Spotify uses a technique called pre-fetching where it predicts the next song the user is likely to play (like the next song in the playlist) and starts buffering it in advance. This reduces the perceived latency when the song is actually played.
+
+6. **Load Balancing:** Load balancers are used to distribute the network traffic evenly across multiple servers. This helps in efficiently handling large numbers of concurrent streaming requests.
+
+7. **Fault Tolerance and Redundancy:** The system should be designed to be fault-tolerant and have redundancies in place. If one server or data center fails, the requests should automatically be routed to another healthy server or data center.
+
+8. **Offline Playback:** Spotify also allows users to download songs for offline playback. This helps in situations where the network connection is slow or unavailable.
+
+These are some of the techniques to manage highly efficient music streaming. It's a complex problem involving various trade-offs, and the actual implementation may vary based on the specific needs and constraints.
+
+### Infrastructure (end-to end)
+
+Building a global streaming service like Spotify involves careful planning and consideration of various infrastructure components. This requires a multi-region, globally distributed setup to ensure low latency and high availability. Let's discuss the various components and how they could be deployed using AWS:
+
+1. **Front-End:** The front-end includes the client applications that users interact with. This could be the web app, desktop app (Windows, MacOS), and mobile apps (Android, iOS). These applications interact with the backend services over the internet, and users could be located anywhere in the world.
+
+2. **Backend Services:** The backend services could be built as microservices, each responsible for a specific function (User Management, Music Streaming, Playlist Management, Search, Recommendation, etc.). These services can be deployed on AWS EC2 instances or use a serverless approach like AWS Lambda. To manage these services, you can use an orchestration service like AWS ECS or EKS.
+
+3. **Global Load Balancer:** AWS Route 53 (DNS service) along with AWS Global Accelerator can help direct user requests to the nearest location with the lowest latency. These services route users to the nearest AWS edge location and from there, the traffic is routed via Amazon's backbone network to the backend services, ensuring low latency.
+
+4. **Multi-region Deployment:** The backend services should be deployed in multiple AWS regions around the world. This ensures that the services are located closer to the users, reducing latency. Also, if one region fails, the traffic can be redirected to another region, ensuring high availability.
+
+5. **Data Storage:** Data storage should also be multi-region. User data can be stored in Amazon RDS (relational data) and Amazon DynamoDB (NoSQL data), both of which support multi-region deployment. Music files can be stored in Amazon S3, which also supports cross-region replication.
+
+6. **Data Pipeline:** For the data pipeline, you can use Amazon Kinesis for real-time data streaming, AWS Glue for ETL, Amazon Redshift for the data warehouse, and Amazon QuickSight for visualization. These services can be deployed in multiple regions as needed.
+
+7. **Content Delivery Network (CDN):** Amazon CloudFront, a global CDN service, can be used to deliver music files to users. It caches the content at the edge locations closer to the users, reducing latency.
+
+8. **Security:** Security is crucial when dealing with user data. AWS provides various services and features to help with this, like IAM for access control, Security Groups and NACLs for network security, KMS for encryption, etc.
+
+9. **Monitoring and Logging:** Services like Amazon CloudWatch and AWS X-Ray can be used for monitoring the system and troubleshooting any issues.
+
+This is a high-level overview of the end-to-end infrastructure for a global music streaming service like Spotify. The actual implementation could vary based on the specific needs and constraints. Remember, building such a system involves dealing with a lot of complexities and challenges like data consistency across regions, handling network partitions, dealing with regulatory and compliance requirements for storing user data, etc.
+
+### IoT perspective
+
+While Spotify itself isn't an Internet of Things (IoT) device, it does have integrations with various IoT devices. Here are a few examples:
+
+1. **Smart Speakers:** Spotify can be streamed on smart speakers such as Amazon Echo, Google Home, Apple HomePod, and others. Users can control Spotify playback on these devices using voice commands.
+
+2. **Smart TVs:** Many Smart TVs come with the Spotify app pre-installed or allow it to be installed. Users can listen to Spotify directly from their TV.
+
+3. **Car Systems:** Spotify can be integrated with the infotainment systems in many cars. For example, Spotify is compatible with Apple's CarPlay and Google's Android Auto.
+
+4. **Smart Watches:** Devices like the Apple Watch or certain models of Fitbit support Spotify, allowing users to control playback or even download music for offline listening directly from their wrist.
+
+5. **Smart Displays:** Devices like the Google Nest Hub or Amazon Echo Show can display the Spotify interface and play music, controlled by voice or touch.
+
+6. **Game Consoles:** Devices like Xbox and PlayStation have Spotify apps that allow users to stream music while they're playing games.
+
+7. **Connected Home Devices:** Some connected home devices, like Samsung's Family Hub refrigerator, also support Spotify.
+
+In each of these cases, Spotify isn't running the IoT side of things - they've simply created versions of their app that work on these different devices, or they've allowed these devices to control the Spotify app on a connected phone or computer. So, while Spotify isn't an IoT company per se, it's certainly part of the IoT ecosystem.
+
+### Front-end perspective / microservices
+
+1 - front-end platforms - Assumes there will be a a front-end, the organization is built to enable them to be autonomous, using fine-grained components
+
+### Product requirements
+
+2 - Music streaming
+
+3 - Discoverabilty
+
+4 - Playlists
+
+5 - Social features
+
+6 - Offline mode
+
+7 - Multiple platforms
+
+### UX
+
+8 - Simplicity
+
+9 - Consistency
+
+10 - Personalization
+
+11 - Feedback and error handling
+
+12 - Accessibility
+
+- Wireframing
+- Prototyping
+- User testing/iteration
+- Implementation/evaluation
+
+## News feed (facebook)
+
+### Initial questions related
+
+#### Key concepts?
 
 - User-Generated Content (UGC): All these platforms rely heavily on content created and shared by their users.
 
@@ -26,18 +190,17 @@
 
 - Ad-based Revenue Model: They all generate revenue by showing targeted ads to users based on their behavior, interests, and demographics.
 
-### Example platforms  
+#### Example platforms
 
-| Platform | Content Focus | Unique Features |
-| --- | --- | --- |
-| Spotify | Music and podcasts | User follows artists, playlists, or friends to get updates and recommendations; "Discover Weekly" playlist. |
-| Facebook | Mixed (text, photos, videos, links) | Combines updates from friends, groups, pages; features for private messaging, groups, and events. |
-| Instagram | Photo and video | Aesthetic appeal; photo filters; Instagram Stories, IGTV, and Shopping. |
-| Twitter | Text (also supports images, videos, links) | Character limit encourages concise messaging; real-time updates on current events; trending topics and hashtags. |
-| TikTok | Short-form video | Users can create and share videos up to 60 seconds long; viral dance challenges; educational content; powerful content recommendation algorithm. |
+| Platform  | Content Focus                              | Unique Features                                                                                                                                  |
+| --------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Spotify   | Music and podcasts                         | User follows artists, playlists, or friends to get updates and recommendations; "Discover Weekly" playlist.                                      |
+| Facebook  | Mixed (text, photos, videos, links)        | Combines updates from friends, groups, pages; features for private messaging, groups, and events.                                                |
+| Instagram | Photo and video                            | Aesthetic appeal; photo filters; Instagram Stories, IGTV, and Shopping.                                                                          |
+| Twitter   | Text (also supports images, videos, links) | Character limit encourages concise messaging; real-time updates on current events; trending topics and hashtags.                                 |
+| TikTok    | Short-form video                           | Users can create and share videos up to 60 seconds long; viral dance challenges; educational content; powerful content recommendation algorithm. |
 
-
-### Functionality needed? 
+#### Functionality needed?
 
 - Account Management
 - User Profile
@@ -50,7 +213,7 @@
 - Accessibility and usability
 - Ad display
 
-### Main stakeholders 
+#### Main stakeholders
 
 - End-users
 - Advertiseras
@@ -58,9 +221,9 @@
 - Employees and developers
 - Regulatory authorities
 - Partners
-- Community and society at large 
-  
-### Initial services 
+- Community and society at large
+
+#### Initial services
 
 - User Service: This handles user-related operations and stores user profiles, including the list of friends for each user.
 
@@ -72,7 +235,7 @@
 
 - Ads Service (optional): If ads are incorporated, this service will determine what ads to show to a user at any given time.
 
-### Sequence diagram - ver 1.0 
+#### Sequence diagram - ver 1.0
 
 ![Feed sequence diagram](https://github.com/skirtapaieo/system-design-101/blob/main/feed-seq-diagram.png)
 
@@ -103,7 +266,7 @@ RTUS -> FS : Update Friends' Feeds
 @enduml
 ´´´
 
-### Non-functional requirements 
+#### Non-functional requirements
 
 - Scalability: Given the large number of users (100 million daily users, 1 million daily status updates), the system needs to be scalable. We could use a distributed database system and implement sharding and partitioning strategies to distribute data and load across multiple servers.
 
@@ -117,8 +280,7 @@ RTUS -> FS : Update Friends' Feeds
 
 - Ads Integration (optional): If ads are incorporated, they could be treated as special types of posts that get inserted into the feed by the Ads Service and then ranked along with regular posts by the Ranking Service.
 
-
-### Sequence diagram ver 2 - with notes related to non-functional ideas 
+#### Sequence diagram ver 2 - with notes related to non-functional ideas
 
 ![Feed sequence diagram](https://github.com/skirtapaieo/system-design-101/blob/main/feed-seq-diagram-NFR.png)
 
@@ -155,31 +317,29 @@ RTUS -> FS : Update Friends' Feeds
 
 <br>
 
-### Requriements for each service
+#### Requriements for each service
 
-| Service               | Description and Load                                                                                                                                                                           |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| User Service          | Handles user-related activities like authentication, profile edits, etc. Expected to handle millions of requests per day. Manages profile info and friend lists for 100M daily users.          |
-| Feed Service          | Responsible for serving user feeds and processing status updates. Expected to handle billions of requests per day. Manages potentially 50B+ daily posts.                                       |
-| Ranking Service       | Handles the ranking of posts for user feeds. Expected to handle hundreds of millions to billions of ranking requests daily. Manages large amounts of metadata associated with ranking.         |
-| Real-Time Update Service | Responsible for processing and propagating real-time status updates to relevant user feeds. Expected to handle 500M update events daily. Manages large volumes of real-time data. |
+| Service                  | Description and Load                                                                                                                                                                   |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User Service             | Handles user-related activities like authentication, profile edits, etc. Expected to handle millions of requests per day. Manages profile info and friend lists for 100M daily users.  |
+| Feed Service             | Responsible for serving user feeds and processing status updates. Expected to handle billions of requests per day. Manages potentially 50B+ daily posts.                               |
+| Ranking Service          | Handles the ranking of posts for user feeds. Expected to handle hundreds of millions to billions of ranking requests daily. Manages large amounts of metadata associated with ranking. |
+| Real-Time Update Service | Responsible for processing and propagating real-time status updates to relevant user feeds. Expected to handle 500M update events daily. Manages large volumes of real-time data.      |
 
- 
-### Requirements from post to ... 
+#### Requirements from post to ...
 
 - ~10 KB per post
--  ~1000 posts per news feed
--  ~1 billion news feeds
--  ~10 KB * 1000 * 1000^3 = 10 PB = 1000 * 10 TB
+- ~1000 posts per news feed
+- ~1 billion news feeds
+- ~10 KB _ 1000 _ 1000^3 = 10 PB = 1000 \* 10 TB
 
-### Algoexpert system diagram 
+#### Algoexpert system diagram
 
 https://github.com/skirtapaieo/system-design-101/blob/main/facebook-system-diagram.svg
 
+## Code-deployment system
 
-
-# Code-deployment system
-design a code deployment system (part of exercise at Algoexpert/System design) 
+design a code deployment system (part of exercise at Algoexpert/System design)
 
 # Index
 
@@ -207,23 +367,21 @@ design a code deployment system (part of exercise at Algoexpert/System design)
   - [Training and Documentation](#training-and-documentation)
 - [The system overview](#the-system-overview)
 
-
-# System design (result of below) 
+# System design (result of below)
 
 ![Alt text of the image](https://github.com/skirtapaieo/codedeployment/blob/main/systemdesign.png)
 
+# The initial questions
 
-# The initial questions 
+- The first questions is of course buy or build, but for the point of the exercise we will ask the questions needed for a design, and a later implementation.
+- The second questions is whether this suits the company and the overall architecture and
+- whether the resources are in place to, after the design, actually be able to build the system.
 
-- The first questions is of course buy or build, but for the point of the exercise we will ask the questions needed for a design, and a later implementation. 
-- The second questions is whether this suits the company and the overall architecture and 
-- whether the resources are in place to, after the design, actually be able to build the system. 
+As shown later in the design phase, it is pretty complicated.
 
-As shown later in the design phase, it is pretty complicated. 
+# Detailed system design questions
 
-# Detailed system design questions 
-
-The following, and other questions will help us to understand the specific requirements and constraints of the code-deployment system, enabling you to design a solution the meets the needs of the organisation. 
+The following, and other questions will help us to understand the specific requirements and constraints of the code-deployment system, enabling you to design a solution the meets the needs of the organisation.
 
 ## Scope and Scale
 
@@ -252,7 +410,6 @@ The following, and other questions will help us to understand the specific requi
 - What is the desired workflow for code deployment (e.g., continuous integration/continuous deployment, manual approval process)?
 - Are there any specific pre-deployment or post-deployment tasks that need to be performed?
 
-
 ## Monitoring and Logging
 
 - What metrics and logging information should be captured during deployment?
@@ -277,11 +434,11 @@ The following, and other questions will help us to understand the specific requi
 - Who will be responsible for managing and operating the code-deployment system?
 - What are the roles and responsibilities of the individuals involved in the deployment process?
 
-# First pass of the system design 
+# First pass of the system design
 
-- The system is supposed to exist in five different physical locations 
-- where binaries have to be deployed reliably and 
-- where the system have to be performance enought to do the deployment within a few minutes 
+- The system is supposed to exist in five different physical locations
+- where binaries have to be deployed reliably and
+- where the system have to be performance enought to do the deployment within a few minutes
 
 ## Global Deployment
 
@@ -327,7 +484,6 @@ The following, and other questions will help us to understand the specific requi
 
 By addressing these considerations, it is possible to design a global and fast code-deployment system that meets the specified requirements and supports efficient and reliable deployments across your organization.
 
-# The system overview 
+# The system overview
 
-Based on the description above we asked ChatGPT to generate a high-level sketch in PlantUML notation. *See Systemdesign.uml*
-
+Based on the description above we asked ChatGPT to generate a high-level sketch in PlantUML notation. _See Systemdesign.uml_
