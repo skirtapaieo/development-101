@@ -2,8 +2,6 @@
 
 experiment with skill areas
 
-# --- test
-
 ## The general approach ..
 
 That's a great way to visualize the various approaches! Here's a basic outline of how they might map to these six key areas. Please note, the table includes only a selection of methodologies for simplicity and does not exhaustively represent all approaches:
@@ -75,4 +73,19 @@ Here's a summary of the software development methodologies:
 | Feature Driven Development (FDD)  | A model-driven, short-iteration process built around software engineering best practices.                              | Develop an Overall Model, Build a Features List, Plan by Feature, Design by Feature, Build by Feature                   |
 | Pair Programming                  | Two programmers share a single workstation (one screen, keyboard and mouse among the pair).                            | Code Design, Code Implementation, Code Review, Continuous Integration                                                   |
 
-###
+### Management
+
+When aligning UX, Product, and Technology, a possible model would focus on the core aspects or stages that are common across most approaches in these fields. Here is a possible general pattern:
+
+| Stage                          | UX                                                                                                  | Product                                                                                                              | Technology                                                                                                                                |
+| ------------------------------ | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Understanding/Research**     | Understand the user's needs and context through methods like interviews, surveys, and user testing. | Understand the market, user needs, and business goals to define a product strategy.                                  | Understand the technical requirements, constraints, and possibilities.                                                                    |
+| **Ideation/Planning**          | Ideate potential design solutions based on the understanding of the user's needs.                   | Plan and prioritize features based on the product strategy.                                                          | Plan the technical architecture and choose the technologies and methodologies to use.                                                     |
+| **Design/Definition**          | Create wireframes, prototypes, and visual designs for the user interface.                           | Define the product requirements and user stories.                                                                    | Design the system architecture and define the technical specifications.                                                                   |
+| **Implementation/Development** | Finalize the design details and collaborate with developers to ensure accurate implementation.      | Manage the product backlog and collaborate with the team to implement features.                                      | Develop the software according to the design and technical specifications.                                                                |
+| **Testing/Validation**         | Conduct usability testing and gather user feedback to validate the design.                          | Test the product functionality and gather user feedback to validate the product meets user needs and business goals. | Conduct unit testing, integration testing, system testing, and acceptance testing to validate the software functionality and performance. |
+| **Iteration/Improvement**      | Iterate on the design based on testing and feedback.                                                | Iterate on the product based on testing, feedback, and changes in the market or business goals.                      | Refactor the code, optimize the system, and implement new features or changes based on feedback and changes in requirements.              |
+
+This is a very simplified model and the actual processes in UX, product, and technology can be much more complex and iterative, and they can vary greatly depending on the specific approaches or methodologies used.
+
+However, this model might be a useful starting point for aligning the different fields and understanding how they can work together in the product development process.
