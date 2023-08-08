@@ -25,14 +25,99 @@
   - [Operations, monitoring and alerts (and support)](#operations-monitoring-and-alerts-and-support)
   - [Testing](#testing)
 
-### Clarifying questions
+## Clarifying questions
 
 - functional - like robinhood or etrade, buy/sell instruments, place a market order (buy/sell), not much else,
 - non-functional - millions of customers, millions of trades (matched orders), high-availability, security, high-performance,
 
 <br>
 
-### Reflections
+## Design approach
+
+Using an existing Swedish app, Avanza
+
+Sure, here are the tables for the User Journey steps with respective API calls, and the Information Model.
+
+### User Journey Steps with API Calls
+
+| Step                  | API Endpoint                         | HTTP Method | Request                                                                                                                                  | Response                                                                                                                                          |
+| --------------------- | ------------------------------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Login                 | /login                               | POST        | { "username": "<username>", "password": "<password>" }                                                                                   | { "token": "<JWT token>" }                                                                                                                        |
+| View Account Overview | /users/{userId}/accounts             | GET         | N/A                                                                                                                                      | [ { "accountId": "<accountId>", "accountType": "<accountType>", "balance": "<balance>", ... } ]                                                   |
+| Select an Account     | /users/{userId}/accounts/{accountId} | GET         | N/A                                                                                                                                      | { "accountId": "<accountId>", "accountType": "<accountType>", "stocks": [ { "stockId": "<stockId>", "quantity": "<quantity>", ... }, ... ], ... } |
+| Select a Stock        | /stocks/{stockId}                    | GET         | N/A                                                                                                                                      | { "stockId": "<stockId>", "currentPrice": "<currentPrice>", "historicalData": [ ... ], ... }                                                      |
+| Place Order           | /orders                              | POST        | { "accountId": "<accountId>", "stockId": "<stockId>", "quantity": "<quantity>", "price": "<price (optional)>", "orderType": "BUY/SELL" } | { "orderId": "<orderId>", "status": "OPEN/PARTIALLY_FILLED/FILLED/CANCELED" }                                                                     |
+
+### Information Model rev 1
+
+| Object         | Properties                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ |
+| User           | userId, username, password (hashed)                                                                                |
+| Account        | accountId, userId, accountType, balance, stocks (list of StockPosition)                                            |
+| StockPosition  | accountId, stockId, quantity                                                                                       |
+| Stock          | stockId, currentPrice, historicalData (list of PriceTimePoint)                                                     |
+| PriceTimePoint | timeStamp, price                                                                                                   |
+| Order          | orderId, accountId, stockId, quantity, price, orderType (BUY/SELL), status (OPEN/PARTIALLY_FILLED/FILLED/CANCELED) |
+
+Please note that this is a high-level example and a real system would likely require a more detailed and comprehensive data model and set of APIs.
+
+### Information model rev 2
+
+Sure, here's the full information model considering the last additions:
+
+| Object           | Properties                                                                                                                                |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| User             | userId, username, password (hashed), kycStatus, amlStatus, accounts                                                                       |
+| Account          | accountId, userId, balance, stocks                                                                                                        |
+| Stock            | stockId, name, currentPrice, market                                                                                                       |
+| Order            | orderId, accountId, stockId, quantity, price, orderType (BUY/SELL), status (OPEN/PARTIALLY_FILLED/FILLED/CANCELED/SETTLED), matchingOrder |
+| MatchingOrder    | matchingOrderId, matchingAccountId, matchingStockId, matchingQuantity, matchingPrice, matchingOrderType                                   |
+| ComplianceChecks | userId, kycStatus, amlStatus                                                                                                              |
+| TradeSettlement  | tradeId, buyerOrderId, sellerOrderId, quantity, price, status (OPEN/CLOSED)                                                               |
+
+Again, this is a simplified model for illustrative purposes. A real-world trading system would involve many more details and edge cases to consider.
+
+### Sequence diagram
+
+```UML
+@startuml
+
+participant UserA
+participant UserService
+participant StockMarketService
+participant TradeOrderService
+participant MessageBrokerService
+participant MatchingEngineService
+participant SettlementService
+participant NotificationService
+
+UserA -> UserService : Authenticate
+UserService --> UserA : Authentication Response
+UserA -> StockMarketService : Request Stock Info
+StockMarketService --> UserA : Stock Info
+UserA -> TradeOrderService : Place Buy Order
+
+alt Order is Valid
+    TradeOrderService -> MessageBrokerService : Publish New Order Event
+    MessageBrokerService -> MatchingEngineService : New Order Event
+    alt Order is Matched
+        MatchingEngineService -> MessageBrokerService : Publish Trade Matched Event
+        MessageBrokerService -> SettlementService : Trade Matched Event
+        SettlementService -> MessageBrokerService : Publish Trade Settled Event
+        MessageBrokerService -> NotificationService : Trade Settled Event
+        NotificationService --> UserA : Trade Completion Notification
+    else Order is Not Matched
+        MatchingEngineService --> TradeOrderService : Order Not Matched
+        TradeOrderService --> UserA : Order Not Matched
+    end
+else Order is Invalid
+    TradeOrderService --> UserA : Order Invalid
+end
+
+@enduml
+```
+
+## Architectural approach
 
 The design from front-end to back-end needs to be synchronized.
 
