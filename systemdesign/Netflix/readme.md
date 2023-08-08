@@ -2,10 +2,21 @@
 
 # Initial questions/thoughts
 
-# Other experience
+## Scope
+
+- Score/core: Go to the platform, profile will be presented with movies and shows, and watch them, and it uses your history to make recommendations
+- Out of scope/not Core: No major thoughts on auxiliary things like authentication and payments ...
+
+## Users
+
+- 200 million users
+-
+
+# Prior experiences
 
 - Spotify design (reusable?)
 - Digital TV broadcast (STB-applications)
+- Codeta (streamed videos in the CMS - and the design)
 
 # Core design
 
@@ -14,18 +25,46 @@
 - Services/APIs
 - Examples
 - Sequence diagrams
+- System diagram
+
+## Use Cases
+
+1. User Registration & Management
+2. Content Browsing & Search
+3. Content Streaming
+4. Content Recommendation
+5. Account & Subscription Management
+6. User Feedback & Ratings
+
+| **Use Case**                         | **Core Service**       | **API(s)**                                                                                                      | **Information Model**                                                              |
+| ------------------------------------ | ---------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 1. User Registration & Management    | User Service           | `registerUser`, `login`, `logout`, `updateUserProfile`, `deleteUser`                                            | `User {userID, email, password, name, DOB, country}`                               |
+| 2. Content Browsing & Search         | Content Service        | `browseContent`, `searchContent`, `getContentDetails`, `getGenres`, `getTrending`                               | `Content {contentID, title, genre, releaseDate, duration, synopsis, cast, rating}` |
+| 3. Content Streaming                 | Streaming Service      | `streamContent`, `pauseStream`, `resumeStream`, `stopStream`                                                    | `Stream {userID, contentID, timestamp, currentProgress, bitrate, resolution}`      |
+| 4. Content Recommendation            | Recommendation Service | `getRecommendationsForUser`, `getSimilarContent`                                                                | `Recommendation {userID, recommendedContentID[]}`                                  |
+| 5. Account & Subscription Management | Account Service        | `createSubscription`, `updateSubscription`, `cancelSubscription`, `getSubscriptionDetails`, `getBillingHistory` | `Subscription {userID, planType, startDate, endDate, billingAmount, billingCycle}` |
+| 6. User Feedback & Ratings           | Feedback Service       | `rateContent`, `submitFeedback`, `getContentRatings`, `getUserRatings`                                          | `Rating {userID, contentID, ratingValue, feedbackText}`                            |
+
+This table provides a structured way of thinking about how the various components of a service like Netflix might interact. In reality, Netflix has a much more intricate system with dozens of microservices handling various functionalities. This is a simplified and representative structure for design interview purposes.
+
+## The ranking of these features - user, technical and business
+
+Certainly. I'll add the scoring for each ranking criteria explicitly to the table:
+
+| **Rank** | **Use Case**                      | **Core Service**       | **User Value** | **Technical Complexity** | **Business Significance** | **Overall Motivation**                                                                                                                                                                          |
+| -------- | --------------------------------- | ---------------------- | -------------- | ------------------------ | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1        | Content Streaming                 | Streaming Service      | 10/10          | 9/10                     | 10/10                     | The primary value proposition of Netflix is streaming. Technical challenges include handling adaptive bitrate streaming, optimizing for various devices and networks, and ensuring low latency. |
+| 2        | Content Recommendation            | Recommendation Service | 9/10           | 10/10                    | 9/10                      | Crucial for user retention and engagement. Technically challenging due to the need for real-time analysis, machine learning models, and personalization at scale.                               |
+| 3        | User Registration & Management    | User Service           | 8/10           | 8/10                     | 9/10                      | Without user management, no other service can be personalized. The challenge lies in security, scalability, and global distribution of user data.                                               |
+| 4        | Content Browsing & Search         | Content Service        | 8/10           | 8/10                     | 8/10                      | Core to the user experience. Search algorithms, metadata management, and real-time updates are challenging.                                                                                     |
+| 5        | Account & Subscription Management | Account Service        | 7/10           | 8/10                     | 10/10                     | Directly linked to revenue. Challenges include secure handling of payment data, integrations with payment gateways, and managing subscription lifecycles.                                       |
+| 6        | User Feedback & Ratings           | Feedback Service       | 7/10           | 7/10                     | 7/10                      | Important for content curation and user engagement. The primary challenge is gathering, storing, and analyzing large amounts of feedback data efficiently.                                      |
+
+The scores are subjective and are meant to illustrate the potential significance of each service based on the criteria. Each criterion is rated out of 10, where 10 indicates the highest importance or challenge.
 
 ## From Spotify design
 
 ### Services
-
-1. User management
-2. Music metadata management
-3. Music/Podcast audio management
-4. Search service
-5. Music streaming service
-6. Recommendation service
-7. Analytics service
 
 ### Music streaming is central
 
