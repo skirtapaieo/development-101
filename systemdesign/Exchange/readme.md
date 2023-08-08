@@ -1,5 +1,30 @@
 # Stock Exchange (Algoexpert)
 
+- [Stock Exchange (Algoexpert)](#stock-exchange-algoexpert)
+
+  - [Clarifying Questions](#clarifying-questions)
+  - [Reflections](#reflections)
+  - [Front-end](#front-end)
+    - [Rendering Approaches](#rendering-approaches)
+    - [Efficient Data Handling](#efficient-data-handling)
+      - [Debouncing and Throttling](#debouncing-and-throttling)
+      - [Pagination and Infinite Scrolling](#pagination-and-infinite-scrolling)
+    - [Caching](#caching)
+    - [Offline](#offline)
+  - [API/Communication Protocol](#apicommunication-protocol)
+    - [Layer Orientation](#layer-orientation)
+  - [Back-end considerations](#back-end-considerations)
+    - [Language alternatives](#language-alternatives)
+    - [Breaking points?](#breaking-points)
+  - [Data "Pipeline"](#data-pipeline)
+  - [Infrastructure](#infrastructure)
+    - [Additional infrastructure due to API/communication protocols](#additional-infrastructure-due-to-apicommunication-protocols)
+  - [Security layers](#security-layers)
+  - [Regulatory compliance](#regulatory-compliance)
+  - [Analytics and reporting](#analytics-and-reporting)
+  - [Operations, monitoring and alerts (and support)](#operations-monitoring-and-alerts-and-support)
+  - [Testing](#testing)
+
 ### Clarifying questions
 
 - functional - like robinhood or etrade, buy/sell instruments, place a market order (buy/sell), not much else,
