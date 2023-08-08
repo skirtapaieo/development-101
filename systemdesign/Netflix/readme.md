@@ -64,6 +64,42 @@ The scores are subjective and are meant to illustrate the potential significance
 
 ## From Spotify design
 
+### The Spotify UX is different
+
+The perception that it's easier to discover new content on Spotify than on Netflix is based on a variety of factors, both subjective and objective:
+
+1. **Nature of Content**:
+
+   - **Duration**: Music tracks typically last a few minutes, making it much quicker and easier to sample a variety of songs in a short period. In contrast, movies or TV shows on Netflix can be hours long, making sampling content a longer commitment.
+   - **Quantity**: A typical album may contain 10-15 songs. If you sample just four albums, you've already browsed through 40-60 individual tracks. This gives a feeling of discovering a lot. Sampling four TV shows or movies on Netflix is a more prolonged experience.
+
+2. **Personalized Playlists and Radio**:
+
+   - Spotify excels at creating personalized playlists such as "Discover Weekly" and "Release Radar," which are tailored for individual users based on their listening habits. These make music discovery very intuitive.
+   - Spotify's "radio" feature, based on songs, artists, or playlists, facilitates content exploration in a seamless stream, pushing users towards new, related content.
+
+3. **Content Production Turnaround**:
+
+   - Producing a song or an album usually requires less time and resources than producing a TV series or a movie. This means artists can release multiple tracks or albums in the time it takes for a single TV series season to be produced. This frequent content release makes it seem like there's always something new to discover on music platforms.
+
+4. **Content Density**:
+
+   - The Spotify UI is designed to introduce a plethora of songs, artists, and albums on a single screen, whereas Netflix prioritizes showcasing TV show or movie posters, resulting in fewer titles displayed at once.
+
+5. **Algorithm Differences**:
+
+   - Spotify's recommendation engine heavily prioritizes user behavior, such as the tracks they've recently played, liked, or added to playlists. This makes for a highly responsive and dynamic recommendation system that quickly adapts to user preferences.
+   - Netflix's recommendations are influenced by viewing history, but due to the longer nature of its content, the system might be perceived as less dynamic.
+
+6. **Content Licensing and Availability**:
+
+   - Music platforms like Spotify often have access to a broader range of tracks, albums, and artists globally. In contrast, Netflix's library can vary significantly from one region to another due to content licensing agreements.
+
+7. **User Behavior**:
+   - When users go to Spotify, they are often in a "browsing" mode, seeking new songs to add to their playlists or looking for background music. On Netflix, users might be more committed, seeking to continue a series they're watching or find a movie for the evening.
+
+Both platforms invest heavily in their recommendation algorithms, but the nature of their content and the ways users engage with that content lead to different perceptions of discoverability.
+
 ### Services
 
 ### Music streaming is central
