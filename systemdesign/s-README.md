@@ -24,7 +24,11 @@
 
 ## Reddit
 
+/Reddit - post, comments, vote, awards
+
 ## Amazon (e-commerce)
+
+/Amazon - e-commerce
 
 ## Exchanges - Stock Exchange
 

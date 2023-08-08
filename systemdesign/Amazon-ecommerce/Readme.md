@@ -8,7 +8,7 @@
 - 300 million customers, 60,000 order/hour (20/second)
 - US is 50% of the orders
 
-## Other experience
+## Other experiences
 
 BDS - retail store system (B2C)
 EIO - Online store (B2B)
