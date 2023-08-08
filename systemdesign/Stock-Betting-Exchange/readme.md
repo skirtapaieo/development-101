@@ -32,6 +32,44 @@
 
 <br>
 
+## Algorithms
+
+### Overview
+
+While the principles behind these order matching algorithms are well-understood and widely known, the specific implementations used by financial exchanges are often proprietary and not open source. This is because these systems are a key part of an exchange's competitive advantage. They invest significant resources in creating high-performance, low-latency systems that can handle large volumes of trades accurately and reliably.
+
+However, there are open source trading platforms available that implement basic versions of these algorithms. For instance, platforms like Catalyst, Lean, Backtrader, and Gekko all have built-in support for backtesting trading strategies, and some of these platforms include rudimentary order matching systems.
+
+Do note that while these open source platforms can be useful for testing trading strategies or for learning about how trading systems work, they may not be suitable for use in a production environment. They may not have the same performance characteristics or reliability as proprietary systems used by professional financial exchanges.
+
+If you're looking to implement your own matching engine, you would typically start with a basic algorithm like FIFO or price/time priority, and then add additional features as necessary. This would be a complex undertaking, and it would require a deep understanding of both the algorithmic and the infrastructure aspects of trading systems.
+
+As for concurrency control and ensuring that orders aren't matched more than once, this is typically handled through careful system design and the use of transactional databases or other mechanisms to ensure atomicity and isolation of operations.
+
+It's also important to consider the regulatory environment in which the exchange operates, as there may be specific rules and requirements about how trades must be matched and reported.
+
+### Examples
+
+In the world of financial trading systems, the matching engine is a critical component that handles the task of matching buy and sell orders. There are several different algorithms or order matching rules that these engines can follow, each with its own set of advantages and rules.
+
+Here are a few commonly used ones:
+
+1. **First-In-First-Out (FIFO)**: This is the simplest and most intuitive rule. The first order to arrive gets priority over others. If a sell order arrives that matches with multiple buy orders, the one which came in first will get matched.
+
+2. **Pro-Rata**: This rule gives priority to orders with larger sizes. If a sell order arrives that can be matched with multiple buy orders, the one with the largest size will get priority. If two orders have the same size, then it falls back to FIFO.
+
+3. **Price/Time Priority**: This rule gives priority firstly to the best price; for orders with the same price, it falls back to the time priority (FIFO). This is one of the most common rules and is believed to be fair since it rewards both price competitiveness and early order placement.
+
+4. **Price/Size/Time Priority**: This is a variation of the Price/Time priority rule. It gives the first priority to the best price, then to the larger size and finally to the time priority.
+
+5. **Top of the book (TOB)**: This rule matches incoming orders against the best opposing order available. If multiple orders share the same best price, priority is typically given on a time basis (i.e., the order that arrived first).
+
+6. **Auction or Call Market**: In this method, all buy and sell orders are collected over a certain period and then matched at a single price that maximizes the volume of trades. This method is often used in less liquid markets or at the opening/closing of exchanges.
+
+In the case of partial order matching, the algorithms will usually match the portion of the order that can be filled, and the remainder of the order stays in the book until it can be filled or until it is cancelled.
+
+Implementing these algorithms accurately and efficiently, and in a way that they can operate with low latency and high throughput, is a major technical challenge in building a trading system. Different exchanges might use different variations and combinations of these rules to meet their specific requirements.
+
 ## Design approach
 
 Using an existing Swedish app, Avanza
