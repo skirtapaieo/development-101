@@ -1,5 +1,9 @@
 # System Designs
 
+Ideas: Tiktok, Instagram, Twitter, Youtube, ..
+
+<br>
+
 - Exchanges - end-customers meet exchanges (betting and stocks and so on)
 - Human Resources (employee perspective) - for developer interview preparation - Algoexpert platform (from Algoexpert exercise)
 - Code - Code Deployment system (from Algoexpert exercise)
@@ -19,6 +23,8 @@
 ## Uber
 
 ## Netflix
+
+/Netflix
 
 ## Google Drive
 

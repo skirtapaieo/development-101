@@ -10,7 +10,6 @@
 ## Users
 
 - 200 million users
--
 
 # Prior experiences
 
@@ -139,3 +138,5 @@ These are some of the techniques to manage highly efficient music streaming. It'
 - Security
 - Protocols
 - Algorithms
+- Team size
+- Costs
