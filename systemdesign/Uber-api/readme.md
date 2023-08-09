@@ -111,11 +111,18 @@ For simplification, the '-' denotes missing or non-applicable data in the tables
 
 ### The tricky parts of the service
 
-### Rider and Driver tracking
+### A - Rider and Driver tracking
 
 These are tightly related and they deal with real-time location tracking and sharing.
 
-#### Proximity Matching
+- Real-time updates
+- Accuracy
+- Privacy concerns
+- Network & battery efficiency
+
+### B - Ride Matching Service
+
+#### B1 Proximity Matching
 
 ##### Roads are networks
 
@@ -144,9 +151,9 @@ There are tools available such as
 - Do on the fly computation for matching, which might be more resous intensive, but will use most up-to-date data
 - Doing a straightline calculation followed by other more intricated calculations if needed
 
-### Ride Matching Service
+#### B2 Concurrent requests
 
-#### Pricing, fare adjustments and payments
+### C - Pricing, fare adjustments and payments
 
 Uber's fare system is built around dynamic pricing, and there can be several reasons for fare adjustments. While I don't have an exact number for how many fare adjustments Uber processes (as this would depend on numerous factors and can vary across regions and time), the reasons for fare adjustments generally fall into several categories:
 
