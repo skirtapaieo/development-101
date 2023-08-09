@@ -14,6 +14,18 @@ TBD
 
 ## Prior experience
 
+# Design
+
+## User journey
+
+## Services / API's
+
+## Information model
+
+## Other
+
+- Sequence diagrams, system model, code examples
+
 # Architecture
 
 ## Front-end
@@ -27,5 +39,3 @@ TBD
 ## Other
 
 - Algorithms, security, protocols, algorithms, deep stack, costs, team size
-
-# Design
