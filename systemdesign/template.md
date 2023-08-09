@@ -10,6 +10,8 @@ TBD
 
 ## Scope
 
+## Usage
+
 ## Competitors
 
 ## Prior experience
