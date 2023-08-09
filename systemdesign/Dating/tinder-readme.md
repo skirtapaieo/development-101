@@ -77,6 +77,10 @@ In conclusion, Tinder's innovative approach to online dating transformed the lan
 - In-app ratings
 - bug reports, etc
 
+## Usage
+
+50 million users on Tinder
+
 ## Competitors
 
 There are many competitors - Bumble, Hinge, Match, OkCupid, etc
