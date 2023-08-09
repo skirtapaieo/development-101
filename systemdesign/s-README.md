@@ -1,7 +1,5 @@
 # System Designs
 
-Ideas: Instagram, Twitter, Youtube, ..
-
 <br>
 
 - Exchanges - end-customers meet exchanges (betting and stocks and so on)
