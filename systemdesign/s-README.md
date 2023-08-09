@@ -1,6 +1,6 @@
 # System Designs
 
-Ideas: Tiktok, Instagram, Twitter, Youtube, ..
+Ideas: Instagram, Twitter, Youtube, ..
 
 <br>
 
