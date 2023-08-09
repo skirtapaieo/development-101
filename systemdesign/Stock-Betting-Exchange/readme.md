@@ -32,7 +32,27 @@
 
 <br>
 
-## Algorithms
+## Algorithms for matching
+
+For stock exchanges, the goal is to match buy and sell orders for a specific stock at specific prices. The primary attributes are stock type and price. Algorithms like the Continuous Double Auction are commonly used in these systems.
+
+The matching algorithms provided below and their descriptions offer a comprehensive understanding of how order matching works in trading systems. They capture the essence of how financial markets prioritize and match orders. However, a deeper exploration reveals several interesting nuances and challenges inherent to this process.
+
+1. **Market Dynamics and Fairness**: The choice of a matching algorithm can have profound impacts on market dynamics. For example, while FIFO seems inherently fair, it can be gamed by traders using high-frequency trading algorithms to get their orders to the front of the queue. The more complex the algorithm, the more potential there might be for unintended consequences or for savvy traders to find and exploit inefficiencies.
+
+2. **Partial Orders and Minimum Fill**: Handling of partial orders can be quite complex. For instance, an order might specify a minimum fill amount, meaning it should either be filled for at least a certain quantity or not at all. This introduces additional constraints into the matching algorithm.
+
+3. **Latency**: Especially in modern electronic markets, latency plays a significant role. High-frequency traders compete to have the lowest possible latency. Their algorithms might make decisions in microseconds, and even tiny advantages in speed can lead to significant profits. This makes the efficiency of a matching algorithm incredibly important.
+
+4. **Order Types**: There are many different order types other than just simple limit and market orders. For example, stop orders, trailing stops, iceberg orders, and more. Each of these order types can introduce its own complexities into the matching algorithm.
+
+5. **Ride-hailing vs. Stock Exchange Matching**: The analogy with ride-hailing is interesting. At a high level, both systems are trying to match supply with demand. However, the specific constraints and objectives are quite different. In ride-hailing, the primary goal is often to minimize wait time and travel distance. In stock exchanges, the goals are to ensure fairness, maximize liquidity, and provide transparent pricing. The algorithms required for these two problems, while conceptually similar, would differ in their details.
+
+6. **Regulation and Transparency**: Stock exchanges are heavily regulated, and the choice of a matching algorithm might be constrained by regulatory requirements. Additionally, the algorithm used, and its rules and priorities, need to be transparent to all market participants to ensure a level playing field.
+
+7. **Economic Impacts**: The choice of matching algorithm can have wider economic impacts. For example, it can influence traders' strategies, impact market liquidity, and even play a role in larger market phenomena like flash crashes.
+
+In conclusion, while the principles behind order matching might seem straightforward, the actual implementation and the decision of which algorithm to use are far from trivial. It's a balance of ensuring fairness, maintaining market integrity, regulatory compliance, and optimizing for efficiency and speed. The detailed nuances and the high stakes involved in financial markets make order matching a fascinating and challenging problem.
 
 ### Overview
 
