@@ -40,6 +40,49 @@ This file needs cleanup - it is as messy as the subject :-)
 - [Algoexpert - Blog Post](#algoexpert-blog-post)
 - [Algoexpert - Rainbow circles (JavaScript)](#algoexpert-rainbow-circles-javascript)
 
+## How come the landscape is so fragmented/decentralized?
+
+The landscape of front-end development has indeed become fragmented, with various libraries, frameworks, and tools emerging over time. Several reasons can explain why large tech companies like Microsoft and Google haven't produced a single "complete" development environment that covers all aspects of the modern front-end stack:
+
+1. **Diverse Needs**: Different projects have different requirements. A single solution that aims to address all possible use cases might become bloated and lose the flexibility required by individual projects.
+
+2. **Innovation and Evolution**: The web evolves rapidly. Tools and technologies can quickly become obsolete or be superseded by superior solutions. This dynamism has led to a natural progression where newer solutions emerge to address limitations in existing ones.
+
+3. **Community-Driven Development**: The open-source nature of many web technologies has allowed individual developers and smaller teams to contribute and create new solutions. This democratized ecosystem means innovations can come from anywhere, not just major tech companies.
+
+4. **Economic & Strategic Interests**: Major companies often have specific strategic or economic interests in pushing certain technologies. For example, Google backs Angular and contributes to Chromium (which powers many browsers like Chrome and Edge), while Facebook created React.
+
+5. **Interoperability Over Monopoly**: While it's feasible for a tech giant to attempt creating an all-in-one solution, promoting interoperability between tools might be more beneficial for the web ecosystem. The Web is inherently decentralized, and fostering an environment where tools can work together can be more advantageous than a monolithic approach.
+
+6. **Existing Integrated Solutions**: While not covering every aspect of front-end development, there are solutions like Microsoft's Visual Studio (and Visual Studio Code) or Google's Firebase that do offer integrated tools for various aspects of development.
+
+7. **Adoption Concerns**: Launching a new, comprehensive tool doesn't guarantee adoption. Developers tend to use tools they are familiar with, that have strong community support, or that they feel are the best fit for their specific needs. Convincing the global developer community to switch to a new all-in-one solution would be a monumental challenge.
+
+8. **Maintenance and Evolution**: Maintaining a monolithic, all-inclusive solution would be a huge undertaking. As different parts of the web ecosystem evolve at different rates, keeping such a system updated, bug-free, and cutting-edge would be incredibly challenging.
+
+While the fragmentation can seem overwhelming, it also illustrates the vibrancy and innovation of the web development community. Developers have a wealth of tools to choose from, allowing them to select the best ones for their specific needs. That said, there's always a possibility that more integrated solutions will emerge in the future as the landscape continues to evolve.
+
+## End-to-end approach rev 3
+
+The following tools is part of the toolset in front-end:
+
+1. **Sentry**: Sentry is an error tracking tool that helps developers monitor and fix issues in real-time. It integrates with various programming languages and platforms.
+
+   - **Category**: Error Monitoring & Tracking
+
+2. **Hotjar**: Hotjar provides insights into user behaviors on websites through heatmaps, session recordings, and surveys.
+
+   - **Category**: User Behavior Analytics & Feedback
+
+3. **Detectify**: Detectify is a web security scanner that automates the process of checking web applications for vulnerabilities and security issues.
+
+   - **Category**: Web Security & Vulnerability Scanning
+
+4. **Storybook**: Storybook is a tool for developing and showcasing UI components in isolation. It supports various frontend frameworks and libraries.
+   - **Category**: UI Component Development & Documentation
+
+These tools each serve different purposes in the development, maintenance, and optimization of web applications. Grouping them gives a clearer picture of their primary roles within the broader landscape of web development tools.
+
 ## End-to-end-approach rev 2
 
 Of course! Let's integrate back-end as a service (BaaS), end-to-end (E2E) testing, and search solutions into the web stack table.
