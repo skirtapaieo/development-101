@@ -1,0 +1,80 @@
+/* Copyright © 2023 AlgoExpert LLC. All rights reserved. */
+
+.head {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-top: 20px;
+    background-color: #ffc0cb;
+  }
+
+  .ear {
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: #ffc0cb;
+  }
+
+  .ear:first-child {
+    left: 10px;
+  }
+
+  .ear:nth-child(2) {
+    right: 10px;
+  }
+
+  .eye {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .eye:first-child {
+    left: 30px;
+  }
+
+  .eye:nth-child(2) {
+    right: 30px;
+  }
+
+  .pupil {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  .nose {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    border-radius: 35%;
+    background-color: #f57187;
+  }
+
+  .nostril {
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: black;
+  }
