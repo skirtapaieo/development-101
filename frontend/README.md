@@ -1,5 +1,7 @@
 # Index
 
+This file needs cleanup - it is as messy as the subject :-)
+
 - [Historical approaches](#historical-approaches)
   - [The evolution of the web](#the-unprincipled-evolution-of-the-web)
 - [Design systems](#design-systems)
@@ -37,6 +39,142 @@
 - [Algoexpert - Spaghetti Recipe](#algoexpert-spaghetti-recipe)
 - [Algoexpert - Blog Post](#algoexpert-blog-post)
 - [Algoexpert - Rainbow circles (JavaScript)](#algoexpert-rainbow-circles-javascript)
+
+## End-to-end-approach rev 2
+
+Of course! Let's integrate back-end as a service (BaaS), end-to-end (E2E) testing, and search solutions into the web stack table.
+
+### Comprehensive Front-end and Back-end Web Stack:
+
+| Layer                                | Technology/Concept                 | Description                                                                | Initial Innovation                             | Major Dependencies                                   |
+| ------------------------------------ | ---------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
+| Base Layer                           | HTML                               | Structure of the web page.                                                 | 1990s                                          | —                                                    |
+| Styling                              | CSS                                | Appearance and design.                                                     | Late 1990s                                     | —                                                    |
+| Interactivity                        | JavaScript                         | Allows dynamic interactions.                                               | 1995                                           | —                                                    |
+| UI Libraries                         | React, Vue, Angular, Svelte        | Build interactive UIs.                                                     | 2000s onwards                                  | JS (React depends on JSX, Angular on TypeScript)     |
+| CSS Frameworks                       | Bootstrap, Tailwind, Bulma         | Predefined styles and components.                                          | 2010s                                          | CSS, often with JS enhancements                      |
+| Specific/Specialized UI Libraries    | Material UI, Chakra UI, Ant Design | Offer specific design systems/components.                                  | 2010s                                          | Typically JS libraries like React or Vue             |
+| Meta Frameworks/Full Stack Solutions | Next.js, Nuxt, SvelteKit, Astro    | Offer integrated solutions, SSR, and more.                                 | 2010s onwards                                  | Base libraries (e.g., Next.js -> React, Nuxt -> Vue) |
+| Package Managers                     | npm, Yarn                          | Manage & organize libraries and dependencies.                              | 2010s                                          | Node.js                                              |
+| Task Runners & Bundlers              | Webpack, Rollup, Parcel            | Process, bundle & optimize code and assets.                                | 2010s                                          | Node.js                                              |
+| Transpilers                          | Babel, TypeScript                  | Convert newer code standards to older ones.                                | 2010s                                          | JS                                                   |
+| Responsive Design                    | Media Queries, Bootstrap           | Ensure sites work on various devices and screens.                          | Early 2010s                                    | CSS (Bootstrap requires JS for certain components)   |
+| SPAs                                 | React Router, Vue Router           | Seamless transitions without full page reloads.                            | Mid 2010s                                      | React, Vue                                           |
+| State Management                     | Redux, Vuex                        | Manage and organize data flow in applications.                             | Mid 2010s                                      | React (Redux), Vue (Vuex)                            |
+| Web Components                       | Polymer, StencilJS                 | Encapsulate and reuse components across projects.                          | Mid 2010s                                      | JS                                                   |
+| Static Site Generators               | Jekyll, Gatsby                     | Pre-build pages for improved performance.                                  | Early 2010s                                    | Ruby (Jekyll), React (Gatsby)                        |
+| SSR                                  | Next.js, Nuxt                      | Render pages on the server for performance & SEO.                          | Mid 2010s                                      | React (Next.js), Vue (Nuxt)                          |
+| PWAs                                 | Service Workers, Manifest          | Enhance web apps with native-like capabilities.                            | Mid 2010s                                      | JS                                                   |
+| **BaaS**                             | Firebase, Supabase, AWS Amplify    | Provide back-end capabilities without managing server-side infrastructure. | 2010s                                          | Varies; Firebase (JS SDK), Supabase (PostgreSQL, JS) |
+| **E2E Testing**                      | Cypress, Playwright                | Automated testing simulating real user behavior.                           | 2010s                                          | JS                                                   |
+| **Search Solutions**                 | Algolia, Elasticsearch             | Provide fast and reliable search capabilities.                             | 2010s (Algolia in 2012, Elasticsearch in 2010) | JS for client integration, Java (Elasticsearch)      |
+
+This table integrates back-end as a service (BaaS), end-to-end (E2E) testing, and search solutions into the prior web stack. Remember, these categories often overlap, and tools might span multiple categories or be used in different ways based on the project's requirements.
+
+## End-to-end approach rev 1
+
+Note: Astro and Qwik are missing
+
+### 1. UI Libraries / Frameworks:
+
+These provide a set of components and often styles to build interactive user interfaces.
+
+| Library/Framework | Supports TypeScript?           | Major Dependencies | Core Principles                       |
+| ----------------- | ------------------------------ | ------------------ | ------------------------------------- |
+| Material UI       | Yes                            | React              | Components for material design        |
+| Chakra UI         | Yes                            | React              | Modular, accessible component library |
+| Mantine           | Yes                            | React              | High customization, dark theme        |
+| Gestalt           | Yes                            | React              | Pinterest's design language           |
+| PrimeReact        | Yes                            | React              | Rich UI component suite               |
+| Evergreen         | Yes                            | React              | Polished, flexible components         |
+| Arco Design       | Yes (with @arco-design/vue-ts) | Vue                | Enterprise-level design language      |
+| Fluent            | Yes                            | React              | Microsoft's Fluent Design             |
+| Radix             | Likely Yes                     | React              | Primitives for UI design              |
+| Semi UI           | Likely Yes                     | React              | Enterprise UI components              |
+| Ant Design        | Yes                            | React              | Enterprise-level components           |
+
+### 2. CSS Frameworks:
+
+These provide styling utilities without the inclusion of JavaScript components.
+
+| Framework | Core Principles                                           |
+| --------- | --------------------------------------------------------- |
+| Bootstrap | Responsive grid, UI components                            |
+| Tailwind  | Utility-first CSS framework                               |
+| Bulma     | Modern, responsive framework                              |
+| UI kit    | Lightweight, modular front-end kit                        |
+| Windy     | Likely a misname, WindiCSS is utility-first like Tailwind |
+| Spectre   | Lightweight, responsive                                   |
+| Milligram | Minimalist CSS framework                                  |
+| Mini      | Minimalist responsive grid                                |
+| Picnic    | Lightweight, no dependencies                              |
+| Skeleton  | Bare-bones grid system                                    |
+
+### 3. Specific UI Libraries:
+
+These are more specialized UI toolsets.
+
+| Library  | Supports TypeScript? | Major Dependencies | Core Principles             |
+| -------- | -------------------- | ------------------ | --------------------------- |
+| Daisy UI | Yes                  | Tailwind CSS       | Extendable component plugin |
+
+### 4. Meta Frameworks / Full Stack Solutions:
+
+These are built on top of base libraries/frameworks and offer a more comprehensive solution.
+
+| Framework  | Supports TypeScript? | Major Dependencies | Core Principles                  |
+| ---------- | -------------------- | ------------------ | -------------------------------- |
+| Svelte Kit | Yes                  | Svelte             | Hybrid static & server rendering |
+| Next.js    | Yes                  | React              | Static & server-side rendering   |
+| Nuxt       | Yes                  | Vue                | Static & server-side rendering   |
+| Astro      | Yes                  | ---                | Deliver the least amount of JS   |
+| Qwik       | Yes                  | ---                | Optimize for loading speed       |
+
+### 5. Base UI Libraries:
+
+| Library | Supports TypeScript? | Core Principles       |
+| ------- | -------------------- | --------------------- |
+| Svelte  | Yes                  | Reactive components   |
+| Vue     | Yes                  | Reactive data-binding |
+| React   | Yes                  | Component-based UI    |
+
+### 6. Backend Frameworks:
+
+| Framework     | Language     | Core Principles                                     |
+| ------------- | ------------ | --------------------------------------------------- |
+| Django        | Python       | Batteries-included web framework                    |
+| Laravel       | PHP          | Elegant syntax, MVC web application framework       |
+| .NET          | C#, F#, etc. | Platform for building various types of applications |
+| Flask         | Python       | Lightweight, micro web framework                    |
+| Ruby on Rails | Ruby         | Convention over configuration, MVC                  |
+
+### 7. End-to-End Testing:
+
+| Tool      | Supports TypeScript? | Core Principles                 |
+| --------- | -------------------- | ------------------------------- |
+| Playwrite | Yes                  | Browser automation              |
+| Cypress   | Yes                  | Fast, easy, reliable testing    |
+| Vi Test   | Unknown              | Not sure, may need more details |
+
+### 8. Search:
+
+| Tool    | Type                | Core Principles           |
+| ------- | ------------------- | ------------------------- |
+| Algolia | Search-as-a-Service | Instant search experience |
+
+### 9. Backend-as-a-Service:
+
+| Service  | Supports TypeScript? | Core Principles                                   |
+| -------- | -------------------- | ------------------------------------------------- |
+| Firebase | Yes                  | Real-time NoSQL database, authentication, hosting |
+| Supabase | Yes                  | Open-source Firebase alternative                  |
+
+### 10. Databases:
+
+| Database | Type             | Core Principles                                         |
+| -------- | ---------------- | ------------------------------------------------------- |
+| MySQL    | Relational       | Widely-used open-source database                        |
+| Prisma   | Database Toolkit | Type-safe database access, auto-generated query builder |
 
 ## Historical approaches
 
