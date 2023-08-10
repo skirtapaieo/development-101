@@ -1,0 +1,5 @@
+nav {display:flex;justify-content:space-between;background:#6e072d;color:#FFF;font:18px sans-serif}
+ul,li {display:flex;list-style:none;margin:0;padding:0}
+li {padding:18px 27px;cursor:pointer;border-right:2px solid}
+li:last-child {border:none}
+li:hover {background:#b90e4d}

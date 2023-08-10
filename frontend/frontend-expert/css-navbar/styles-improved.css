@@ -1,0 +1,55 @@
+/* CSS Variables for easy theming and consistent styling */
+:root {
+    --navbar-bg-color: #6e072d;
+    --navbar-font-color: white;
+    --navbar-hover-color: #b90e4d;
+    --navbar-font-size: 18px;
+    --navbar-border-color: white;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-font-color);
+    font-size: var(--navbar-font-size);
+}
+
+/* Styling for unordered lists within the navigation bar */
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Removing default list style and setting a consistent pointer for interactive elements */
+ul, li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+/* Styling for list items within the navigation bar */
+li {
+    padding: 1em 1.5em;
+}
+
+/* Adding borders between list items, excluding the last item */
+li:not(:last-of-type) {
+    border-right: 2px solid var(--navbar-border-color);
+}
+
+/* Enhancing the hover effect on list items with an outline for better accessibility */
+li:hover, li:focus {
+    background-color: var(--navbar-hover-color);
+    outline: 2px solid var(--navbar-font-color);
+}
+
+/* Optional: Media Queries for mobile responsiveness. Adjust according to your design requirements */
+@media (max-width: 600px) {
+    nav {
+        /* Example: Adjusting font-size for smaller screens */
+        font-size: calc(var(--navbar-font-size) * 0.8);
+    }
+    /* Add other mobile-specific styles as required */
+}
