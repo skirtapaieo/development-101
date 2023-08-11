@@ -81,3 +81,56 @@ ol li:not(:first-of-type)::after {
   background-color: black;
   position: absolute;
   left: calc(-50% + var(--circle-radius));
+  top: calc(var(--circle-radius) +
+  var(--circle-border-width) -
+  var(--divider-line-height) / 2);
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  height: var(--product-offering-height);
+  padding: var(--product-offering-padding);
+  border-radius: var(--product-offering-border-radius);
+  margin: var(--product-offering-vertical-margin) 0;
+  background-color: white;
+  font-weight: bold;
+}
+
+.blue-product {
+  border-left: var(--product-offering-left-border-size) solid var(--blue-product-color);
+  color: var(--blue-product-color);
+}
+
+.red-product {
+  border-left: var(--product-offering-left-border-size) solid var(--red-product-color);
+  color: var(--red-product-color);
+}
+
+.orange-product {
+  border-left: var(--product-offering-left-border-size) solid var(--orange-product-color);
+  color: var(--orange-product-color);
+}
+
+.green-product {
+  border-left: var(--product-offering-left-border-size) solid var(--green-product-color);
+  color: var(--green-product-color);
+}
+
+label {
+  margin-left: var(--label-left-margin);
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-background-color);
+  color: white;
+}
