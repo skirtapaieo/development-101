@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+
+    /* Define the areas for the grid */
+    grid-template-areas:
+        "top top"
+        "mid aside"
+        "bottom bottom";
+}
+
+.top {
+    grid-area: top;
+    background-color: #FFD700;
+    padding: 1rem;
+    text-align: center;
+}
+
+.mid {
+    grid-area: mid;
+    background-color: #FF6347;
+    padding: 1rem;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #32CD32;
+    padding: 1rem;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: #4682B4;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* For smaller screens, stack everything */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "top"
+            "mid"
+            "aside"
+            "bottom";
+    }
+}
