@@ -2,8 +2,6 @@
 
 ## Summary
 
-Certainly! Here's a table comparing supervised, unsupervised, and deep learning methods based on various criteria:
-
 | Criteria                  | Supervised Learning                                                         | Unsupervised Learning                                                      | Deep Learning                                                                                           |
 | ------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | **Definition**            | Algorithms trained on labeled data to predict outcomes based on input data. | Algorithms trained on unlabeled data to find patterns or structures.       | A subset of machine learning using neural networks with many layers to analyze various factors of data. |
