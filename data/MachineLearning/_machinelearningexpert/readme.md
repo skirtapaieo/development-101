@@ -1,6 +1,6 @@
 # Machine learning expert
 
-## Crash course
+## 1. Machine Learning Crash course
 
 ### Supervised learning
 
@@ -46,3 +46,7 @@ Generative Adversarial Networks
 ### Recommender Systems
 
 ### Ranking
+
+## Large Scale ML
+
+TBD
