@@ -33,3 +33,11 @@
 ### Google Cloud IoT
 
 ### IBM Watson IoT
+
+### Particle
+
+### ThingWorx
+
+### Cisco IoT
+
+### SAP IoT
