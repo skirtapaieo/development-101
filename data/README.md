@@ -1,49 +1,6 @@
 # data-101
 
-- [Roles](#roles)
-  - [Data Engineer](#data-engineer)
-- [Data Pipeline perspective](#data-pipeline-perspective)
-- [Pipelines with industry examples](#pipelines-with-industry-examples)
-- [Technologies](#technologies)
-  - [1 Data Ingestion](#1-data-ingestion)
-  - [2 Data Storage](#2-data-storage)
-  - [3 Data processing](#3-data-processing)
-    - [Data processing and analysis libraries (in Python)](#data-processing-and-analysis-libraries-in-python)
-  - [4 Real-time processing](#4-real-time-processing)
-  - [5 Data Analysis](#5-data-analysis)
-  - [6 Machine Learning and AI](#6-machine-learning-and-ai)
-  - [7 Data Visualization](#7-data-visualization)
-    - [Tableau](#tableau)
-    - [Power BI](#power-bi)
-    - [Other](#other)
-  - [8 Edge computing](#edge-computing)
-  - [9 Data Governancne](#data-governance)
-  - [10 Data Privacy and Security]
-  - [Cloud-data warehousing](#cloud-data-warehousing)
-    - [Snowflake](#snowflake)
-  - [Data Modeling](#data-modeling)
-  - [Back-end development](#back-end-development)
-    - [Django](#django)
-    - [Flask](#flask)
-  - [A list of random names, heights, and ages](#a-list-of-random-names-heights-and-ages)
-  - [Python data processing](#python-data-processing)
-    - [Pythin libraries in a broader perspective](#python-libraries-in-a-broader-perspective)
-
-# Roles
-
-## Data Engineer
-
-- Python programming
-  . Data warehousing and data modeling - with for example Snowflake
-- Designing/maintaining data models (for querying and integration)
-- Back-end development skills - maintaining large scale data systems (Django and Flask)
-- Data visualization - with for example Tableau
-- Understanding data engineering principles - data structures, algorithms and principles
-- Data pipeline and storage development - design/build/maintain effecient data pipelines/data storage solutions
-- Data ingestions and processing - optimize data ingestion, processing and transformation process - scalable workflows
-  <br>
-
-# Data Pipeline perspective
+# Data - the pipeline and the technologies
 
 |                                                                         | Data Ingestion | Data Storage | Data Processing/Transformation | Data Analysis | ML & AI | Visualization |
 | ----------------------------------------------------------------------- | -------------- | ------------ | ------------------------------ | ------------- | ------- | ------------- |
@@ -61,6 +18,8 @@
 | **Edge Computing** (like AWS Greengrass)                                | ✔️             |              |                                |               |         |               |
 | **Data Governance Tools** (like Collibra)                               |                | ✔️           | ✔️                             | ✔️            |         |               |
 | **Data Privacy and Security Tools** (like SSL, IAM)                     | ✔️             | ✔️           | ✔️                             | ✔️            | ✔️      | ✔️            |
+
+# Additional
 
 | **Data Pipeline Stage**        | **Concepts/Tools/Technologies**                                                                                                                                                                                                                                                                                                  | **Scale**        | **Distributed Computing** |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------- |
