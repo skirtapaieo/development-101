@@ -40,6 +40,133 @@ This file needs cleanup - it is as messy as the subject :-)
 - [Algoexpert - Blog Post](#algoexpert-blog-post)
 - [Algoexpert - Rainbow circles (JavaScript)](#algoexpert-rainbow-circles-javascript)
 
+<br>
+
+## Alternative history
+
+Timeline of the Web according to HTMX:
+
+1. **Web 1.0** (Initial phase):
+
+   - Dominated by only HTML without JavaScript (JS).
+
+2. **Web 2.0** (Starts in 2005):
+
+   - Rise of Single Page Applications (SPA) and JSON.
+   - Numerous sites like Drupal and Wordpress emerged. These sites utilized JS and concepts like AJAH/AJAJ, but largely adhered to regular HTML from Web 1.0.
+   - Emphasis on re-creating Flash applications using just HTML, CSS, and JS.
+
+3. **2010-2012**:
+
+   - Browsers began to support and implement HTML5, CSS3, and ES5 along with JSON.parse.
+   - Introduction of the history API that allowed URLs to be changed without having to reload the entire page. Before this, there was a reliance on #! links.
+
+4. **2015**:
+
+   - Peak of traditional web frameworks like Drupal, Wordpress, Django, and Rails.
+   - Surge in mobile app popularity brought forth a question on the relevance of the web.
+
+5. **Circa 2020**:
+   - Overwhelming use of JS, JSON, and API became the norm.
+   - Server frameworks started adapting to an environment where HTML was primarily for applications.
+   - Introduction of frameworks and tools like Blazor, Phoenix LiveView, Laravel Livewire, and HTMX.
+
+Other Key Points:
+
+- Web applications with Java and ActiveX existed before JavaScript became prominent.
+- Early JS apps relied more on HTML and XML instead of JSON.
+- The history of the web seems to run in two parallel directions. One focuses on websites with server-side logic and minimal JS, staying true to the original web. The other leans towards providing a more "app-like" experience.
+- Despite the evolution and competition from native apps, HTML remains a strong and preferred medium for delivering apps.
+
+In essence, while technology and platforms have evolved over the years, the integral role of HTML in web development remains evident.
+
+<br>
+
+## Exploring the tools a little
+
+Blazor, Phoenix LiveView, Laravel Livewire, and HTMX are frameworks and libraries that focus on offering interactive web applications, but each of them comes from a different background and employs different strategies. Here's a comparison to help you understand them and their differences from other modern front-end frameworks like React, Svelte, and Qwik:
+
+1. **Blazor (by Microsoft)**
+
+   - **Language**: Uses C# instead of JavaScript.
+   - **WebAssembly**: Allows running .NET code in the browser via WebAssembly.
+   - **Integration**: Blends well with the ASP.NET Core ecosystem.
+   - **Components**: Component-based architecture, similar to React or Angular.
+
+2. **Phoenix LiveView (part of the Phoenix Framework)**
+
+   - **Language**: Uses Elixir.
+   - **Server-rendered**: Performs most of the logic on the server, sending just the minimal updates to the DOM over WebSockets.
+   - **Real-time**: Native real-time capabilities because it's built on the Phoenix Framework, which is built on top of the Elixir language and the Erlang VM.
+
+3. **Laravel Livewire**
+
+   - **Integration**: Designed to work seamlessly with the Laravel PHP framework.
+   - **Server-rendered**: Like Phoenix LiveView, it updates the DOM based on server-side state changes, using AJAX.
+   - **Single stack**: Enables building dynamic interfaces without pulling in a separate JavaScript framework.
+
+4. **HTMX**
+   - **Lightweight**: Doesn't require bundling or transpiling.
+   - **HTML-centric**: Extends HTML for dynamic content, meaning you can just sprinkle in behaviors.
+   - **Server interactions**: Enables access to modern browser features like fetch for partial page updates.
+
+**Comparison to React, Svelte, and Qwik:**
+
+1. **React (by Facebook)**
+
+   - **Component-based**: Encourages building UIs out of reusable components.
+   - **Virtual DOM**: Uses a virtual DOM to efficiently update and render components.
+   - **JavaScript-centric**: Primarily uses JS/JSX for component logic and UI.
+
+2. **Svelte**
+
+   - **Compiler-based**: Instead of using a virtual DOM, Svelte compiles components into highly efficient vanilla JavaScript at build time.
+   - **Reactive**: Built-in reactivity without the need for additional libraries.
+
+3. **Qwik**
+   - **Optimization**: Focuses heavily on optimal loading performance.
+   - **Server-rendered**: Designed to deliver the optimal loading and interactivity metrics by focusing on server rendering.
+   - **HTML-centric**: Uses HTML as the main entry point, with optimized inlining strategies.
+
+**Summary**:
+
+- **Blazor, Phoenix LiveView, Laravel Livewire, and HTMX** tend to blur the traditional lines between client and server, allowing developers to write less JavaScript and offload more logic to the server when necessary. They cater to developers from different ecosystems (e.g., .NET, Elixir, PHP) to build interactive apps without relying heavily on client-side frameworks.
+
+- **React, Svelte, and Qwik** are more client-side focused. React uses a virtual DOM and relies heavily on JavaScript, Svelte shifts much of its work to compile-time for efficiency, and Qwik prioritizes load performance by leveraging server rendering and other optimization techniques.
+
+Both approaches have their strengths, and the best choice often depends on the project requirements, the team's expertise, and specific use cases.
+
+<br>
+
+## What about React Server Components?
+
+React Server Components (RSC) is an experimental feature introduced by the React team to enable developers to build more efficient and interactive web applications. React Server Components blend some of the benefits of server rendering with the interactivity of client-side apps. Here's how RSC fits into the landscape:
+
+**React Server Components (RSC) Key Features:**
+
+1. **Server-rendered**: Components are rendered on the server instead of the client. This means faster initial load times since there's no need to send JS code for initial rendering.
+
+2. **Zero client-side JS**: RSC can be rendered without adding JS weight to the client. This can significantly improve performance for parts of the UI that do not require interactivity.
+
+3. **Full React capabilities**: Even though they're server-rendered, RSC can be seamlessly integrated with client-side React components, allowing developers to choose the best strategy for each part of their application.
+
+4. **Automatic data fetching**: RSC can fetch and use data on the server without the need for client-side data-fetching logic, reducing the waterfalls often associated with client-side data fetching.
+
+5. **Smooth transitions**: When an RSC fetches data or updates, React ensures smooth transitions without unnecessary loading states.
+
+**Comparison to Other Approaches:**
+
+- Unlike traditional server-rendered pages, RSC offers fine-grained interactivity. Developers can mix and match server and client components as needed. This is different from frameworks like Phoenix LiveView or Laravel Livewire, where the server-side dominates the logic.
+
+- RSC reduces the need for heavy client-side bundles, aligning it closer to the principles of HTMX (where you update parts of the page with minimal JS). However, RSC still fully integrates with the React ecosystem, allowing for a hybrid approach.
+
+- React Server Components differ from the typical React model (or even from frameworks like Svelte) in that they offload rendering to the server for parts of the app, reducing client-side work and JS payload. They're more akin to partial server rendering than full-page server rendering or static site generation.
+
+**In Summary:**
+React Server Components offer a middle-ground, blending the benefits of server rendering (performance, reduced client-side code) with the interactivity and flexibility of client-side React. They provide a way for React applications to become more efficient, especially concerning initial load times and interactivity, by reducing the reliance on heavy client-side JS bundles for all parts of an app.
+
+<br>
+
 ## How come the landscape is so fragmented/decentralized?
 
 The landscape of front-end development has indeed become fragmented, with various libraries, frameworks, and tools emerging over time. Several reasons can explain why large tech companies like Microsoft and Google haven't produced a single "complete" development environment that covers all aspects of the modern front-end stack:
