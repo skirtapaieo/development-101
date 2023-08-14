@@ -46,3 +46,25 @@ The specifics of the "technology" used can vary greatly depending on the exact p
 5. **Ranking and Comparison Tools**: For methods of RLHF that involve ranking or comparing different actions or trajectories, tools or platforms that support pairwise comparison might be used.
 
 6. **Evaluation and Monitoring Tools**: Once models have been refined using human feedback, tools for evaluating model performance and monitoring them in real-time settings become important. This is especially true for applications like robotics or any RL application in the real world.
+
+## The RLHF roles/team
+
+People working with Reinforcement Learning with Human Feedback (RLHF) often have backgrounds in artificial intelligence, machine learning, and specifically reinforcement learning. The roles or titles of individuals working in this domain might vary across organizations, but some common roles or titles include:
+
+1. **Machine Learning Engineer**: This is a broad title, but ML engineers in certain teams could specialize in reinforcement learning applications that utilize human feedback.
+
+2. **Reinforcement Learning Researcher/Scientist**: Individuals who are primarily focused on researching and advancing the state of RL techniques, including RLHF.
+
+3. **Data Scientist**: Data scientists might be involved, especially when there's a need to analyze and interpret the human feedback data or when designing the feedback mechanisms.
+
+4. **Research Engineer**: Those who implement and experiment with new RL algorithms or techniques, which could include RLHF methodologies.
+
+5. **Human-Computer Interaction (HCI) Specialist**: Given that RLHF involves the interface between humans and AI systems, specialists in HCI might be involved in designing the mechanisms by which feedback is collected.
+
+6. **Robotics Engineer/Researcher**: If RLHF is being applied in the context of robotics, professionals with a background in robotics would be deeply involved.
+
+7. **Product Manager (AI/ML-focused)**: PMs might be involved in steering the direction of projects that incorporate RLHF, ensuring that the development aligns with product or business goals.
+
+It's also worth noting that RLHF projects can be interdisciplinary. This means that teams working on such projects might be composed of professionals from various backgrounds, not just AI or ML. For example, if the project is about designing a game where RL agents learn from player feedback, the team might include game designers, UX/UI designers, software developers, and more.
+
+Larger organizations or research institutions might have dedicated teams focusing on reinforcement learning or even specific aspects of it, like human feedback. In startups or smaller companies, the teams might be more generalized with individuals wearing multiple hats.
