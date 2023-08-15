@@ -13,7 +13,7 @@ def betting_probability(n, x):
     at_least_once = 1 - not_win_probability
 
     # Compute the payout to break even given unlimited attempts
-    payout = 100 + (100 * (1-p) / p)
+    payout = 100 / at_least_once
 
     return [round(at_least_once*100, 4), round(payout, 4)]
 
