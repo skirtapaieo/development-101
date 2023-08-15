@@ -17,7 +17,6 @@ def betting_probability(n, x):
 
     return [round(at_least_once*100, 4), round(payout, 4)]
 
-print("hello")
 n = 3
 x = 10
 print(betting_probability(n, x))
