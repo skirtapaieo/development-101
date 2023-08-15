@@ -17,14 +17,14 @@ class Metrics():
         union = len(set(X) | set(Y))
         return round(intersection / union, 4)
 
-    def distances_and_similarities(X, Y):
-        similarity = Metrics()
-        return [
-            similarity.euclidean_distance(X, Y),
-            similarity.manhattan_distance(X, Y),
-            similarity.cosine_similarity(X, Y),
-            similarity.jaccard_similarity(X, Y)]
+def distances_and_similarities(X, Y):
+    similarity = Metrics()
+    return [
+        similarity.euclidean_distance(X, Y),
+        similarity.manhattan_distance(X, Y),
+        similarity.cosine_similarity(X, Y),
+        similarity.jaccard_similarity(X, Y)]
 
 X = [1, 3, 4, 5]
 Y = [7, 6, 3, 1]
-print(compute_metrics(X, Y))
+print(distances_and_similarities(X, Y))
