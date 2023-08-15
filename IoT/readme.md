@@ -11,7 +11,7 @@
 
 - Internet of Things
 - Augment Reality/Virtual Reality
-- Autonomous Vehicle
+- Autonomous Vehicles
 
 ## Architecture
 

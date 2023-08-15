@@ -9,5 +9,4 @@ func main() {
 }
 
 // Output:
-// Hello
 // Hello World
