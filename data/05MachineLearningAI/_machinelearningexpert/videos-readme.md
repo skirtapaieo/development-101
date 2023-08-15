@@ -49,4 +49,42 @@ Generative Adversarial Networks
 
 ## Large Scale ML
 
-TBD
+**Data Support**
+
+### Data Ingestion
+
+### Data Storage
+
+### Data Processing
+
+### Processing Orchestration
+
+**Exploration**
+
+### Workspaces
+
+**Experimentation**
+
+### Frequentist AB Testing
+
+### Bayesian AB Testing
+
+### Multi-armed bandit
+
+**Large-scale training**
+
+### Basic models
+
+### Deep learning models
+
+### Model validation
+
+**Productionization**
+
+### Productionization
+
+**Hosting**
+
+### Data Hosting
+
+### Model Hosting
