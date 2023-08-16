@@ -1,7 +1,3 @@
-Absolutely, let's design Airbnb!
-
----
-
 # Airbnb - Online Marketplace for Lodging
 
 # Summary
