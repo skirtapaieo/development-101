@@ -64,3 +64,63 @@ There are several tools and methodologies available that allow users to define, 
    - GCP offers similar solutions with their Cloud Foundation Toolkit.
 
 The approach you choose largely depends on your preferences, the complexity of your setup, and how often you expect changes. Some prefer the flexibility and power of IaC with tools like Terraform or CloudFormation, while others might prioritize visualization and use tools like CloudCraft or the AWS Well-Architected Tool. There's no one-size-fits-all; the landscape is vast, and the right tools often depend on specific project needs.
+
+## Smaller, simpler approaches than the Big 3 Cloud vendors
+
+There are several platforms and vendors that aim to simplify deployment, hosting, and scaling of web applications, often abstracting away much of the underlying infrastructure management. Here are some popular ones:
+
+1. **Vercel**:
+
+   - **Purpose**: Primarily known for hosting frontend web applications and static sites.
+   - **Features**: Offers a global CDN, automatic HTTPS, continuous deployment from Git, serverless functions, and more.
+   - **Best For**: Projects based on Next.js (although it supports other frameworks too).
+
+2. **Netlify**:
+
+   - **Purpose**: A platform for building, deploying, and hosting web applications and static sites.
+   - **Features**: Continuous deployment from Git, serverless functions, built-in CDN, form handling, identity/authentication services, and more.
+   - **Best For**: Static site generators like Jekyll, Hugo, Gatsby, etc., and frontend frameworks like React, Vue, Angular.
+
+3. **Render**:
+
+   - **Purpose**: Provides hosting for web apps, static sites, backend apps, databases, and more.
+   - **Features**: Continuous deployment, pull request previews, automatic HTTPS, managed databases, private networking.
+   - **Best For**: Full-stack applications with frontend and backend components.
+
+4. **Heroku**:
+
+   - **Purpose**: A cloud platform as a service (PaaS) supporting several programming languages.
+   - **Features**: Git-based deployments, a marketplace of add-ons for databases, caching, logging, error tracking, etc.
+   - **Best For**: Backend applications, APIs, web applications with backend logic.
+
+5. **Firebase Hosting**:
+
+   - **Purpose**: Offers fast, secure, and reliable hosting for web applications.
+   - **Features**: Serves content over a CDN, provides automatic SSL, supports serverless with Cloud Functions, offers realtime databases and authentication.
+   - **Best For**: SPA (Single Page Applications) and mobile app backends.
+
+6. **DigitalOcean App Platform**:
+
+   - **Purpose**: Platform as a Service (PaaS) offering by DigitalOcean.
+   - **Features**: Git-based deployment, auto-scaling, HTTPS, container-based applications.
+   - **Best For**: Web apps, APIs, static sites, and container-based applications.
+
+7. **Begin**:
+   - **Purpose**: A platform to build and deploy serverless apps.
+   - **Features**: Git integration, built on top of AWS (especially AWS Lambda).
+   - **Best For**: Serverless applications and architectures.
+
+These platforms primarily cater to developers looking for a more straightforward deployment process, abstracting away many infrastructure decisions and tasks.
+
+They can be more cost-effective for small to medium-sized applications due to their pricing structures and the avoided overhead of managing infrastructure directly.
+
+However, larger, more complex applications, or those with specific infrastructure needs, may still benefit from a more traditional or custom cloud-based setup.
+
+## Comparison of infrastructure approaches
+
+| Category                             | Pros                                                                                                  | Cons                                                                                  |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Full-Featured Cloud Environments** | - Versatility<br>- Scalability<br>- Managed Services<br>- Security<br>- Integration<br>- Global Reach | - Complexity<br>- Cost<br>- Vendor Lock-in                                            |
+| **Simpler Cloud Platforms**          | - Simplicity<br>- Speed<br>- Optimized for Use Cases<br>- Managed<br>- Cost-Effective                 | - Less Control<br>- Scope Limitation<br>- Vendor Lock-in                              |
+| **Self-Managed/On-Premise**          | - Full Control<br>- Optimization<br>- Cost Structure<br>- Security                                    | - Maintenance Overhead<br>- Upfront Costs<br>- Scalability<br>- Redundancy Challenges |
+| **Hybrid Solutions**                 | - Balanced Control<br>- Optimization<br>- Flexibility                                                 | - Complexity<br>- Cost Monitoring<br>- Integration Challenges                         |
