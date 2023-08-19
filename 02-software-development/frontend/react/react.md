@@ -1,6 +1,4 @@
-
 # React
-
 
 ## Table of Contents
 
@@ -14,35 +12,33 @@
     - [6 Reactive updates](#6-reactive-updates)
     - [7 State-management](#7-state-management)
     - [8 Life-cycle methods](#8-life-cycle-methods)
-  - [Benefits](#benefits)
-- [React, Vue and Svelte - broader perspective](#react-vue-and-svelte---broader-perspective)
 
 <br>
 
-## Principles   
+## Principles
 
-React is built on several principles, that plain JavaScript, does not provide. It guides and enforces developer to follow its core principles. The principles provide a structure and efficient approach to building UI's compared to plain JavaScript, which involved more manual handling of DOM updates and state management. 
+React is built on several principles, that plain JavaScript, does not provide. It guides and enforces developer to follow its core principles. The principles provide a structure and efficient approach to building UI's compared to plain JavaScript, which involved more manual handling of DOM updates and state management.
 
-| Principle               | React                                     | Plain JavaScript                               |
-|------------------------|-------------------------------------------|------------------------------------------------|
-| 1 Declarative Programming| Uses a declarative approach to describe UI state based on data. | Primarily imperative, requiring explicit DOM manipulation and updates. |
-| 2 Component-Based Architecture | Encourages building UIs with reusable components. | Usually, UIs are constructed without clear separation into reusable components. |
-| 3 Virtual DOM            | Utilizes Virtual DOM for efficient updates to the actual DOM. | Directly manipulates the DOM, potentially leading to inefficiencies and performance issues. |
-| 4 Unidirectional Data Flow | Follows a unidirectional data flow, passing data from parent to child components. | Data flow may not be explicitly defined, leading to potential data inconsistencies. |
-| 5 JSX                    | Utilizes JSX for writing HTML-like code within JavaScript. | Uses plain JavaScript for DOM manipulation and template generation. |
-| 6 Reactive Updates       | Reactively updates the DOM based on changes to state or props. | Requires manual handling of DOM updates when data changes. |
-| 7 State Management       | Components can have mutable state, making it easier to manage data. | State management might be handled differently, leading to code complexity. |
-| 8 Lifecycle Methods      | Provides lifecycle methods for hooking into component events. | No built-in lifecycle methods, requiring manual handling of component events. |
+| Principle                      | React                                                                             | Plain JavaScript                                                                            |
+| ------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1 Declarative Programming      | Uses a declarative approach to describe UI state based on data.                   | Primarily imperative, requiring explicit DOM manipulation and updates.                      |
+| 2 Component-Based Architecture | Encourages building UIs with reusable components.                                 | Usually, UIs are constructed without clear separation into reusable components.             |
+| 3 Virtual DOM                  | Utilizes Virtual DOM for efficient updates to the actual DOM.                     | Directly manipulates the DOM, potentially leading to inefficiencies and performance issues. |
+| 4 Unidirectional Data Flow     | Follows a unidirectional data flow, passing data from parent to child components. | Data flow may not be explicitly defined, leading to potential data inconsistencies.         |
+| 5 JSX                          | Utilizes JSX for writing HTML-like code within JavaScript.                        | Uses plain JavaScript for DOM manipulation and template generation.                         |
+| 6 Reactive Updates             | Reactively updates the DOM based on changes to state or props.                    | Requires manual handling of DOM updates when data changes.                                  |
+| 7 State Management             | Components can have mutable state, making it easier to manage data.               | State management might be handled differently, leading to code complexity.                  |
+| 8 Lifecycle Methods            | Provides lifecycle methods for hooking into component events.                     | No built-in lifecycle methods, requiring manual handling of component events.               |
 
 React's principles provide a more structured and efficient approach to building UIs compared to plain JavaScript, which involves more manual handling of DOM updates and state management. By following React's principles, developers can create maintainable, scalable, and performant user interfaces with ease.
 
 <br>
 
-### 1 Declarative programming 
+### 1 Declarative programming
 
-In React, the UI is described how it should look like by using JSX.  
+In React, the UI is described how it should look like by using JSX.
 
-``` JavaScript
+```JavaScript
 import React from 'react';
 
 const NamesList = ({ names }) => {
@@ -58,9 +54,9 @@ const NamesList = ({ names }) => {
 export default NamesList;
 ```
 
-It is possible to write declaratively in plain JavaScript: 
+It is possible to write declaratively in plain JavaScript:
 
-``` JavaScript
+```JavaScript
 
 <!-- HTML Markup -->
 <ul id="names-list"></ul>
@@ -87,11 +83,11 @@ renderNames(names);
 </script>
 ```
 
-### 2 Component-based architecture 
+### 2 Component-based architecture
 
-A component is a self-contained unit that manages its own state. 
+A component is a self-contained unit that manages its own state.
 
-``` JavaScript
+```JavaScript
 // React Component
 import React, { useState } from 'react';
 
@@ -114,8 +110,7 @@ export default Counter;
 
 ```
 
-### 3 Virtual DOM 
-
+### 3 Virtual DOM
 
 **Virtual DOM**:
 
@@ -144,7 +139,6 @@ The Virtual DOM provides several benefits:
 5. **Easier Debugging**: The Virtual DOM can be helpful during debugging, as it allows developers to inspect the differences between Virtual DOM snapshots and understand how changes are being applied to the real DOM.
 
 Overall, the Virtual DOM in React plays a critical role in optimizing the performance of UI updates and simplifying the process of managing dynamic and complex user interfaces. It abstracts away the complexities of direct DOM manipulation, leading to more efficient rendering and improved user experience.
-
 
 ### 4 Uni-directional data flow
 
@@ -184,26 +178,26 @@ While unidirectional data flow is a powerful pattern that offers many benefits, 
 
 In summary, while unidirectional data flow is a powerful and widely used pattern, it might not always be the best fit for every application. Developers should carefully consider the specific requirements, complexity, and size of the project before deciding whether to adopt unidirectional data flow or opt for a different approach to data management and state handling. For smaller projects or scenarios where the benefits of unidirectional data flow are not significant, simpler and more direct approaches might be preferable.
 
-### 5 JSX 
+### 5 JSX
 
-JSX is a "template", and allows to write component structures that closely resembles HTML (that is declarative). JSX is transpiled in this way: 
+JSX is a "template", and allows to write component structures that closely resembles HTML (that is declarative). JSX is transpiled in this way:
 
-``` JavaScript
+```JavaScript
 
 const MyComponent = ({ name }) => {
   return <h1>Hello, {name}!</h1>;
 };
 ```
 
-After transpiling: 
+After transpiling:
 
-``` JavaScript
+```JavaScript
 const MyComponent = ({ name }) => {
   return React.createElement('h1', null, `Hello, ${name}!`);
 };
 ```
 
-### 6 Reactive updates 
+### 6 Reactive updates
 
 React is designed to be reactive in nature, which means it efficiently updates the user interface when the underlying data or state changes. React achieves this through its Virtual DOM and a process known as "reconciliation."
 
@@ -213,15 +207,15 @@ React is designed to be reactive in nature, which means it efficiently updates t
 
 - Efficient Updates: By performing this reconciliation process, React optimizes the updates and reduces the number of actual manipulations to the real DOM. This approach helps in avoiding unnecessary reflows and repaints in the browser, resulting in a more efficient and performant UI.
 
-### 7 State-management 
-
-<br> 
-
-### 8 Life-cycle methods 
+### 7 State-management
 
 <br>
 
-## Benefits  
+### 8 Life-cycle methods
+
+<br>
+
+## Benefits
 
 Using React offers several significant benefits that make it a popular choice for building modern web applications:
 
@@ -250,3 +244,81 @@ Using React offers several significant benefits that make it a popular choice fo
 Overall, React's benefits lie in its performance optimizations, component-based architecture, intuitive syntax, and a vibrant community, making it a compelling choice for building modern, scalable, and user-friendly web applications.
 
 <br>
+
+## History of React changes
+
+React, since its inception, has undergone numerous changes and enhancements.
+
+- the virtual DOM was an innovation (2012) - and helped with performance, made the UI declarative, flexibility, made things easier to test and maintain
+- Introduction of Fiber (2017) - reconciliation algorithm that improved a lot of aspects
+- New Context API and lifecycle (2018) - with minor refactoring one could move to this new model
+- Introduction of Hooks (2019) - biggest shift in Reacts history - a new way to manage state- and side-effects in functional components
+- Concurrent mode (2022) - the rendering process is improve - ability to interrupt the rendering process
+- Server components - still experimental in 2023
+
+Here's a summary of major milestones and features introduced over the years:
+
+1. **Initial Release (2013):**
+
+   - Introduction of the Virtual DOM.
+   - Component-based architecture using class components.
+   - JSX for describing UI.
+
+2. **React 0.13 (2015):**
+
+   - Introduction of ES6 classes for defining components.
+
+3. **React 0.14 (2015):**
+
+   - Splitting React into two packages: `react` and `react-dom`.
+   - Introduction of stateless functional components.
+   - Improved support for server-side rendering with `ReactDOMServer`.
+
+4. **React 15 (2016):**
+
+   - Major changes in the underlying reconciliation algorithm.
+   - Introduction of the `PropTypes` library (extracted out of core React).
+   - Improved SVG support.
+
+5. **React 16 (Fiber, 2017):**
+
+   - Introduction of the new Fiber reconciliation engine.
+   - Better error handling using error boundaries (`componentDidCatch`).
+   - Return of arrays, strings, and numbers directly from component render methods.
+   - Portals for rendering children into different DOM subtree.
+   - `ReactDOM.createRoot` for concurrent mode (experimental).
+
+6. **React 16.3 (2018):**
+
+   - Introduction of the new Context API.
+   - Deprecation of lifecycle methods like `componentWillMount`, `componentWillReceiveProps`, and `componentWillUpdate`.
+   - New lifecycle methods: `getDerivedStateFromProps` and `getSnapshotBeforeUpdate`.
+
+7. **React 16.6 (2018):**
+
+   - Introduction of `React.memo` for memoizing functional components.
+   - Introduction of `React.lazy` for lazy-loading components.
+   - New static contextType for easier context usage in class components.
+
+8. **React 16.8 (2019):**
+
+   - Introduction of Hooks, which brought state and lifecycle methods to functional components.
+   - Hooks like `useState`, `useEffect`, `useContext`, etc., became available.
+
+9. **React 17 (2020):**
+
+   - Introduction of the new JSX Transform.
+   - No major developer-facing features but made it easier to upgrade React itself.
+
+10. **Concurrent Mode (Experimental as of my last update):**
+
+- A set of features making React apps more responsive by rendering component trees without blocking the main thread.
+- Introduction of `useTransition` and `useDeferredValue` hooks.
+
+11. **Server Components (Experimental as of my last update):**
+
+- Allows rendering React components on the server and sending them to the client, combining smooth interactivity with server rendering's benefits.
+
+Throughout its development, React has also consistently focused on improving performance, reducing bundle size, and enhancing developer experience with tools like React DevTools.
+
+It's worth noting that the React ecosystem and community have also grown in parallel, with innovations in state management (like Redux, MobX, Zustand), routing (React-Router, Next.js), static site generation (Gatsby, Next.js), and more.
