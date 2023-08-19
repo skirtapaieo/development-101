@@ -1,7 +1,5 @@
 # Index
 
-This file needs cleanup - it is as messy as the subject :-)
-
 - [Historical approaches](#historical-approaches)
   - [The evolution of the web](#the-unprincipled-evolution-of-the-web)
 - [Design systems](#design-systems)
@@ -39,46 +37,6 @@ This file needs cleanup - it is as messy as the subject :-)
 - [Algoexpert - Spaghetti Recipe](#algoexpert-spaghetti-recipe)
 - [Algoexpert - Blog Post](#algoexpert-blog-post)
 - [Algoexpert - Rainbow circles (JavaScript)](#algoexpert-rainbow-circles-javascript)
-
-<br>
-
-## Alternative history
-
-Timeline of the Web according to HTMX:
-
-1. **Web 1.0** (Initial phase):
-
-   - Dominated by only HTML without JavaScript (JS).
-
-2. **Web 2.0** (Starts in 2005):
-
-   - Rise of Single Page Applications (SPA) and JSON.
-   - Numerous sites like Drupal and Wordpress emerged. These sites utilized JS and concepts like AJAH/AJAJ, but largely adhered to regular HTML from Web 1.0.
-   - Emphasis on re-creating Flash applications using just HTML, CSS, and JS.
-
-3. **2010-2012**:
-
-   - Browsers began to support and implement HTML5, CSS3, and ES5 along with JSON.parse.
-   - Introduction of the history API that allowed URLs to be changed without having to reload the entire page. Before this, there was a reliance on #! links.
-
-4. **2015**:
-
-   - Peak of traditional web frameworks like Drupal, Wordpress, Django, and Rails.
-   - Surge in mobile app popularity brought forth a question on the relevance of the web.
-
-5. **Circa 2020**:
-   - Overwhelming use of JS, JSON, and API became the norm.
-   - Server frameworks started adapting to an environment where HTML was primarily for applications.
-   - Introduction of frameworks and tools like Blazor, Phoenix LiveView, Laravel Livewire, and HTMX.
-
-Other Key Points:
-
-- Web applications with Java and ActiveX existed before JavaScript became prominent.
-- Early JS apps relied more on HTML and XML instead of JSON.
-- The history of the web seems to run in two parallel directions. One focuses on websites with server-side logic and minimal JS, staying true to the original web. The other leans towards providing a more "app-like" experience.
-- Despite the evolution and competition from native apps, HTML remains a strong and preferred medium for delivering apps.
-
-In essence, while technology and platforms have evolved over the years, the integral role of HTML in web development remains evident.
 
 <br>
 
