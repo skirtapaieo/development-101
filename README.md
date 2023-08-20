@@ -4,16 +4,59 @@ This is a research/educational repository.
 
 I have consolidated a lot of repositories, so my commits look worse than it is :-)
 
-- Systems design (Architecture)
+1. Systems design (Architecture)
 
-- Software Development
-  - Algorithms (and data structures)
-  - Back-end
-  - Front-end
-- Emerging technologies
+2. Software Development
 
-  - Blockchain
-  - IoT
+- Algorithms (and data structures)
+- Back-end
+- Front-end
+
+3. Emerging technologies
+
+- Blockchain
+- IoT
+
+4. Data
+
+- Data ingestion
+- Data storage
+- Data processing
+- Data analysis
+- Machine Learning and AI
+- Edge Computing
+- Data Quality
+- Data Governance
+- Data Privacy and Security
+
+5. Infrastructure
+
+- Compute
+- Storage
+- Databases
+- Networking/Content Delivery
+- Developer tools
+- Management/Governance
+- Security/Identity and Compliance
+- Analytics
+- Application integration
+- Machine Learning and AI
+- Migration and Transfer
+- End User Computing
+- Cost Management
+
+6. Design
+
+7. Product
+
+8. Education
+
+- Algorithms -
+- Machine Learning -
+- Systems design - 76% on test
+- Programming - certificate
+- Frontend - test done
+- Blockchain -
 
 - ## Programming Languages
 
