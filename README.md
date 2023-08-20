@@ -8,17 +8,20 @@ I have consolidated a lot of repositories, and the commit history looks bad due 
 
 1. **Systems design (Architecture)**
 
-- A lot of systems designs within
-  - E-commerce - Amazon (course), Tele2, etc,
-  - Ride sharing - Uber (course),
-  - Cloud Storage - Google drive (course)
-  - Dating
-  - Social
-  - Streaming media
-  - Team collaboration
-  - Banking
-  - Real Estate
-  - Educational
+I have added the systems designs from my course at Algoexpert SystemsExpert.
+
+- E-commerce - Amazon (course), Tele2, etc,
+- Ride sharing - Uber (course),
+- Cloud Storage - Google drive (course)
+- Dating - Tinder(course)
+- Social - Facebook, Reddit, Tiktok and Twitter (course)
+- Streaming media - Netflix, Spotify, Twitch and Youtube (course)
+- Team collaboration - Slack (course)
+- Banking - stock exchange (course), Avanza (hobby)
+- Real Estate - Hemnet (client), Airbnb (course)
+- Educational - Algoexpert
+
+Have added some hobby-cases - but the clients systems designs are in a private repository.
 
 2. **Software Development**
 
