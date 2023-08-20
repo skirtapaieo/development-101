@@ -2,22 +2,36 @@
 
 This is a research/educational repository.
 
-I have consolidated a lot of repositories, so my commits look worse than it is :-)
+There is a private around startup projects and a play as well.
 
-1. Systems design (Architecture)
+I have consolidated a lot of repositories, and the commit history looks bad due to it.
 
-2. Software Development
+1. **Systems design (Architecture)**
+
+- A lot of systems designs within
+  - E-commerce - Amazon (course), Tele2, etc,
+  - Ride sharing - Uber (course),
+  - Cloud Storage - Google drive (course)
+  - Dating
+  - Social
+  - Streaming media
+  - Team collaboration
+  - Banking
+  - Real Estate
+  - Educational
+
+2. **Software Development**
 
 - Algorithms (and data structures)
 - Back-end
 - Front-end
 
-3. Emerging technologies
+3. **Emerging technologies**
 
 - Blockchain
 - IoT
 
-4. Data
+4. **Data**
 
 - Data ingestion
 - Data storage
@@ -29,7 +43,7 @@ I have consolidated a lot of repositories, so my commits look worse than it is :
 - Data Governance
 - Data Privacy and Security
 
-5. Infrastructure
+5. **Infrastructure**
 
 - Compute
 - Storage
