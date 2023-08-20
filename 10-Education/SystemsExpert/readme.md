@@ -59,3 +59,8 @@ Part III
 Part IV
 
 - Systems design interview techniques
+  - Gathering system requirements
+  - Planning
+  - Estimation
+  - Communication
+  - Diagramming
