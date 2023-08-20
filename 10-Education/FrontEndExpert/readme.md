@@ -1,0 +1,46 @@
+It's a crash course - lets crash!
+
+- HTML
+- CSS
+
+  - Stay consistent
+  - Keep separation from HTML
+  - Focus on responsive design avoid absolutes
+  - Respect the cascade, avoid important
+  - Don't repeat your code (DRY); group similar components, use variable
+  - Methodologies:
+    - BEM - block, element, modifier
+      - Block - menu
+      - Element - menu\_\_item
+      - Modifier - menu menu--enabled, etc
+    - Object-oriended CSS (OOSSS)
+      - Components as objects
+      - Containers vs ..
+    - Atomic CSS
+      - Avoid any repeated declarations
+    - SMACS
+      - Base
+      - Layout
+      - Module
+      - State
+      - Theme
+    - Inverted triangle CSS (ITCSS)
+      - Settings (high reach)
+      - Tools
+      - Generic
+      - Elements
+      - Objects
+      - Components
+      - Trumps
+  - Performance:
+    - Browsers read css right to left
+    - Avoid expensive properties
+    - Avoid unused code
+    - Minify css-files
+    - Defer non-essential CSS prevent reader blocking
+
+- JavaScript
+- DOM manipulation
+- React components
+- React hooks
+- Web development fundamentals
