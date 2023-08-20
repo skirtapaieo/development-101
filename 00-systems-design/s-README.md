@@ -2,21 +2,7 @@
 
 <br>
 
-## Real Estate (NAICS:53)
-
-Utgångspunkt: Hemnet, Airbnb
-
-### Lessors of Real-estate
-
-- Hemnet - Booli, Funda, Immobilien, Zillow, PropertyGuru ..
-
-### Offices of Real Estate Agents and Brokers
-
-- Mäklarhuset, Fastighetsbyrån, Svensk Fastighetsförmedling
-
-### Activities related to Real Estate
-
-- Airbnb - Blocket bostad
+## Made a set of systems design with a few areas:
 
 ##
 

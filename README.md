@@ -2,17 +2,19 @@
 
 This is a research/educational repository.
 
-I have consolidated a lot of repositories into this one a while ago so it looks
+I have consolidated a lot of repositories, so my commits look worse than it is :-)
 
-- Design (UX)
 - Systems design (Architecture)
+
 - Software Development
   - Algorithms (and data structures)
   - Back-end
   - Front-end
 - Emerging technologies
+
   - Blockchain
   - IoT
+
 - ## Programming Languages
 
 experiment with skill areas
