@@ -1,5 +1,20 @@
 # development-101
 
+This is a research/educational repository.
+
+I have consolidated a lot of repositories into this one a while ago so it looks
+
+- Design (UX)
+- Systems design (Architecture)
+- Software Development
+  - Algorithms (and data structures)
+  - Back-end
+  - Front-end
+- Emerging technologies
+  - Blockchain
+  - IoT
+- ## Programming Languages
+
 experiment with skill areas
 
 ## The general approach ..
