@@ -1,25 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <button onClick={handleClick}>Click Me</button>
   );
 }
 
-export default App;
+function handleClick(event) {
+  console.log(event);
+}
+
+function MyButton(props) {
+  return (
+    <button
+      {...props}
+      style={{
+        color: 'red'
+      }} />
+  );
+}
+
+/*   return (
+    <>
+      <p>Hello Patrik</p>
+      <p>Hello Emma</p>
+      <p>Hello Gabriel</p>
+      <Hello name="Patrik" />
+      <Comment username="Gunnar" time="2021-10-10 10:10:10">
+        <h1>This is a comment</h1>
+      </Comment>
+    </>
+  )
+}
+
+function Hello({name = 'User'}) {
+  return <p>Hello {name}</p>
+}
+
+function Comment({username, time, children}) {
+  return (
+    <div>
+      <p>{username}</p>
+      <p>{time}</p>
+      <p>{children}</p>
+    </div>
+  )
+} */
