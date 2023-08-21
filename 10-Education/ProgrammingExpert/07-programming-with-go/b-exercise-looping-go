@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+)
+
+// MatchingCharacters function returns the number of matching characters between two strings
+func MatchingCharacters(string1, string2 string) int {
+	matches := 0
+	length := len(string1)
+	if len(string2) < length {
+		length = len(string2)
+	}
+
+	for i := 0; i < length; i++ {
+		if string1[i] == string2[i] {
+			matches++
+		}
+	}
+	return matches
+}
+
+func main() {
+	string1 := "AlgoExpert"
+	string2 := "Alligator"
+	fmt.Printf("Number of matching characters: %d\n", MatchingCharacters(string1, string2)) // Output: Number of matching characters: 3
+}
