@@ -7,3 +7,7 @@ console.log(localStorage.getItem("name"));
 localStorage.removeItem("name");
 
 console.log(localStorage.getItem("name"));
+
+// IndexedDB
+
+// Session Storage
