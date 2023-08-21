@@ -1,6 +1,6 @@
 /* package main
 
-import "fmt"
+/* import "fmt"
 
 func mains() {
 	a := 1
@@ -11,5 +11,18 @@ func mains() {
 	case a == 2:
 		fmt.Println("a is 2")
 	}
+} */
+
+
+package main
+
+import "fmt"
+
+func main()	{
+	switch a :_= 2; {
+		fmt.Println("a is 1")
+		fallthrough
+	case a == 2:
+		fmt.Println("a is 2")
+	}
 }
-*/
