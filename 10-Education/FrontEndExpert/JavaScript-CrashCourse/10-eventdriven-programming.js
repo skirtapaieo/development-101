@@ -4,7 +4,8 @@ button.addEventListener('click', onClick);
 
 document.body.addEventListener('click', onClick);
 
-function onClick() {
+function onClick(event) {
+    event.stopPropagation();
     console.log(event);
     console.log(event.type);
     console.log(event.target);
