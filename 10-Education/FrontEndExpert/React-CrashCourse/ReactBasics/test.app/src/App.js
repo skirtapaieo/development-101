@@ -1,10 +1,7 @@
-import './App.css';
-
+import "./App.css";
 
 export default function App() {
-  return (
-    <button onClick={handleClick}>Click Me</button>
-  );
+  return <button onClick={handleClick}>Click Me</button>;
 }
 
 function handleClick(event) {
@@ -16,8 +13,9 @@ function MyButton(props) {
     <button
       {...props}
       style={{
-        color: 'red'
-      }} />
+        color: "red",
+      }}
+    />
   );
 }
 

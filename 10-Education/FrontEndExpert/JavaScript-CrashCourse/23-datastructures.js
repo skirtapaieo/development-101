@@ -28,3 +28,11 @@ const iter = map.entries();
 console.log(iter.next());
 console.log(iter.next());
 console.log(iter.next());
+
+// Set
+
+// WeakMap
+
+// Weak Set
+
+// Linked list
