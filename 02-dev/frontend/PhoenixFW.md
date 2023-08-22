@@ -32,7 +32,7 @@ Is a web framework built on Elixir
 - Provides: routing, views, controllers, and database integration
 - With channels it provides a way to add real-time functionality to applications
 
-## Phoenix LiveWire
+## Phoenix Liveview
 
 A Feature in Phoenix Framework that enables rich, real-time experiences with server-rendered HTML.
 You can build interactive real-time application, without a lot of JavaScript.
