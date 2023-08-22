@@ -31,7 +31,12 @@
 - Remix IDE
 - Your first smart contract
 - Smart contract theory
+  - Gas, denoted in gwei
+  - Storage is expensive
 - Deploying smart contracts
+  - Mainnet
+  - Local network are not persistent
+  - Test networks (see on Ethereum site - many faucets are unreliable)
 - Data types
 - Operators and type conversions
 - Conditionals
@@ -45,6 +50,9 @@
 - Events
 - Arrays
 - Strings
+- Loops
+- Gas Cost and Estimation
+  - Gas units, gas price (gwei) = base + tip, Tx fee = cost, Tx fee sent - (actual) cost = refund, gas limit
 
 ## Advanced solidity
 
