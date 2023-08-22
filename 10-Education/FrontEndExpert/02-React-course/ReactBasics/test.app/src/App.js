@@ -1,12 +1,21 @@
-import { useState } from "react";
+import Counter from "./Counter";
+import CustomInput from "./CustomInput";
+import './App.css';
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <p>Count: {count}</p>
+        <Counter ref={counterRef} />
+        <CustomInput placeholder="type something..." />
+        <button onClick={() => {
+
+        }}>
+            Reset
+        </button>
     </>
   );
+}
+
+function forwardRef(function (props,ref) {
+    return <input ref={props.inputRef} />;
 }
