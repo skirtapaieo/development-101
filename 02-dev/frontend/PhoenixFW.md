@@ -9,7 +9,7 @@ We have this little stack of technologies:
 
 ## Erlang
 
-Programming lanugage used to build massively scalable, fault-tolerant systems.
+Programming languaage used to build massively scalable, fault-tolerant systems.
 Originally developed by Ericsson, for telco, but used broadly today.
 
 - Concurrency model - actor model, with lightweight processes communicating through message passing
