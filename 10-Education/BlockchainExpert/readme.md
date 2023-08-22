@@ -1,6 +1,6 @@
 # Blockchain expert
 
-## Blockchain fundamentals
+## 1 Blockchain fundamentals
 
 - Introduction to Blockchain
 - Centralized vs Decentralized
@@ -14,7 +14,7 @@
 - Nodes and masternodes
 - Bitcoin summary
 
-## Ethereum and Smart Contracts
+## 2 Ethereum and Smart Contracts
 
 - Cryptocurrency introduction
 - Ethereum basics
@@ -25,7 +25,7 @@
 - Stablecoins
 - Oracles
 
-## Solidity fundamentals
+## 3 Solidity fundamentals
 
 - Metamask
 - Remix IDE
@@ -54,10 +54,12 @@
 - Gas Cost and Estimation
   - Gas units, gas price (gwei) = base + tip, Tx fee = cost, Tx fee sent - (actual) cost = refund, gas limit
 
-## Advanced solidity
+## 4 Advanced solidity
 
 - Math and arithmetic
+  - No floating point, exists libraries, better from 0.8.0, SafeMath lib (handled over/underflows)
 - Time and time units
+  - block.timestand = time since unix epoch, 1 jan 1970 00:00:00 UTC
 - Structs
 - Modifiers
 - Enums
@@ -68,9 +70,10 @@
 - Contract storage
 - Optimizing gas costs
 
-## Interacting with Smart contracts
+## 5 Interacting with Smart contracts
 
 - JavaScript setup
+  - VS Code, Node.js,
 - Asynchronous programming
 - Ethers.js introduction
 - Javascript environment variables
