@@ -10,7 +10,12 @@
 
 # Tailwind
 
-# Phoenix
+# Phoenix (Elixir/Erlang/BEAM)
+
+BEAM is the virtual machine that runs Erlang, Elixir and other languages that target the
+
+Surface-UI (inspired by React)
+Morphdom
 
 # Phoenix Liveview
 
