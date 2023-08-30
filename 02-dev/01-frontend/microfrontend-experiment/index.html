@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Micro-frontend Experiment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        window.addEventListener('popstate', loadContent);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('nav').addEventListener('click', function (event) {
+                if (event.target.tagName === 'A') {
+                    event.preventDefault();
+                    history.pushState(null, '', event.target.href);
+                    loadContent();
+                }
+            });
+
+            loadContent();
+        });
+
+        function loadContent() {
+            fetch(location.pathname)
+                .then(function (response) {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Failed to load content: ' + response.status);
+                    }
+                })
+                .then(function (data) {
+                    document.querySelector('#content').innerHTML = data;
+                })
+                .catch(function (error) {
+                    console.error(error);
+                });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Micro-frontend Experiment</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/spaghetti-recipe/index.html">Team 1 - Spaghetti Recipe</a></li>
+            <li><a href="/blog-post/index.html">Team 2 - Blog Post</a></li>
+            <li><a href="/rainbow-circles/index.html">Team 3 - Rainbow Circles</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <!-- Content of the micro-frontend will be loaded here -->
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+    </footer>
+</body>
+</html>

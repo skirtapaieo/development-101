@@ -1,0 +1,25 @@
+
+<!-- HTML Markup -->
+<ul id="names-list"></ul>
+
+<script>
+
+// Plain JavaScript (Declarative Approach)
+const names = ['Alice', 'Bob', 'Charlie'];
+
+function renderNames(names) {
+  const namesListElement = document.getElementById('names-list');
+
+  // Create a new array of list item elements using map and join them together
+  const listItems = names.map((name) => `<li>${name}</li>`);
+  const listItemsHTML = listItems.join('');
+
+  // Set the HTML content of the unordered list
+  namesListElement.innerHTML = listItemsHTML;
+}
+
+renderNames(names);
+
+
+</script>
+```
