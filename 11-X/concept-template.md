@@ -12,6 +12,8 @@
 
 ## What are some great <Concept> examples?
 
+## Give a simple code example of <Concept>?
+
 ## What are the things that people say <Concept> needs to improve?
 
 ## What are the main alternatives to <Concept>?
