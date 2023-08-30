@@ -1,8 +1,10 @@
 # design-101
 
-# Approaches vs startup/scaleup/enterprise
+**Startups** often need to move quickly and have less structured processes, which is why low-cost and flexible methods like sketching, wireframing, and digital prototyping tend to be highly applicable. Startups may also benefit from Lean UX, which focuses on learning and iterating quickly. Design systems may be less applicable in early stages because they require a significant investment to set up and are most beneficial when design consistency is needed across a large number of pages or components, which may not yet be the case for startups.
 
-Here's a rough classification of the approaches you've mentioned based on startup, scaleup, and enterprise environments. However, it's important to note that these are generalizations, and the actual application can vary greatly based on specific project needs, company culture, resources, and other factors.
+**Scaleups** are in a stage where they're growing rapidly but also trying to formalize processes to maintain consistency and efficiency. They can benefit from all the approaches, but design systems become particularly important to maintain design consistency as the product and team grow.
+
+**Enterprises** have more established processes and larger teams, which can make it beneficial to have formal design systems in place. They often have the resources to invest in thorough user-centered design practices and can afford the time to create high-fidelity prototypes. Simpler methods like sketching and designing in your head may be less applicable due to the need for clear communication and documentation in larger teams.
 
 | **Design Approach**                           | **Startup** | **Scaleup** | **Enterprise** |
 | --------------------------------------------- | ----------- | ----------- | -------------- |
@@ -15,12 +17,6 @@ Here's a rough classification of the approaches you've mentioned based on startu
 | User-Centered Design (UCD)                    | High        | High        | High           |
 | Design Thinking                               | High        | High        | High           |
 | Lean UX                                       | High        | High        | Medium         |
-
-1. **Startups** often need to move quickly and have less structured processes, which is why low-cost and flexible methods like sketching, wireframing, and digital prototyping tend to be highly applicable. Startups may also benefit from Lean UX, which focuses on learning and iterating quickly. Design systems may be less applicable in early stages because they require a significant investment to set up and are most beneficial when design consistency is needed across a large number of pages or components, which may not yet be the case for startups.
-
-2. **Scaleups** are in a stage where they're growing rapidly but also trying to formalize processes to maintain consistency and efficiency. They can benefit from all the approaches, but design systems become particularly important to maintain design consistency as the product and team grow.
-
-3. **Enterprises** have more established processes and larger teams, which can make it beneficial to have formal design systems in place. They often have the resources to invest in thorough user-centered design practices and can afford the time to create high-fidelity prototypes. Simpler methods like sketching and designing in your head may be less applicable due to the need for clear communication and documentation in larger teams.
 
 ## Minimal design system
 
