@@ -1,5 +1,7 @@
 # development-101
 
+This area is a long-term experimentation area
+
 ## Systems design (Architecture)
 
 I have added the systems designs from my course at Algoexpert SystemsExpert.
