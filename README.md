@@ -1,12 +1,6 @@
 # development-101
 
-This is a research/educational repository.
-
-There is a private around startup projects and a play as well.
-
-I have consolidated a lot of repositories, and the commit history looks bad due to it.
-
-1. **Systems design (Architecture)**
+## Systems design (Architecture)
 
 I have added the systems designs from my course at Algoexpert SystemsExpert.
 
