@@ -2,6 +2,9 @@
 
 This area is a long-term experimentation area
 
+- Dev - divided into front-end, back-end, data, emerging tech etc...
+- Des -
+
 ## Systems design (Architecture)
 
 I have added the systems designs from my course at Algoexpert SystemsExpert.
