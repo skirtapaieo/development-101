@@ -1,78 +1,14 @@
 # development-101
 
-This area is a long-term experimentation area
+This area is a short-term experimentation area :-)
 
-- Dev - divided into front-end, back-end, data, emerging tech etc...
-- Des -
+All experiments are focused on supporting private projects.
 
-## Systems design (Architecture)
-
-I have added the systems designs from my course at Algoexpert SystemsExpert.
-
-- E-commerce - Amazon (course), Tele2, etc,
-- Ride sharing - Uber (course),
-- Cloud Storage - Google drive (course)
-- Dating - Tinder(course)
-- Social - Facebook, Reddit, Tiktok and Twitter (course)
-- Streaming media - Netflix, Spotify, Twitch and Youtube (course)
-- Team collaboration - Slack (course)
-- Banking - stock exchange (course), Avanza (hobby)
-- Real Estate - Hemnet (client), Airbnb (course)
-- Educational - Algoexpert
-
-Have added some hobby-cases - but the clients systems designs are in a private repository.
-
-2. **Software Development**
-
-- Algorithms (and data structures)
-- Back-end
-- Front-end
-
-3. **Emerging technologies**
-
-- Blockchain
-- IoT
-
-4. **Data**
-
-- Data ingestion
-- Data storage
-- Data processing
-- Data analysis
-- Machine Learning and AI
-- Edge Computing
-- Data Quality
-- Data Governance
-- Data Privacy and Security
-
-5. **Infrastructure**
-
-- Compute
-- Storage
-- Databases
-- Networking/Content Delivery
-- Developer tools
-- Management/Governance
-- Security/Identity and Compliance
-- Analytics
-- Application integration
-- Machine Learning and AI
-- Migration and Transfer
-- End User Computing
-- Cost Management
-
-6. Design
-
-7. Product
-
-8. Education
-
-- Algorithms -
-- Machine Learning -
-- Systems design - 76% on test
-- Programming - certificate
-- Frontend - test done
-- Blockchain -
+- X - HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
+- Learn - courses in systems design, algorithms and data structures, blockchain, programming (Python/Go), frontend (HTML/CSS/JS/React), Machine Learning
+- Dev - front-end, back-end, data, machine learning and AI, blockchain, IoT etc
+- Prod - nothing there yet :-)
+- Des - nothing of value :-)
 
 - ## Programming Languages
 
