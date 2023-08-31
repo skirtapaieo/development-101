@@ -1,6 +1,12 @@
 # development-101
 
-Welcome! Here you can find experiments of various types
+Welcome! Here you can find things that does not fit in LinkedIn :-)
+
+**Marketing** https://github.com/skirtapaieo/development-101/blob/main/00-marketing/marketing-readme.md
+
+**Products** https://github.com/skirtapaieo/development-101/blob/main/00-prod/prod-readme.md
+
+**Design**
 
 /X as in experimentation - small tests of HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
 
