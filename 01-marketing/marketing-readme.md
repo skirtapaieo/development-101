@@ -1,17 +1,19 @@
 # Marketing
 
-Currently:
+## Currently:
 
 - SEO/design/performance review of 10 competitor sites for a client
 
-Recently:
+## Recently
 
-- Programmatically (JavaScript/Puppeteer) automated Lighthouse, WebPageTest, PageSpeed for continously review SEO, accessibility, performance
+- Programmatically (JavaScript/Puppeteer) automated headless chrome
+  - for running Lighthouse locally, on WebPageTest, PageSpeed
+  - for continously review SEO, accessibility, performance
 - Unlighthouse test for full-site reviews of SEO (client)
 - Automated screenshots to compare size/layout
 - Website design (for my company)
 
-In general:
+## In general
 
 Marketing
 
