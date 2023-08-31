@@ -1,9 +1,6 @@
 # development-101
 
-This area is a short-term digital experimentation area - not 100% code focus.
-
-/Prod
-Design -
+Welcome! Here you can find experiments of various types
 
 /X as in experimentation - small tests of HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
 

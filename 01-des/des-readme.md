@@ -1,7 +1,37 @@
 # Design and UX
 
-- Branding is the foundation for design and UX
--
+## Currently
+
+- Design/SEO/performance review of industry leaders (client)
+  - Programmatically automated lighthouse, webpagetests, pagespeed to measure SEO, Accessibility and Performance
+  - With unligthouse or similar approach the review can be made for all parts of a site
+  - To continuously
+
+## Recently
+
+- Led program that built a design system using Figma, Storybook and component libraries (React/Vue)
+- User session tracking (HotJar)
+- Front-end security (Detectify)
+- Analytics (Google Analytics, Tag Management)
+
+## Further back
+
+- Participated in branding-centrix startups with branding and design agencies
+- I can participate hands-on if necessary (Figma (sketch), Adobe Creative Suite)
+- Led technical parts of design systems and have a very good understanding of various approaches
+- Balances 100s of cross-functional teams - with product, ux, developers and other expertise
+- I have experimented with AI tools during 2023
+
+  - ChatGPT - ex for personas, competitor analysis
+  - MidJourney - moodboards, icons,
+  - Adobe Creative - added AI to some tools
+
+- I have worked with a lot of marketing aspects, mainly through tools:
+  - Performance analysis (programmatically, )
+  - User session tracking (HotJar)
+  - Analytics (google analytics)
+  - SEO
+  - Security (Detectify)
 
 ## Approaches
 
