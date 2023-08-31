@@ -1,5 +1,10 @@
 # Design and UX
 
+- Branding is the foundation for design and UX
+-
+
+## Approaches
+
 **Startups** often need to move quickly and have less structured processes, which is why low-cost and flexible methods like sketching, wireframing, and digital prototyping tend to be highly applicable. Startups may also benefit from Lean UX, which focuses on learning and iterating quickly. Design systems may be less applicable in early stages because they require a significant investment to set up and are most beneficial when design consistency is needed across a large number of pages or components, which may not yet be the case for startups.
 
 **Scaleups** are in a stage where they're growing rapidly but also trying to formalize processes to maintain consistency and efficiency. They can benefit from all the approaches, but design systems become particularly important to maintain design consistency as the product and team grow.

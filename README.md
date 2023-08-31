@@ -1,14 +1,14 @@
 # development-101
 
-This area is a short-term experimentation area :-)
+This area is a short-term digital experimentation area - not 100% code focus.
 
-All experiments are focused on supporting private projects.
+/Prod
+Design -
 
-- X - HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
-- Learn - courses in systems design, algorithms and data structures, blockchain, programming (Python/Go), frontend (HTML/CSS/JS/React), Machine Learning
-- Dev - front-end, back-end, data, machine learning and AI, blockchain, IoT etc
-- Prod - nothing there yet :-)
-- Des - nothing of value :-)
+/X as in experimentation - small tests of HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
+
+- Course - courses in systems design, algorithms and data structures, blockchain, programming (Python/Go), frontend (HTML/CSS/JS/React), Machine Learning
+- Dev - front-end, back-end, data, machine learning and AI, blockchain, IoT etc,
 
 - ## Programming Languages
 
