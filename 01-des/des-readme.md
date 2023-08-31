@@ -5,7 +5,14 @@
 - Design/SEO/performance review of industry leaders (client)
   - Programmatically automated lighthouse, webpagetests, pagespeed to measure SEO, Accessibility and Performance
   - With unligthouse or similar approach the review can be made for all parts of a site
-  - To continuously
+  - To continuously review metrics for SEO, Accessibility and other indices/KPIs
+
+## What about AI and design?
+
+- ChatGPT - ex for personas, competitor analysis
+- MidJourney - moodboards, icons, content, and other assets
+- Adobe Creative - added AI to some of the tools
+- UIzard - scans design sketches and transforms them to digital designs
 
 ## Recently
 
@@ -13,27 +20,18 @@
 - User session tracking (HotJar)
 - Front-end security (Detectify)
 - Analytics (Google Analytics, Tag Management)
+- User performance and error tracking (Sentry)
+- Security reviews (Detectify)
 
 ## Further back
 
-- Participated in branding-centrix startups with branding and design agencies
-- I can participate hands-on if necessary (Figma (sketch), Adobe Creative Suite)
-- Led technical parts of design systems and have a very good understanding of various approaches
 - Balances 100s of cross-functional teams - with product, ux, developers and other expertise
-- I have experimented with AI tools during 2023
+- Participated in branding-centrix startups with branding and design agencies
+- Led technical parts of design systems and have a very good understanding of various approaches
+- I can participate hands-on if necessary (Figma (sketch), Adobe Creative Suite)
+- Usability testing (both qualitative and quantitative)
 
-  - ChatGPT - ex for personas, competitor analysis
-  - MidJourney - moodboards, icons,
-  - Adobe Creative - added AI to some tools
-
-- I have worked with a lot of marketing aspects, mainly through tools:
-  - Performance analysis (programmatically, )
-  - User session tracking (HotJar)
-  - Analytics (google analytics)
-  - SEO
-  - Security (Detectify)
-
-## Approaches
+## About approaches
 
 **Startups** often need to move quickly and have less structured processes, which is why low-cost and flexible methods like sketching, wireframing, and digital prototyping tend to be highly applicable. Startups may also benefit from Lean UX, which focuses on learning and iterating quickly. Design systems may be less applicable in early stages because they require a significant investment to set up and are most beneficial when design consistency is needed across a large number of pages or components, which may not yet be the case for startups.
 
