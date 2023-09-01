@@ -1,41 +1,37 @@
-# Organization, structure and way of working
+# Organization, structure and way of working and technology
 
-Humanity's unique gift is the ability to organize ourselves.
-Transcending the limits of biology in ways that no other form of life has been able to achieve.
-It is this organizational skill that has enabled us to build civilizations, shape the planet, and even reach for the stars.
+What is this? Why have a section on organization on Github?
+
+We have a unique gift in the ability to organize ourselves, that transcends the limits of biology.
+
+Our inherent organizational skills has enabled us to build civilizations, shape the planet, and even reach for the stars.
+
 We do it by structuring, organizing, working together, in big and small iterations, and usually over very long periods of time.
 
-<br>
+Technology has changed the way we do this and will continue to do so - so experimentation and innovation in organization goes hand in hand with technology.
 
-## Recent work
+## Work within organization
 
-Hands-on leadership/change:
+See www.transformationkompaniet.com for more.
 
 - DeLaval - about organization of 60 teams, to get a new digital platform in place, and a range of products out to the market.
 - Telenor was smaller, around 15 teams, to start a new journey towars digital marketing
 - Hemnet - led a few teams as engineering director under the CTO
 - Tele2 - organized the transformation at Tele2
 - Codeta - interim CTO, in place to launch a product
-
-Strategic work:
-
 - SJ - helped them with parts of a transformation
 - NetOnNet - helped them clarify their transformation
 
-Prior experiences:
+## A simple model for thinking about organization
 
-- CEO at Tain and Bertil
-- Have had my own consulting firm
-- Consultant and employee at Tele2, Spray/Razorfish, Digiscope
+I have through the years stitched together a simple model, that is useful in many ways consisting of;
 
-## A simple model
-
-Tying together
-
-1. structure,
-2. organization,
-3. way of working,
+1. structure - what are the building blocks?
+2. organization - how do we organize people into groups?
+3. way of working - how do people in the structures and organizations work?
 4. with a low-level, foundational understanding coordination, iterations and skills required
+
+There are many inspirations, organizationally from Henry Mintzberg, but also from new companies, and own practices.
 
 ### 1 Structure - The skeleton of the organization
 
