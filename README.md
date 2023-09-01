@@ -8,7 +8,7 @@ Welcome! Here you can find things that does not fit in LinkedIn :-)
 
 **Design and UX**
 
-**Development**
+**Development** - front-end experiments with HTMX, Leptos, React Server Components, Astron, Phoenix, Qwik, etc.
 
 **Infrastructure**
 
