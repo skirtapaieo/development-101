@@ -5,9 +5,11 @@
 
 ## Why should I care of <Product>?
 
-## Why <Product> was created?
-
 ## Who created <Product>?
+
+## Why the name <Product>?
+
+## Why <Product> was created?
 
 ## How and when was <Product> started?
 
