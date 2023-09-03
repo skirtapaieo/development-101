@@ -27,6 +27,9 @@ Sure, here is the size in KB or lines of code of the various frameworks, rounded
 | Astro     | 1.0       | 5,000         |
 | Qwik      | 1.1       | 6,000         |
 
+Vue: 130,000 LOC
+HTMX: 1,800 LOC
+
 # Detailed comparison
 
 Here is a more detailed comparison of each framework:
