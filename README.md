@@ -2,17 +2,17 @@
 
 Welcome! Here you can find things that does not fit in LinkedIn :-)
 
-**Marketing** https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
+**1 - Organization and leadership**
 
-**Products** https://github.com/skirtapaieo/development-101/blob/main/02-prod/prod-readme.md
+**2 - Marketing** https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
 
-**Design and UX**
+**3- Products** https://github.com/skirtapaieo/development-101/blob/main/02-prod/prod-readme.md
 
-**Development** - front-end experiments with HTMX, Leptos, React Server Components, Astron, Phoenix, Qwik, etc.
+**4 -Design and UX** - https://github.com/skirtapaieo/development-101/tree/main/03-des
 
-**Infrastructure**
+**5 - Courses** - - systems design, algoriths, front-end, blockchain, machine learning, programming
 
-**Courses**
+**6 - Experiments** - currently mainly front-end with HTMX, React Server Components, Astro, etc
 
 /X as in experimentation - small tests of HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
 

@@ -1,8 +1,8 @@
 # Organization, structure and way of working and technology
 
-What is this? Why have a section on organization on Github?
+Why have a section on organization on Github?
 
-We have a unique gift in the ability to organize ourselves, that transcends the limits of biology.
+We have a unique gift in the ability to organize ourselves.
 
 Our inherent organizational skills has enabled us to build civilizations, shape the planet, and even reach for the stars.
 
