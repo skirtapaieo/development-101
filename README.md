@@ -1,6 +1,8 @@
 # development-101
 
-Welcome! Here you can find things that does not fit in LinkedIn :-)
+Welcome! Here you can find things (experiements) that does not fit in LinkedIn :-)
+
+What is the red thread? An increasingly broader interest in leadership, business operations and technology
 
 **1 - Organization and leadership** - https://github.com/skirtapaieo/development-101/blob/main/00-organization/01-organization-readme.md
 
@@ -16,14 +18,7 @@ Welcome! Here you can find things that does not fit in LinkedIn :-)
 
 **7 - Experiments** - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling
 
-**8 - Infrastructure** -
-
-- Course - courses in systems design, algorithms and data structures, blockchain, programming (Python/Go), frontend (HTML/CSS/JS/React), Machine Learning
-- Dev - front-end, back-end, data, machine learning and AI, blockchain, IoT etc,
-
-- ## Programming Languages
-
-experiment with skill areas
+**8 - Infrastructure** - cloud and other topics
 
 ## The general approach ..
 
