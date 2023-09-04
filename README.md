@@ -1,25 +1,23 @@
-# development
+Welcome!
 
-Welcome to things not fit for LinkedIn!
+## Courses-2023 - systems design, algoriths, front-end, blockchain, machine learning, programming ...
 
-## Courses
+## Experiments-2023 - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling
 
-systems design, algoriths, front-end, blockchain, machine learning, programming ...
+## Development-2023 - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms,
 
-## Experiments
+## Design-UX-2023
 
-## Infrastructure
+https://github.com/skirtapaieo/development-101/tree/main/03-des
 
-**1 - Organization and leadership** - https://github.com/skirtapaieo/development-101/blob/main/00-organization/01-organization-readme.md
+## Products-2023
 
-**2 - Marketing** https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
+https://github.com/skirtapaieo/development-101/blob/main/02-prod/prod-readme.md
 
-**3- Products** https://github.com/skirtapaieo/development-101/blob/main/02-prod/prod-readme.md
+## Marketing-2023
 
-**4 -Design and UX** - https://github.com/skirtapaieo/development-101/tree/main/03-des
+https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
 
-**6 - Development** - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms,
+## Leadership and organization
 
-**7 - Experiments** - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling
-
-**8 - Infrastructure** - cloud and other topics
+https://github.com/skirtapaieo/development-101/blob/main/00-organization/01-organization-readme.md
