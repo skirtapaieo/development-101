@@ -2,7 +2,7 @@
 
 Welcome! Here you can find things that does not fit in LinkedIn :-)
 
-**1 - Organization and leadership**
+**1 - Organization and leadership** - https://github.com/skirtapaieo/development-101/blob/main/00-organization/01-organization-readme.md
 
 **2 - Marketing** https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
 
@@ -12,9 +12,11 @@ Welcome! Here you can find things that does not fit in LinkedIn :-)
 
 **5 - Courses** - - systems design, algoriths, front-end, blockchain, machine learning, programming
 
-**6 - Experiments** - currently mainly front-end with HTMX, React Server Components, Astro, etc
+**6 - Development** - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms,
 
-/X as in experimentation - small tests of HTMX, Leptos, React Server Components, Astro, Phoenix, Qwik, etc
+**7 - Experiments** - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling
+
+**8 - Infrastructure** -
 
 - Course - courses in systems design, algorithms and data structures, blockchain, programming (Python/Go), frontend (HTML/CSS/JS/React), Machine Learning
 - Dev - front-end, back-end, data, machine learning and AI, blockchain, IoT etc,
