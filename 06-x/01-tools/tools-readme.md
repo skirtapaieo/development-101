@@ -2,14 +2,14 @@
 
 ## Targets
 
-- Cross-plattform development
+- Cross-platform development
 - Create increasingly good habits (learn new tool if needed)
 
 ## Editors
 
 - VS code - try to optimize use of it
 - Add extensions - Harpoon, etc
-- NeoVim (and quickstart)
+- NeoVim
 
 ## Terminal
 
