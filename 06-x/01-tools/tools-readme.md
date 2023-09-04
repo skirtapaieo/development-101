@@ -5,13 +5,19 @@ Targets:
 - Cross-plattform development
 - Create increasingly good habits (learn new tool if needed)
 
+Using:
+
 - Editors
-  [x] VS code - try to optimize use of it
+
+  - VS code - try to optimize use of it
+  - Add extensions - Harpoon, etc
   - Start experimenting with NeoVim (and quickstart)
-  -
+
 - Terminal
+
   - learn Powershell
   - Relearn Bash
+
 - Git
   - Use it in VS code
   - Use Github desktop
