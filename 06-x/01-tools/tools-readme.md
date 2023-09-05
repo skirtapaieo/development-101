@@ -14,6 +14,7 @@
 ## Terminal
 
 - learn Powershell
+  - debugging of scripts
 - Bash (or WSL on Windows)
 
 ### Windows Subsystem for Windows
