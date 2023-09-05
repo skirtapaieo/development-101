@@ -1,5 +1,11 @@
 # Open AI Advanced Data Analysis (formerly Code Interpreter)
 
+It helps:
+
+- Solving mathematical problems, quantitative and qualitative
+- Doing data analysis and visualization
+- Converting files between formats
+
 ## Answers and Questions
 
 | Question                                                                          | Answer                                                                                                                         |
