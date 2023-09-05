@@ -38,3 +38,46 @@ RAG, on the other hand, is designed to augment generative models like GPT with t
 5. **Combined Workflow**: In a combined system, ChatGPT could handle the general conversation and generate queries for RAG whenever factual information is needed. RAG would then retrieve the information and pass it back to ChatGPT for generating the final response.
 
 In summary, while ChatGPT and RAG are different types of models serving different purposes, they can be combined to create a more powerful and informative conversational agent.
+
+# Example of ChatGPT and RAG in combination
+
+Below is a simplified Python code example that demonstrates how ChatGPT and RAG could be combined to create a more informative conversational agent. This example assumes that you have access to the Hugging Face Transformers library and have set up both ChatGPT and RAG models.
+
+```python
+from transformers import GPT2LMHeadModel, GPT2Tokenizer, RagTokenizer, RagRetriever, RagSequenceForGeneration
+
+# Initialize ChatGPT
+gpt2_tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+gpt2_model = GPT2LMHeadModel.from_pretrained("gpt2")
+
+# Initialize RAG
+rag_tokenizer = RagTokenizer.from_pretrained("facebook/rag-sequence-nq")
+rag_retriever = RagRetriever.from_pretrained("facebook/rag-sequence-nq", index_name="exact", use_dummy_dataset=True)
+rag_model = RagSequenceForGeneration.from_pretrained("facebook/rag-sequence-nq", retriever=rag_retriever)
+
+def ask_question(question):
+    # Use ChatGPT to generate a query for RAG
+    gpt2_input = gpt2_tokenizer(question, return_tensors="pt").input_ids
+    gpt2_output = gpt2_model.generate(gpt2_input)
+    gpt2_query = gpt2_tokenizer.decode(gpt2_output[0], skip_special_tokens=True)
+
+    # Use RAG to answer the query
+    rag_input = rag_tokenizer(gpt2_query, return_tensors="pt").input_ids
+    rag_output = rag_model.generate(rag_input)
+    rag_answer = rag_tokenizer.decode(rag_output[0], skip_special_tokens=True)
+
+    return rag_answer
+
+# Example usage
+question = "Tell me about the capital of France."
+answer = ask_question(question)
+print("Answer:", answer)
+```
+
+In this example:
+
+1. **ChatGPT** is used to generate a query based on the user's question. This could involve rephrasing the question or generating a more detailed query based on the context.
+
+2. **RAG** then takes this query to retrieve relevant information and generate an answer.
+
+This is a simplified example and doesn't cover all the nuances, such as handling context in a conversation, but it should give you an idea of how the two models can be combined.
