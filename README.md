@@ -2,11 +2,11 @@ Welcome!
 
 ## Courses-2023 - systems design, algoriths, front-end, blockchain, machine learning, programming ...
 
-## Experiments-2023 - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling
+## Experiments-2023 - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling ...
 
-## Development-2023 - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms,
+## Development-2023 - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms ...
 
-## Design-UX-2023
+## Design-UX-2023 ...
 
 https://github.com/skirtapaieo/development-101/tree/main/03-des
 
