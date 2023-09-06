@@ -16,6 +16,7 @@
 
 - learn Powershell
   - debugging of scripts
+  - /scripts
 - Bash (or WSL on Windows)
 
 ### Windows Subsystem for Windows
