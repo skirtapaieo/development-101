@@ -8,6 +8,7 @@
 ## Editors
 
 - VS code - try to optimize use of it
+  - Use Co-pilot more effectively
 - Add extensions - Harpoon, etc
 - NeoVim
 
