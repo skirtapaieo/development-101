@@ -1,6 +1,8 @@
 # Design and UX
 
-## Currently
+It is central to understand the intersection of UX, design and technology
+
+## Currently doing
 
 - Performance benchmark of leading sites in industry (for client)
 
@@ -13,7 +15,7 @@
 - Experimenting with UX design and AI for startup
   - Bard to create HTML/CSS from screenshot of a particular design
   - Uizard tests to create a copy of a particular design
-  -
+  - Canva and ChatGPT
 
 ## What about AI and design?
 
@@ -25,12 +27,13 @@
 
 ## Recently
 
-- Led program that built a design system using Figma, Storybook and component libraries (React/Vue)
-- User session tracking (HotJar)
-- Front-end security (Detectify)
-- Analytics (Google Analytics, Tag Management)
-- User performance and error tracking (Sentry)
-- Security reviews (Detectify)
+- Led program:
+  - Built a design system using Figma, Storybook and component libraries (React/Vue)
+  - User session tracking (HotJar)
+  - Front-end security (Detectify)
+  - Analytics (Google Analytics, Tag Management)
+  - User performance and error tracking (Sentry)
+  - Security reviews (Detectify)
 
 ## Further back
 
