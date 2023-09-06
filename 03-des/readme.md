@@ -2,10 +2,18 @@
 
 ## Currently
 
-- Design/SEO/performance review of industry leaders (client)
-  - Programmatically automated lighthouse, webpagetests, pagespeed to measure SEO, Accessibility and Performance
-  - With unligthouse or similar approach the review can be made for all parts of a site
-  - To continuously review metrics for SEO, Accessibility and other indices/KPIs
+- Performance benchmark of leading sites in industry (for client)
+
+  - SEO and Accessibility secondary
+  - Programmatically automated lighthouse, webpagetests, pagespeed
+  - Unlighthouse to review the full site/all pages
+  - Manual testing of size and rendering
+  - Final report (in ppt)
+
+- Experimenting with UX design and AI for startup
+  - Bard to create HTML/CSS from screenshot of a particular design
+  - Uizard tests to create a copy of a particular design
+  -
 
 ## What about AI and design?
 
@@ -13,6 +21,7 @@
 - MidJourney - moodboards, icons, content, and other assets
 - Adobe Creative - added AI to some of the tools
 - UIzard - scans design sketches and transforms them to digital designs
+- Bard - interpret screenshot and create code (html/css)
 
 ## Recently
 
