@@ -60,3 +60,4 @@ This should get you up and running with WSL on your Windows machine.
 - Use it in VS code
 - Use Github desktop
 - Use git from terminal
+  - Script git a little
