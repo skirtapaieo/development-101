@@ -11,6 +11,8 @@
 
 - VS code - try to optimize use of it
   - Use Co-pilot more effectively
+  - Harpoon
+  - NeoVim for VS code
 - Add extensions need for languagages, etc
 - NeoVim or VS code neovim
 
