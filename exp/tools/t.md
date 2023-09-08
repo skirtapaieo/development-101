@@ -4,20 +4,26 @@
 
 - Cross-platform development
 - Create increasingly good habits (learn new tool if needed)
+- Optimize moving between play, experiments and startup
+- Optimize git workflow
 
 ## Editors
 
 - VS code - try to optimize use of it
   - Use Co-pilot more effectively
-- Add extensions - Harpoon, etc
-- NeoVim
+- Add extensions need for languagages, etc
+- NeoVim or VS code neovim
 
 ## Terminal
 
 - learn Powershell
   - debugging of scripts
   - /scripts
+  - aliases for PowerShell and WindowsPowershell
+  - aliases for gitconfigure
 - Bash (or WSL on Windows)
+- TMux
+-
 
 ### Windows Subsystem for Windows
 
