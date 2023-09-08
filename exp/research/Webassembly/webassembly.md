@@ -13,7 +13,7 @@ WebAssembly (often abbreviated as wasm) is designed to be a low-level virtual ma
 
 WebAssembly was created to address the performance limitations of JavaScript by providing a binary instruction format that's more efficient to execute. It also aims to be secure and independent of the machine architecture, making it broadly applicable.
 
-## Who created WebAssembly?
+## Who created WebAssembly?ls
 
 WebAssembly is a community-driven project that initially had contributions from Mozilla, Microsoft, Google, and Apple.
 
