@@ -1,8 +1,39 @@
 Welcome!
 
-## Courses-2023 - systems design, algoriths, front-end, blockchain, machine learning, programming ...
+# Courses
 
-## Experiments-2023 - currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling ...
+Main courses at Algoexpert (similar to leetcode):
+
+- Algorithm ()
+- Systems Design
+- Programming
+- Front-end
+- Blockchain
+- Machine Learning
+
+# Research
+
+- AI
+- Devtools
+- front-end
+- JavaScript interview
+- Math
+
+# Development
+
+- frontend
+- backend
+- data
+- systems design
+- iot
+- blockchain
+- infrastructure
+
+# Experiments-2023
+
+Short-term experiments in
+
+currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling ...
 
 ## Development-2023 - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms ...
 

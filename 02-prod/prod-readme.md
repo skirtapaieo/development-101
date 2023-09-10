@@ -11,15 +11,6 @@ For client:
 In general:
 Also started to code again - so I am prototyping front-end, back-end, data solutions and the use of LLM
 
-## Experiences
-
-I have experience from developing products in a few areas:
-
-- Finance
-- Real Estate
-- iGaming
-- Telecom
-
 ## The major areas
 
 - Market research
@@ -33,3 +24,7 @@ I have experience from developing products in a few areas:
 - Data Analytics
 - Customer feeedback
 - Monetization
+
+## Experiences
+
+See http://Linkedin.com/patriksv
