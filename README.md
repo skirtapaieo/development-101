@@ -1,8 +1,10 @@
-Welcome to 2023!
+Welcome!
 
-I felt that I missed software, so now i try to have a few hobby/startup projects ongoing (startup repository). On my path I end up doing: courses, training, drills, experiments, research.
+My hobby/startup projects are in the startup repo.
 
-# Courses in 2023
+Here you have recent courses, training, drills, experiments, research that helps get me unstuck.
+
+# Courses
 
 Main courses at Algoexpert (similar to leetcode) during 2023:
 
@@ -37,26 +39,3 @@ Ambition to develop full-stack abilities:
 - iot
 - blockchain
 - infrastructure
-
-## Design/UX
-
-in /03-des
-
-- Performance, Accessibility and SEO programmatically
-- Various AI tools for design
-- Some activities in Figma
-- Adobe Creative cloud
-
-## Products
-
-Product-related activities in /02-prod
-
-- Mainly developed in private repository /startup-101
-
-## Marketing
-
-Marketing-related activities in /01-marketing
-
-## Leadership and organization
-
-/00-organization
