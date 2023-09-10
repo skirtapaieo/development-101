@@ -21,11 +21,11 @@ http://www.algoexpert.io
 
 # Research & Development
 
-- Tools
-- Frontend
-- Backend
-- Data (Machine Learning&AI)
-- Systems designs
+- Tools (cross-plattform; vsc/vim, bash, git)
+- Frontend (JS, libraries, frameworks, CSS, HTML, CMS, Desktop)
+- Backend (Go,Python, Rust)
+- Data (Machine Learning & AI, LLM, Generative AI)
+- Systems designs (a long range of experiements)
 - Emerging technologies (blockchain, iot)
-- Infrastructure
-- Languages
+- Infrastructure (cloud)
+- Languages (see back-end and course)
