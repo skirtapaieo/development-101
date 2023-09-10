@@ -1,5 +1,7 @@
 # Algoexpert
 
+Course aimed at helping software engineers prepare for algorithmic coding interviews at top tech companies like Google, Facebook, Amazon, and Microsoft. 195 coding questios, 100+ hours of video explanations, data structure crash course and space-time complexity analysis-
+
 ## Exercises
 
 - Arrays

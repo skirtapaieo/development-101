@@ -18,6 +18,8 @@
 
 ## Functions
 
+### Types of functions
+
 # Intermediate topics in <language>
 
 ## Arrays and Lists

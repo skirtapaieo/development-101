@@ -2,6 +2,8 @@
 
 https://www.algoexpert.io/content#frontendexpert
 
+Course aimed at helping software engineers prepare for frontend coding interviews at top tech companies . 50 coding questios, +20 hours of videos and +100 topics and a 50 question final quiz where you have to pass 80% related to React, JavaScript, TypeScript, HTML, CSS and web development.
+
 ## Frontend assignments (50)
 
 - HTML
@@ -11,7 +13,7 @@ https://www.algoexpert.io/content#frontendexpert
 - React Components
 - React Hooks
 
-## HTML
+## HTML (2 hours of video)
 
 - HTML basics
 - Semantic HTML
@@ -22,7 +24,7 @@ https://www.algoexpert.io/content#frontendexpert
 - Accessibility
 - Meta Tags
 
-## CSS
+## CSS (3 hours of videos)
 
 - CSS basics
 - Selectors
@@ -37,7 +39,7 @@ https://www.algoexpert.io/content#frontendexpert
 - Flexbox
 - CSS Grid
 
-## JavaScript
+## JavaScript (10 hours of videos)
 
 - JavaScript basics
 - Variables and Scoping
@@ -66,7 +68,7 @@ https://www.algoexpert.io/content#frontendexpert
 - Debugging strategies
 - Writing clean JavaScript
 
-## React
+## React (5 hours of videos)
 
 - React basics
 - JSX
@@ -88,7 +90,7 @@ https://www.algoexpert.io/content#frontendexpert
 - React under the hood
 - Companion libraries
 
-## Web Development
+## Web Development (2 hours of video)
 
 - Client-server model
 - Webpage request lifecycle
