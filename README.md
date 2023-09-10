@@ -1,6 +1,6 @@
 Welcome to 2023!
 
-I felt that I lost my software foundation, so now i try to have a few hobby/startup projects ongoing (startup repository). On my path I end up doing: courses, training, drills, experiments, research.
+I felt that I missed software, so now i try to have a few hobby/startup projects ongoing (startup repository). On my path I end up doing: courses, training, drills, experiments, research.
 
 # Courses in 2023
 
@@ -12,7 +12,7 @@ http://www.algoexpert.io
 
 - Algorithms (Algoexpert)
 - Systems Design (SystemsExpert)
-- Programming (programmingExpert)
+- Programming (programmingExpert
 - Front-end (FrontendExpert)
 - Blockchain (BlockchainExpert)
 - Machine Learning (MachineLearningExpert)
