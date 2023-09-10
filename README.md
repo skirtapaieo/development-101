@@ -1,25 +1,34 @@
-Welcome!
+Welcome to 2023!
 
-# Courses
+I felt that I lost my software foundation, so now i try to have a few hobby/startup projects ongoing (startup repository). On my path I end up doing: courses, training, drills, experiments, research.
 
-Main courses at Algoexpert (similar to leetcode):
+# Courses in 2023
 
-- Algorithm ()
-- Systems Design
-- Programming
-- Front-end
-- Blockchain
-- Machine Learning
+Main courses at Algoexpert (similar to leetcode) during 2023:
 
-# Research
+http://www.algoexpert.io
 
-- AI
-- Devtools
-- front-end
-- JavaScript interview
-- Math
++100 of hours of videomaterial and 100s of exercises in the following courses:
+
+- Algorithms (Algoexpert)
+- Systems Design (SystemsExpert)
+- Programming (programmingExpert)
+- Front-end (FrontendExpert)
+- Blockchain (BlockchainExpert)
+- Machine Learning (MachineLearningExpert)
+
+# Research and experiments
+
+- Tools (to get development flow)
+- AI (various small experiements/research)
+- Devtools (research)
+- front-end (CSS, JS and desktop)
+- JavaScript interview (training)
+- Math (first )
 
 # Development
+
+Ambition to develop full-stack abilities:
 
 - frontend
 - backend
@@ -29,26 +38,25 @@ Main courses at Algoexpert (similar to leetcode):
 - blockchain
 - infrastructure
 
-# Experiments-2023
+## Design/UX
 
-Short-term experiments in
+in /03-des
 
-currently mainly front-end (with HTMX, React Server Components, Astro, etc) and tooling ...
+- Performance, Accessibility and SEO programmatically
+- Various AI tools for design
+- Some activities in Figma
+- Adobe Creative cloud
 
-## Development-2023 - front-end, back-end like gRPC, data, systems design, IoT, blockchain, algorithms ...
+## Products
 
-## Design-UX-2023 ...
+Product-related activities in /02-prod
 
-https://github.com/skirtapaieo/development-101/tree/main/03-des
+- Mainly developed in private repository /startup-101
 
-## Products-2023
+## Marketing
 
-https://github.com/skirtapaieo/development-101/blob/main/02-prod/prod-readme.md
-
-## Marketing-2023
-
-https://github.com/skirtapaieo/development-101/blob/main/01-marketing/marketing-readme.md
+Marketing-related activities in /01-marketing
 
 ## Leadership and organization
 
-https://github.com/skirtapaieo/development-101/blob/main/00-organization/01-organization-readme.md
+/00-organization
