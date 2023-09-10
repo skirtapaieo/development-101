@@ -19,22 +19,21 @@ http://www.algoexpert.io
 - Blockchain (BlockchainExpert)
 - Machine Learning (MachineLearningExpert)
 
-# Research and experiments
+# Research & Development 
 
-- Tools (to get development flow)
-- AI (various small experiements/research)
-- Devtools (research)
-- front-end (CSS, JS and desktop)
+- Tools
+- Frontend 
+- Backend 
+- Data (Machine Learning&AI)
+- Systems designs 
+- Emerging technologies (blockchain, iot)
+- Infrastructure 
+- Languages 
 - JavaScript interview (training)
 - Math (first )
-
-# Development
-
-Ambition to develop full-stack abilities:
-
 - frontend
 - backend
-- data
+- data (ML&AI)
 - systems design
 - iot
 - blockchain
