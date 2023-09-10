@@ -28,4 +28,3 @@ http://www.algoexpert.io
 - Systems designs (a long range of experiements)
 - Emerging technologies (blockchain, iot)
 - Infrastructure (cloud)
-- Languages (see back-end and course)
