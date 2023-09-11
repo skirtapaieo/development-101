@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frosty Glass with Tailwind</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .frosty-bg {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-no-repeat bg-fixed bg-cover bg-top h-screen w-full font-sans antialiased"
+    style="background-image: url(http://bit.ly/2gPLxZ4)"
+  >
+    <div
+      class="relative w-64 h-96 mx-auto my-auto frosty-bg rounded overflow-hidden"
+    >
+      <div class="relative z-10 mx-auto mt-12 text-center">
+        <div
+          class="w-24 h-24 mx-auto rounded-full bg-gradient-to-b from-gray-600 to-gray-200"
+        ></div>
+        <div class="mt-4 mb-4 text-white">Gilfoyle</div>
+        <input type="text" class="w-32 h-5 px-4 py-2 bg-opacity-40 rounded" />
+      </div>
+    </div>
+  </body>
+</html>

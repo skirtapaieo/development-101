@@ -1,5 +1,7 @@
 # short
 
+other: deno, pnpm
+
 https://bun.sh
 
 it is a javascript runtime that runs on top of webkit (uses javascriptcore aka nitro)
