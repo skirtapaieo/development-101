@@ -4,4 +4,6 @@
 
 # How to configure <tool>
 
-#
+# How to start <tool>
+
+# How to use <tool>
