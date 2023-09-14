@@ -23,7 +23,7 @@
 
 # Using the tool <product>
 
-## How to install <product> using CLI
+## How to install <product> using CLI (Powershell)
 
 ## How to configure <product>
 
