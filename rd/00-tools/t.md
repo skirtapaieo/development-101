@@ -69,3 +69,8 @@ This should get you up and running with WSL on your Windows machine.
 - Use Github desktop
 - Use git from terminal
   - Script git a little
+
+## Diagrams
+
+- Excalidraw
+- D2, Mermaid, etc
