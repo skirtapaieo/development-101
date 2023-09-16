@@ -353,6 +353,11 @@ a.push(1);
 
 ## 11] No Function Overloading
 
+### Reddit question
+
+11] No function overloading
+
+
 ### How it is normally managed in Go
 Use variadic parameters or different function names.
 
@@ -373,6 +378,10 @@ Great! Let's proceed with the remaining points.
 ---
 
 ## 12] No Ternary Operator
+
+### Reddit question
+
+12] No ternary operator
 
 ### How it is normally managed in Go
 Go doesn't support the ternary operator; you need to use if-else statements.
@@ -396,6 +405,10 @@ const result = condition ? 1 : 0;
 ---
 
 ## 13] No Enums
+
+### Reddit question
+
+13] No enums
 
 ### How it is normally managed in Go
 Go uses constants to simulate enumerations.
@@ -423,6 +436,10 @@ enum Color {
 
 ## 14] No Optional/Multi-Value JSON Keys
 
+### Reddit question
+
+14] no optional/multi value JSON keys possible to express and you have to resort to interface{} and do the typecasting later on which is difficult to read if the JSON is big and the code is big
+
 ### How it is normally managed in Go
 You can use `map[string]interface{}` for dynamic JSON or multiple value types.
 
@@ -441,6 +458,10 @@ type MyType = string | number;
 ---
 
 ## 15] JSON Validation
+
+### Reddit question
+
+15] Beyond just JSON, if you have to do JSON validation for incoming requests then you add more and more validation logic using third party library to the json struct tags which is a string where there is no type completion and custom functions are also a a pain to write and customise error messages.
 
 ### How it is normally managed in Go
 Use third-party libraries like `go-validator`.
