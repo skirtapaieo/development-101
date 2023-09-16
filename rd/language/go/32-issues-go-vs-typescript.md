@@ -2,6 +2,15 @@
 # Reddit comments
 
 
+1] nil pointers could blow up the code anywhere and the compiler does nothing to prevent accessing something which can be nil.
+
+2] Error handling (or lackthereof) at every line is insanely painful to see and if you forget to check any error then the code could blow up and the compiler WILL NOT stop you at all
+
+3] No union/sum types is also a BIG problem.
+
+4] poor OOPish implementation using receiver functions instead of just having proper OOP if that's what they wanted to enable in the first place.
+
+5] implicit interface implementation means you have to read the entire declaration of the file just to know which interface is implemented instead of just allowing "x implements y,z..." like EVERY other language.
 
 6] Zero default values do not play well with JSON serialization/deserialization and are a source of MANY MANY bugs. Workaround is to convert a field to a pointer and then do the nil check, but this means you have to convert all the struct keys to a pointer as you can receive an entire empty struct so how will you identify what was set and what was not set without all struct keys being set to pointer and doing the nil checks, it just never ends.
 
@@ -213,11 +222,16 @@ class MyClass implements MyInterface {
 }
 ```
 
-Great! Let's continue.
+
 
 ---
 
 ## 6] Zero Default Values and JSON Serialization
+
+### Reddit question
+
+6] Zero default values do not play well with JSON serialization/deserialization and are a source of MANY MANY bugs. Workaround is to convert a field to a pointer and then do the nil check, but this means you have to convert all the struct keys to a pointer as you can receive an entire empty struct so how will you identify what was set and what was not set without all struct keys being set to pointer and doing the nil checks, it just never ends.
+
 
 ### How it is normally managed in Go
 Use pointers for optional fields to distinguish between zero value and unset.
@@ -241,6 +255,11 @@ interface MyInterface {
 
 ## 7] Accessing Struct Keys Dynamically
 
+### Reddit question
+
+7] Cannot access keys of struct dynamically using a variable which is so easy in typescript (also very securely as well due to powerful type system) and in GO one has to convert the struct to a map or use reflect boilerplate code just to access a key of a struct using a variable.
+
+
 ### How it is normally managed in Go
 Use the `reflect` package for dynamic field access, although it's considered non-idiomatic.
 
@@ -258,6 +277,11 @@ const value = myObject[fieldName];
 ---
 
 ## 8] Struct Manipulation
+
+### Reddit question
+
+8] Cannot create a new struct by picking/omitting few keys from other struct. The code is never DRY in GO
+
 
 ### How it is normally managed in Go
 Go doesn't offer built-in manipulation; you have to create a new struct manually.
@@ -279,6 +303,11 @@ const { fieldToRemove, ...newObject } = oldObject;
 
 ## 9] JSON Handling
 
+### Reddit question
+
+9] PAINFUL JSON handling - especially deeply nested (or dynamic) JSON as the JSON mapping logic is inside strings (struct string tags) where there is no autocomplete and no compile error
+
+
 ### How it is normally managed in Go
 Go uses struct tags for mapping JSON keys.
 
@@ -298,6 +327,11 @@ const obj = JSON.parse(jsonString);
 ---
 
 ## 10] Code Complexity
+
+### Reddit question
+
+10] Code littered with pointer/nonpointer/slice/capacity/interface{} madness everywhere.
+
 
 ### How it is normally managed in Go
 Go’s simplicity is a feature, but yes, it can lead to boilerplate.
