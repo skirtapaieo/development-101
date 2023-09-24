@@ -1,5 +1,5 @@
-Planetscale
-Yugabyte
+Planetscale - serverless for mysql (vitess), fully managed
+Yugabyte -
 Neon
 Dolt
 Cockroach
@@ -15,3 +15,10 @@ Meilisearch
 Mindsdb
 Firestore
 supabase
+
+postgres - yes
+aws amplify
+sqllite -
+firebase -
+
+prisma?
