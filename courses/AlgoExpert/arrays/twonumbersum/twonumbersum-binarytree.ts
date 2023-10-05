@@ -1,5 +1,3 @@
-import * as z from 'zod';
-
 
 interface TreeNode {
     value: number;
@@ -8,6 +6,7 @@ interface TreeNode {
 }
 
 function twoNumberSum(root: TreeNode, targetSum: number): Number[] | [] {
+
     const stack: TreeNode[] = [root];
     const set: Set<number> = new Set();
 
