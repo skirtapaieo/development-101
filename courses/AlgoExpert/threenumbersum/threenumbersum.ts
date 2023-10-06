@@ -9,7 +9,7 @@
  *              The numbers in each triplet should be ordered in ascending order, and the triplets themselves should be ordered in ascending order with respect to the numbers they hold.
  *              If no three numbers sum up to the target sum, the function should return an empty array.
  *
- * Input ex:    array, [12, 3, 1, 2, -6, 5, -8, 6], targetSum = 0
+* Input ex:    array, [12, 3, 1, 2, -6, 5, -8, 6], targetSum = 0
  * Output ex:   two-dimensiontal array, [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
  *
  * Approaches:  Brute force approach: O(n^3) time | O(n) space, use: <50 elements, extremely slow for larger arrays
