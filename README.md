@@ -1,6 +1,6 @@
 Welcome!
 
-My hobby/startup projects are in the startup repo.
+You have to start somewhere.
 
 Here you have recent courses, training, drills, experiments, research that helps get me unstuck.
 
