@@ -40,6 +40,7 @@ BDD is used by development teams who are focused on collaboration and communicat
 1. Test-Driven Development (TDD)
 2. Acceptance Test-Driven Development (ATDD)
 3. Traditional QA Testing
+4. Specification by example
 
 ## Overview of BDD
 
@@ -50,3 +51,9 @@ BDD is used by development teams who are focused on collaboration and communicat
 - **Integration**: Can be integrated into most CI/CD pipelines for automated testing.
 
 In summary, Behavior-Driven Development aims to make your development process more collaborative and user-focused, providing a clear understanding of the application's behavior to all stakeholders.
+
+## OVerview of the BDD-stack
+
+1. Gherkin language, a language for writing human readable descriptions of software
+2. Cucumber, a tool for running automated tests written in gherkin language
+

@@ -91,21 +91,85 @@ export function threeSumTwoPointer(input: Input): number[][] {
     return triplets;
 }
 
-// Test cases for each algorithm
 
-describe('Three Number Sum', () => {
-    const testInput = { array: [12, 3, 1, 2, -6, 5, -8, 6], targetSum: 0 };
-    const expectedOutput = [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]];
+// Test Function
+function testFunction(name: string, func: (input: Input) => number[][], input: Input, expected: number[][]): void {
+    const result = func(input);
+    console.log(`${name} Test: ${JSON.stringify(result) === JSON.stringify(expected) ? "PASSED" : "FAILED"}`);
+    console.log(`Expected: ${JSON.stringify(expected)}`);
+    console.log(`Received: ${JSON.stringify(result)}`);
+    console.log("------------");
+}
 
-    test('Brute force approach', () => {
-        expect(threeSumBruteForce(testInput)).toEqual(expectedOutput);
-    });
+// Test cases
 
-    test('Hash table approach', () => {
-        expect(threeSumHashTable(testInput)).toEqual(expectedOutput);
-    });
+// Your function implementations go here
+// threeSumBruteForce, threeSumHashTable, threeSumTwoPointer
 
-    test('Two-pointer approach', () => {
-        expect(threeSumTwoPointer(testInput)).toEqual(expectedOutput);
-    });
+// Define test cases
+const testCases = [
+    {
+        input: { array: [12, 3, 1, 2, -6, 5, -8, 6], targetSum: 0 },
+        expected: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]],
+    },
+    {
+        input: { array: [1, 2, 3], targetSum: 6 },
+        expected: [[1, 2, 3]],
+    },
+    {
+        input: { array: [1, 2, 3], targetSum: 7 },
+        expected: [],
+    },
+    {
+        input: { array: [8, 10, -2, 49, 14], targetSum: 57 },
+        expected: [[-2, 10, 49]],
+    },
+    {
+        input: { array: [12, 3, 1, 2, -6, 5, 0, -8, -1], targetSum: 0 },
+        expected: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5], [-1, 0, 1]],
+    },
+    {
+        input: { array: [12, 3, 1, 2, -6, 5, 0, -8, -1, 6], targetSum: 0 },
+        expected: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5], [-1, 0, 1]],
+    },
+    {
+        input: { array: [12, 3, 1, 2, -6, 5, 0, -8, -1, 6, -5], targetSum: 0 },
+        expected: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5], [-5, 0, 5], [-1, 0, 1]],
+    },
+    {
+        input: { array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], targetSum: 18 },
+        expected: [[3, 6, 9], [3, 7, 8], [4, 5, 9], [4, 6, 8], [5, 6, 7]],
+    },
+    {
+        input: { array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], targetSum: 32 },
+        expected: [[8, 9, 15]],
+    },
+    {
+        input: { array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], targetSum: 33 },
+        expected: [[9, 9, 15]],
+    },
+    {
+        input: { array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], targetSum: 5 },
+        expected: [],
+    }
+];
+
+// Run test cases
+testCases.forEach((testCase, i) => {
+    console.log(`Running test case ${i + 1}`);
+    console.log(`Input: ${JSON.stringify(testCase.input)}`);
+
+    const outputBruteForce = threeSumBruteForce(testCase.input);
+    const outputHashTable = threeSumHashTable(testCase.input);
+    const outputTwoPointer = threeSumTwoPointer(testCase.input);
+
+    console.log(`Output using Brute Force: ${JSON.stringify(outputBruteForce)}`);
+    console.log(`Output using Hash Table: ${JSON.stringify(outputHashTable)}`);
+    console.log(`Output using Two Pointer: ${JSON.stringify(outputTwoPointer)}`);
+
+    console.log(`Expected: ${JSON.stringify(testCase.expected)}`);
+    console.log('---');
 });
+
+
+
