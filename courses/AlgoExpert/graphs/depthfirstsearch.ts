@@ -11,14 +11,18 @@
  *
  * Scenarios:   Size of input, structure of graph, available memory, available time
  *
- * Solutions:   Recursive approach: O(v + e) time | O(v) space,
+ * Solutions:   Recursive approach: O(v + h) time | O(v) space,
  *                  size of input: smaller lists, more readable
+ *                  structure of graph: for trees, not for graphs with cycles
  *              Iterative approach: O(v + e) time | O(v) space,
  *                  size of input: for larger lists, more performant
+ *                  structure of graph: for tree and graphs with cycles
  *              Generator function approach: O(v + e) time | O(v) space,
  *                  size of input: for larger lists, more performant
+ *                  structure of graph: for trees
  *              Custom data structure approach: O(v + e) time | O(v) space,
  *                  size of input: for even larger lists, more performant
+ *                  structure of graph: for tree and graphs with cycles
  *
  * Input ex:   graph = A
                     /  |  \
