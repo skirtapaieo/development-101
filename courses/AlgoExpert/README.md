@@ -1,8 +1,8 @@
 # Algoexpert
 
-Course aimed at helping software engineers prepare for algorithmic coding interviews at top tech companies like Google, Facebook, Amazon, and Microsoft. 195 coding questios, 100+ hours of video explanations, data structure crash course and space-time complexity analysis-
+Course aimed at helping software engineers prepare for algorithmic coding interviews at top tech companies like Google, Facebook, Amazon, and Microsoft. 195 coding questios, 100+ hours of video explanations, data structure crash course and space-time complexity analysis.
 
-## Exercises #195 (sort by difficulty/category)
+## Exercise Categories (with different difficulty)
 
 - Arrays
 - Binary Search Trees
@@ -20,18 +20,16 @@ Course aimed at helping software engineers prepare for algorithmic coding interv
 - Strings
 - Tries
 
-# Is there a way to structure the exercises?
-
-We can organize the 195 questions,  into their "respective" categories and levels.
+# According to "levels"
 
 ### Level 1: Basic Data Structures
 - **Arrays**
-  - Two Number Sum <-- yes!
-  - Sorted Squared Array
-  - Tournament Winner
+  - Two Number Sum **<-- yes** (typescript)
+  - Sorted Squared Array **<--yes**
+  - Tournament Winner **<-- yes**
   - Non-Constructible Change
   - Transpose Matrix
-  - Three Number Sum <-- yeah!
+  - Three Number Sum **<-- yes!** (typescript/zod/tests/alternative)
   - Smallest Difference
   - Move Element To End
   - Monotonic Array
@@ -44,7 +42,7 @@ We can organize the 195 questions,  into their "respective" categories and level
   - Missing Numbers
   - Majority Element
   - Sweet And Savory
-  - Apartment Hunting
+  - Apartment Hunting **<-- yes**
   - Calendar Matching
   - Waterfall Streams
   - Minimum Area Rectangle
@@ -148,7 +146,7 @@ We can organize the 195 questions,  into their "respective" categories and level
 - **Square of Zeroes**
 
 ### Level 6: Graph Algorithms
-- **Depth-first Search** <-- learned a lot here
+- **Depth-first Search** **<-- yes** (typescript/scenarios/multiple solutions)
 - **Single Cycle Check**
 - **Breadth-first Search**
 - **River Sizes**
