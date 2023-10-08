@@ -1,6 +1,6 @@
 
 /**
- * Depth-first search
+ * Name:        Depth First Search
  *
  * Problem:    Traverse a graph by going as deep as possible, if possible, before backtracking
  *
