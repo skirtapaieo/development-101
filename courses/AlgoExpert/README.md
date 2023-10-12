@@ -28,7 +28,7 @@ Course aimed at helping software engineers prepare for algorithmic coding interv
   - Sorted Squared Array **<--yes**
   - Tournament Winner **<-- yes**
   - Non-Constructible Change
-  - Transpose Matrix
+  - Transpose Matrix **<-- yes!**, added pseudocode, terminology, but not comments, etc
   - Three Number Sum **<-- yes!** (typescript/zod/tests/alternative)
   - Smallest Difference
   - Move Element To End
