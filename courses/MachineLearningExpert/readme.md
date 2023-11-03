@@ -1,6 +1,6 @@
-# ML Expert -
+# ML Expert
 
-## Machine Learning - Crash Course
+## Machine Learning
 
 1 - Introduction
 2 - Prerequisites

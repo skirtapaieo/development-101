@@ -1,8 +1,9 @@
 # Frontend Expert
 
-https://www.algoexpert.io/content#frontendexpert
+<https://www.algoexpert.io/content#frontendexpert>
 
-Course aimed at helping software engineers prepare for frontend coding interviews at top tech companies . 50 coding questios, +20 hours of videos and +100 topics and a 50 question final quiz where you have to pass 80% related to React, JavaScript, TypeScript, HTML, CSS and web development.
+Course aimed at helping software engineers prepare for frontend coding interviews at top tech companies.
+50 coding questions, +20 hours of videos and +100 topics and a 50 question final quiz where you have to pass 80% related to React, JavaScript, TypeScript, HTML, CSS and web development.
 
 ## Frontend assignments (50)
 
