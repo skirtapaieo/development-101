@@ -1,57 +1,57 @@
-Welcome!
 
-You might be lost - if not then here you can find have recent courses and research here.
+Hey there,
 
-I spend 2% of my coding here perhaps and 98% in private repositories (and 1% in my play repo).
+If you've stumbled upon this page in search of fresh courses and research, you're in the right spot.
 
-# Courses
+Just so you know, the bulk of my code lives in private repos, but I do sprinkle a bit of my work here and in a side "play" repo.
 
-Main courses at Algoexpert (similar to leetcode) during 2023:
+# Short background
 
-<http://www.algoexpert.io>
+Most of the time the last 6 years i have lead digital team, at Telenor, Hemnet, Delaval, Codeta, done strategy stuff at NetOnNet and SJ and a startup during 2023 that I cannot talk about yet. Not a lot of hands coding, but at least I've kept up.
 
-+100 of hours of videomaterial and 100s of exercises in the following courses:
+# I had to do a reboot
 
-1. Algorithms (Algoexpert)
-2. Systems Design (SystemsExpert)
-3. Programming (programmingExpert
-4. Front-end (FrontendExpert)
-5. Blockchain (BlockchainExpert)
-6. Machine Learning (MachineLearningExpert)
+I've been brushing up on my skills with AlgoExpert throughout 2023—think LeetCode but broader. If you're curious, check out [AlgoExpert](http://www.algoexpert.io) for a treasure trove of videos and exercises covering everything from algorithms to machine learning.
 
-# Research
+It is +100 of hours of videomaterial and 100s of exercises in the following courses - algorithms, systems design, programming, front-end, blockchain and machine learning. It is quite massive, most likely spend a full 3 months on all of it.
 
-Most of the things below are 6-9 months old (2023) as I have been on hiatus for a while from coding. I am incredibly enthusistic about the topics I mention below.
+# Toolbox and Skills
 
-## Tools
+I nowaday use with VSC/vim motions, bash/zsh, git, and WSL/Ubuntu - and mix of Copilot, ChatGPT Plus, and perplexity. For project flows, Notion's my go-to, with Markdown/Git for the nitty-gritty. Great because I move freely between Mac, Windows and Linux.
 
-I use vsc, and bash/zsh, git, wsl/ubuntu, trying out vsc neovim extension I use cop-pilot, chatgpt plus, bard frequently on desktop and sometimes bing and perplexity on mobile. I use notion for projects and markdown/git for minor things, figma, miro, excalidraw. And daily dose of twitter and youtube. I have tested codium, phind, coderabbit, cursor, codesandbox - and more - but nothing stuck :-)
+## Web Front-end Fun
 
-## Front-end
+I keep tabs on the ever-expanding HTML landscape and the latest in CSS, including the buzz about the View Transition API. I've toyed with everything from custom CMS back in the day to Episerver and WordPress quite recently with clients. Led some microfrontend teams, delved into TypeScript, and got my hands dirty with React, Svelte, Vue, Solid and so on. I play around with HTMX and Tailwind/Daisy CSS for kicks, and Go has been my backend buddy.
 
-I know that there are over 140 HTML tags nowadays, I follow CSS and am looking a View Transition API as a big change. I have a long-running interest in CMS, made a few myself (oldschool) with front-end and back-end tools - I have had to work with Episerver, Wordpress in professional clients, and with proprietary headless CMS as well. I have experience of leading microfrontend teams.
+## Natively speaking
 
-On JavaScript, I use Typescript (transpiler) and Zod for validations, done to two courses in React (library), interest in where RSC will end up. Tested Svelte (compiler) and curious about Runes and SolidJS (signals) and try follow Ryan Carniato on Youtube. I am acquainted with Angular (framework) but haven't worked with it. I Like the idea of VanJS and lead teams working on Vue (Delaval) and Ruby/Rails (Hemnet). When I do hobbyprojects I currently try use HTMX, Tailwind/Daisy CSS and Go/TypeScript. When using Python I use Pydantic to get some "type safety".
+Natively I have led teams using Kotlin (moving from Java) and Swift, I have looked at Flutter, Electron and Tauri, React-Native. I have old school experinece of Ajax, Applets, designing with tables, VBScript and CGI-scripting using Delphi and even J++ and COM+.
 
-Also worked a little bit in Sketch and Figma to design things, well acquainted with Storybook and building design systems/components (in Vue and React). I have worked in collaboration with in-house design teams, design agencies, branding agencies and at Delaval I led a design system/design components initiative.
+## Backend and Beyond
 
-Natively I have led teams using Kotlin (moving from Java) and Swift, I have looked at Flutter, Electron and Tauri, React-Native. I have old school experinece of Ajac, Applet, designing with tables, VBScript and CGI-scripting using Delphi and also J++. I have used all Anders Heijlsbergs languages :)
-
-I have picked up accessibility and have had an interest in Reactive programming since 2014 (spreadsheets are also reactive but perhaps doesn't count). In 2014 I used Meteor and have documented blitz talks about it :-). Founder of Vue worked with Meteor.
-
-## Back-end
-
-In the courses on top I have used Go, Python, React, JavaScript and TypeScript but I am new to Primeagen so I also like Rust more than I should :-) I am a big fan or Ruby and Rails started with leading teams at Hemnet that is one of the few large sites using that in Sweden. Sandy Metz books was our bible on how to think about Ruby. I like DHH. I have looked at Mojo for future use in AI/ML projects. I have written a little C and C++ and I am looking at Zig to expand my views.
-
-My background is using Delphi (Anders Hejslberg language - and little J2EE and COM+ on the MS-side - that actually still is around) and Java (which in version 21 looks really good). So most modern back-end approaches including all improvements to C++ is really really nice DX for me :-).
+I have been into Go, Python, and TypeScript with my recent course binge. Got a soft spot for Ruby on Rails, and Rust is growing on me. My old-school love for Delphi and Java gets a nod too, especially with Java's recent facelift in version 21. I keep an eye on Zig and Mojo.
 
 ## Data
 
-I try to have a data mindset and think of the data area as a pipeline from data ingestions, to storage, processing, transforamtion, analysis, ML & AI and visualization. I have been involved in Data Warehouse development a telco scale, lead AI/ML team at Hemnet and at Delaval 90% of what we did was collecting data from farms and building services around the data and we also built Data Lake for future use. Currently I am focusing on using metadata (yaml), using LLMs (mainly OpenAI API), Clip (Dall:e), but also transforming data using Python and storing metadata, ORMs like Drizzle for avoiding. I have done a lot of OLTP SQL but it was a long time ago. There are so many new things like databases with versioning, vector databases and so on.
+Thinking data-first, I've built up from data warehousing to leading AI/ML teams. Metadata (yaml), OpenAI's API, and Python for data transformation are my current focus areas.
 
-## Architecture and system design
+## Architecture and Design
 
-in larger context architecture skills (modelling +100 subsystems in telco for example) helps you define front-end, back-end, data pipelines, infrastructure to give you a start.
+As for architecture, it's all about the big picture and connecting the dots from front to back, data to design. You'll find a few of the system designs in the systems design folders.
+
+## Emerging technology
+
+Blockchain's got my attention, and IoT's been a big playfield, especially with custom hardware. AWS has been my cloud home for 15 years, and I've seen Azure and Google Cloud from the inside.
+
+## Design
+
+I can manage Figma, and well acquainted with Storybook and building design systems/components (in Vue and React). I have worked in collaboration with in-house design teams, design agencies, branding agencies and at Delaval I led the teams behind the design system/design components.
+
+I have picked up accessibility and have had an interest in Reactive programming since 2014 (spreadsheets are also reactive but perhaps doesn't count). In 2014 I used Meteor and have documented blitz talks about it :-). Founder of Vue worked with Meteor.
+
+Cheers!
+
+## Back-end
 
 I have done a course on system design at Algoexpert and design is more specific around scope, how the system will be used, making a concept, looking at similar designs and major differencies, figuring out major user journeys, the main services and API's, the information model, sequence diagrams and system models. Then there are aspects like special algorithms needed, security perspectives, protocols used, costs and teams needed.
 
