@@ -1,28 +1,13 @@
 # Algoexpert
 
-Course aimed at helping software engineers prepare for algorithmic coding interviews at top tech companies like Google, Facebook, Amazon, and Microsoft.
-It entails 195 coding questions, in various categories and levels. It is about 100+ hours of video explanations, data structure crash course and space-time complexity analysis.
+Course aimed at helping software engineers prepare for algorithmic coding interviews at top tech companies like Google, Facebook, Amazon, and Microsoft. It is about 100+ hours of video explanations, data structure crash course and space-time complexity analysis.
 
-The categories:
-- Arrays
-- Binary Search Trees
-- Binary Trees
-- Dynamic Programming
-- Famous Algorithms
-- Graphs
-- Greedy Algorithms
-- Heaps
-- Linked Lists
-- Recursion
-- Searching
-- Sorting
-- Stacks
-- Strings
-- Tries
+It entails 195 coding questions, in various categories and levels. The categories are arrays, binary search trees, binary trees, dynamic program, "famous" algorithms, graphs, greedy algorithms, heaps, linked lists, secursion, searching, sorting, stacks, strings and trees.
 
-It think the course is very good. I tried to focus on learning JavaScript, a little bit of Typescript, I tried to think about conceptual solutions, adding pseudocode, before coding when I did the exercises. I also tried to start use JSDoc, terminology, Zod (for validations), test, scenarios, alternative solutions.
+I tried to combined learning algorithms with JavaScript, Typescript, Zod, testing, scenarios,
+alternative solutions and documenting code (JSDoc).
 
-There are many routes of improving courses like Algoexpert - at the same time the exercises become a little complex. See code example below for some ideas. I also asked ChatGPT to make a code review - see below the code. I haven't addressed the issues. For interview purposes the course is most likely effective if you go through all the material and all exercises.
+See example below.
 
 ## Example: Depth First Search (Graph)
 
@@ -318,4 +303,3 @@ Conducting a code review involves several aspects, including correctness, style,
 - Analyze and discuss the space and time complexity in more detail, particularly considering the depth of the tree.
 
 Overall, the provided code is a good starting point for a depth-first search implementation, but it should be further refined for robustness, especially concerning error handling and potentially complex graph structures.
-
