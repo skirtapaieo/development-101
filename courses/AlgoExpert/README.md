@@ -8,7 +8,6 @@ I tried to combined learning algorithms with JavaScript, Typescript, Zod, testin
 alternative solutions and documenting code (JSDoc).
 
 See example below.
-
 ## Example: Depth First Search (Graph)
 
 ```Javascript
@@ -258,6 +257,7 @@ console.log(graph9.depthFirstSearchRecursive([])); // ["A"]
 
 console.log(graph5.depthFirstSearch()); // ["A", "B", "G", "F", "K", "E", "D", "L", "C", "M", "N", "H", "S", "U", "P", "T", "V", "W", "X", "Y", "Z", "Q", "R", "O"]
 ```
+
 
 ## ChatGPT code review
 
