@@ -1,6 +1,6 @@
 # Design system
 
-Certainly! Here are the links to the sections in the text:
+
 
 [Design System](#design-system)
 
@@ -64,8 +64,6 @@ Here's how they fit together:
 The following tries to cover all essential aspects and components of the system.
 
 While the specific content and depth may vary depending on the organization's needs and complexity of the project, the following is a general outline that can serve as a starting point.
-
-Certainly! Below is an updated outline for a modern design system, incorporating the section on "Charts, Data Visualization, and Indicators of Success and Failure":
 
 1. **Introduction:**
 
@@ -373,7 +371,7 @@ Note: Most of these CSS frameworks don't directly support React or TypeScript, b
 
 8. **Skeleton**: http://getskeleton.com/
 
-Feel free to explore these libraries and choose the one that best suits your project's needs and requirements. Each library has its own set of features, design styles, and documentation to help you get started quickly. Happy designing!
+
 
 # Conversational UI
 
@@ -416,6 +414,3 @@ A breakdown of various tools:
 - [Arthur Shield](https://www.arthur.ai/get-started): A paid product for detecting toxicity, hallucination, prompt injection, etc.
 - [LMQL](https://lmql.ai): A programming language for LLM interaction with support for typed prompting, control flow, constraints, and tools.
 
-## Targeted service
-
-## web components
