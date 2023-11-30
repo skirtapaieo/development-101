@@ -70,10 +70,5 @@ The research part is a little chaotic. When I am interested in something I resea
 
 [Math](research/math/readme.md) - a couple of math tools evaluated
 
-## Infrastructure increasingly important (research/infrastructure)
-
-With a 15-year history on AWS, I've played a key role in cloud infrastructure, including introducing Azure at Tele2 and migrating Hemnet to AWS. My experience also covers SRE, DevOps, and cost optimization. I've explored modern web development tools like Next.js through Vercel. I use this directory to research topics that I am curious about.
-
-## Tools
 
 
