@@ -1,5 +1,5 @@
 
-Certainly, Infrastructure as Code (IaC) has gained significant traction in the DevOps community, and there are several major tools and platforms available for this purpose. Here's a rundown of some of the major IaC providers:
+Infrastructure as Code (IaC) has gained significant traction in the DevOps community, and there are several major tools and platforms available for this purpose. Here's a rundown of some of the major IaC providers:
 
 ### Cloud-Specific
 

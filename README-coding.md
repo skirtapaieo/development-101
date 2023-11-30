@@ -1,3 +1,4 @@
+
 ## Coding (mainly in private repos)
 
 Most of my coding is done in private repos for customers, and what you find here are quick and dirty, non-production, examples, assignments, quick "touch and feel" of some library and so on. But below is an example of an assigment in AlgoExpert, below that a simple MVP (a CLI-based AI assistant) - and my most used Bash script :-)

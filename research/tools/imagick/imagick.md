@@ -1,4 +1,3 @@
-I apologize for the confusion earlier. Thank you for pointing out the product template you've specified. Here's the information about ImageMagick using your template:
 
 # ImageMagick
 
@@ -50,7 +49,7 @@ I hope this information fits your requested template well.
 
 <br>
 
-# Image formats supported 
+# Image formats supported
 
 PEG
 PNG

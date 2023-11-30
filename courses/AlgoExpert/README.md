@@ -259,7 +259,9 @@ console.log(graph5.depthFirstSearch()); // ["A", "B", "G", "F", "K", "E", "D", "
 ```
 
 
-## ChatGPT code review
+## ChatGPT code review:
+
+(did not fix above after below)
 
 Conducting a code review involves several aspects, including correctness, style, performance, and maintainability. Below is a review based on these aspects.
 
@@ -302,4 +304,4 @@ Conducting a code review involves several aspects, including correctness, style,
 - Define and include the `CustomStack` implementation or remove references if it is not used.
 - Analyze and discuss the space and time complexity in more detail, particularly considering the depth of the tree.
 
-Overall, the provided code is a good starting point for a depth-first search implementation, but it should be further refined for robustness, especially concerning error handling and potentially complex graph structures.
+

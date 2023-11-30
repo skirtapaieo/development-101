@@ -16,7 +16,7 @@ Pricing for Edge Computing, Serverless Computing, and Docker-based services can 
 
 # Providers
 
-Certainly! Here's a merged table that includes both the major cloud providers and the niche players.
+Here's a merged table - includes both the major cloud providers and the niche players.
 
 | Provider       | Edge Computing      | Serverless Computing | Docker-based Computing    | VMs             | Bare-Metal         |
 |----------------|---------------------|----------------------|---------------------------|-----------------|--------------------|

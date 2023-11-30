@@ -1,7 +1,7 @@
 
 # Local devops
 
-Certainly, setting up a local CI/CD (Continuous Integration/Continuous Deployment) flow with different environments like development, test, staging, and production is possible. You can achieve this using GitHub and Visual Studio Code (VS Code). Below is an outline of how you can go about it.
+Setting up a local CI/CD (Continuous Integration/Continuous Deployment) flow with different environments like development, test, staging, and production is possible. You can achieve this using GitHub and Visual Studio Code (VS Code). Below is an outline of how you can go about it.
 
 ### Tools Required
 
