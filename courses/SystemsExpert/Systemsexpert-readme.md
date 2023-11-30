@@ -37,6 +37,8 @@ This is their systems design course, called SystemsExpert:
 
 ## Part II
 
+(Moved most of these.)
+
 - Systems design assignments
   - Code Deployment
   - Algoexpert

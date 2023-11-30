@@ -1,6 +1,6 @@
 # The transitions between Windows and Unix shell
 
-The table below shows the issue of using Windows tools - i.e. you have to "relearn" either way you go.
+The table below shows the issue of using Windows tools - i.e. you have to "relearn" either way you go :-) 
 
 ## Tool Comparison Table
 

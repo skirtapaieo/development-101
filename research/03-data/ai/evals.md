@@ -19,7 +19,7 @@ In addition to the above, evals can also refer to the evaluation of AI systems i
 
 # Holdout
 
-Sure, here is a code example for evaluating a machine learning model using a holdout set:
+A code example for evaluating a machine learning model using a holdout set:
 
 ```python
 import numpy as np

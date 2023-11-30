@@ -15,6 +15,7 @@
   - aliases for PowerShell and WindowsPowershell
   - aliases for gitconfigure
 - Bash
+  - Same as above 
 - TMux
 
 ## Git
