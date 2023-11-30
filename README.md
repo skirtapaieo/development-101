@@ -1,38 +1,23 @@
 
 Hey there.
 
+## Reboot as software developer!
 
-## Reboot as software developer
+In the past six years at Digitalkompaniet, I've led up to 30 teams at companies like Telenor, Hemnet, Delaval, NetOnNet, and SJ, focusing on management over hands-on development.The end oof 2022 marked a turning point for me, with significant advancements in AI.
 
-In the past six years at Digitalkompaniet, I've led up to 30 teams at companies like Telenor, Hemnet, Delaval, NetOnNet, and SJ, focusing on management over hands-on development.
+I started doing courses and research, which I documented here (development-101) and more playful things in another repository (play-101). I also have private repos where I do startup and client work.
 
-2022 marked a turning point for me, with significant advancements in front-end frameworks and AI, especially with the advent of GPT-3.5.
+Since March, I have started to do commercial work for clients, my first thing was a performance framework using Python, Puppeteer, Lighthouse that tested the performance of 10 competitors, from 3 different locations across Europe and summarizing "everything" about their performance on all of their pages.
 
-In March 2023, I developed a performance framework using Python and Puppeteer to create testing environments across Europe, incorporating tools like Lighthouse for comprehensive website analysis.
+So a little bit about this repo:
 
-## Continuous learning through courses
 
-I started using AlgoExpert years ago to sharpen my technical interview skills, especially for roles at top tech firms like Google and Facebook. AlgoExpert has since evolved, offering extensive learning in algorithms, systems design, front-end, blockchain/crypto, and machine learning. My focus has been on JavaScript and Python.
+## Embracing simplicity in Coding (in private repos)
 
-## Systems design and architecture
+Most of my coding is done in private repos for customers, and what you find here are quick and dirty, non-production, examples, assignments, quick "touch and feel" of some library and so on. But below is an example of an assigment in AlgoExpert, below that a simple MVP (a CLI-based AI assistant) - and my most used Bash script :-)
 
-My expertise in systems architecture stems from working on telecom systems with complex models and large-scale RFQ processes at companies like Ericsson and Huawei. I enhanced this knowledge through AlgoExpert's systems design course, adding exercises from various sectors like social media, streaming, team collaboration, finance, real estate, and education.
 
-My designs, often used for interviews or discussions, focus on user experience, service architecture, APIs, and information models. My experience covers a broad range of areas, including front-end, back-end, infrastructure, and data pipelines, though these are usually too advanced for typical systems design.
-
-I've also worked on confidential projects in dairy farming, railway, and telecom. These experiences highlight that while system improvements are often known, they can be hindered by factors like budget, time, and available talent.
-
-### Infrastructure increasingly important
-
-With a 15-year history on AWS, I've played a key role in cloud infrastructure, including introducing Azure at Tele2 and migrating Hemnet to AWS. My experience also covers SRE, DevOps, and cost optimization. I've explored modern web development tools like Next.js through Vercel.
-
-### Product Management and UX
-
-In my software development approach, product management and UX are key. I've successfully launched products with outstanding UX and technology, like at DeLaval, where we developed cloud platforms and products using AWS IoT solutions and a proprietary edge server. Iam proficient in Figma and Storybook, I've worked on design systems in Vue and React, collaborating with in-house teams and agencies. My interest in accessibility and reactive programming since 2014 complements my technical skills, while I often prioritize back-end development and data pipelines, at least for MVPs.
-
-## Embracing simplicity in coding
-
-My coding journey in 2022 began with an MVP of an AI assistant using a CLI-based UI. I've adapted to modern environments with tools like VSC, GitHub/Git, and WSL/Ubuntu. My expertise spans front-end development, microfrontend teams, and various languages including Go, Python, TypeScript, and Rust. I'm also experienced in database management, RDBMs, and SQL, with a focus on data-first approaches. Here's an early version of the CLI-based application:
+### MVP/CLI-based AI assistant
 
 ```Python
 import openai
@@ -98,6 +83,43 @@ if __name__ == "__main__":
         response = chat_with_gpt(user_input)
         print(f"{RED}Tribe-AI:{RESET} {response}")
 ```
+
+### A Bash-script
+
+I have a hangup that I want to keep control on the amout of code I do to make sure that things don't grow out of hand.
+
+```Bash
+#!/bin/bash
+
+# Initialize the line count to 0
+total_lines=0
+
+# Initialize the other variable to 50 for lines in other types of files
+other=0
+
+# Loop through each .js, .ts, or .yaml file in the /src directory and its subdirectories
+while read -r file; do
+  # Count the lines in each file
+  lines=$(wc -l < "$file")
+  echo "$file has $lines lines"
+
+  # Add to total line count
+  total_lines=$((total_lines + lines))
+# Yaml: done < <(find ../ -type f \( -name "*.js" -o -name "*.ts" -o -name "*.yaml" \))
+
+# No Yaml:
+done < <(find ../ -type f \( -name "*.js" -o -name "*.ts" \))
+
+# Add the 'other' lines to the total line count
+total_lines=$((total_lines + other))
+
+# Display total line count
+echo "Total lines of code: $total_lines"
+
+```
+
+
+### Depth-fist assignment at AlgoExpert
 
 Here is quite a different sample, where I had done some assignments Algoexpert before this (Depth First Search) assignment, and I think I wanted a way to think through the problem, the variants, and to document the code and try to write some test cases which ends up looking overcommented. And it is only half done to become production worthy - it lacks error handling in the "node" classes - but I took out the algorithm part and passed the assignment, which was one of the main goals in this case:
 
@@ -358,4 +380,30 @@ console.log(graph5.depthFirstSearch()); // ["A", "B", "G", "F", "K", "E", "D", "
 
 
 
+
+
+
+## Continuous learning through courses (/courses)
+
+I started using AlgoExpert years ago to sharpen my technical interview skills, especially for roles at top tech firms like Google and Facebook. AlgoExpert has since evolved, offering 6 courses and extensive learning in algorithms and data structure, systems design, front-end, blockchain/crypto, and machine learning. I've signed up for all courses and most of them are done now. My language focus has been on JavaScript and Python - but you also learn a little about React, Go, Solidity, HTML and CSS.
+
+### Product Management and UX (in private repos and clients)
+
+The focus is software development butin any software development approach, product management and UX are key, both creating cross-functional organizations and harmonized "toolchains". I've successfully launched products with outstanding UX and technology, like at DeLaval, where we developed cloud platforms and products using AWS IoT solutions and a proprietary edge server. I have worked as CTO/CPO, and I have done UX design for clients. I am proficient in Figma and Storybook, I've worked with design systems in Vue and React, collaborating with in-house teams and agencies. The most recent thing that I have learned about is accessibility. I have done reactive programming since 2014 (Meteor).
+
+## Systems design and architecture (/research/systems-design)
+
+My expertise in systems architecture stems from working on telecom systems with complex models and large-scale RFQ processes at companies like Ericsson and Huawei. I enhanced this knowledge through AlgoExpert's systems design course, adding exercises from various sectors like social media, streaming, team collaboration, finance, real estate, and education.
+
+My designs, often used for interviews or discussions, focus on user experience, service architecture, APIs, and information models. My experience covers a broad range of areas, including front-end, back-end, infrastructure, and data pipelines, though these are usually too advanced for typical systems design.
+
+Most of the system designs are made in less than 30 minutes, in some cases I took more time to research a special topic. Most systems design have a lot in similar, but almost all advanced solutions have one or more unique features, that is well worth to invest in.
+
+## Infrastructure increasingly important (research/infrastructure)
+
+With a 15-year history on AWS, I've played a key role in cloud infrastructure, including introducing Azure at Tele2 and migrating Hemnet to AWS. My experience also covers SRE, DevOps, and cost optimization. I've explored modern web development tools like Next.js through Vercel. I use this directory to research topics that I am curious about.
+
+## Tools
+
+I've use tools like VSC, GitHub/Git, and WSL/Ubuntu. My expertise spans front-end development, microfrontend teams, and various languages including Go, Python, TypeScript and JavaScript. I'm also experienced in database management (RDBMS and SQL) with a focus on data-first approaches. Here's an early version of the CLI-based application:
 
